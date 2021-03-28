@@ -169,8 +169,8 @@
 <body>
 
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://start.hansung.ac.kr">Start your Web</a>
-		<span class="topurl col-sm-9 col-md-10" id="topurl">http://start.hansung.ac.kr/?topic=[your Topic]</span>
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="https://photonrusher.github.io">Start your Web</a>
+		<span class="topurl col-sm-9 col-md-10" id="topurl">https://photonrusher.github.io/?topic=[your Topic]</span>
 		<!--input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
 		<ul class="navbar-nav px-3">
 		  <li class="nav-item text-nowrap">
@@ -198,13 +198,19 @@
 			  </h6>
 			  <ul class="nav flex-column mb-2">
 				<li class="nav-item">
-					<a class="nav-link" href="http://start.hansung.ac.kr/?topic=hansung">
+					<a class="nav-link" href="https://photonrusher.github.io/?topic=yk">
+					  Photonrusher
+					</a>
+				  </li>
+				</ul>
+				<li class="nav-item">
+					<a class="nav-link" href="https://photonrusher.github.io/?topic=hansung">
 					  Hansung University
 					</a>
 				  </li>
 				</ul>
 				<li class="nav-item">
-				  <a class="nav-link" href="http://start.hansung.ac.kr/?topic=main">
+				  <a class="nav-link" href="https://photonrusher.github.io/?topic=main">
 					기본 홈페이지
 				  </a>
 				</li>
@@ -240,7 +246,7 @@
 			var topic = getUrlParameter('topic');	// 파라미터 체크
 
 			if(typeof topic == "undefined" || topic == null || topic == "") {
-				fGetSiteInfoFromServer( 'hansung' ); // 현 서버에서는 hansung을 기본으로
+				fGetSiteInfoFromServer( 'yk' ); // 현 서버에서는 yk를 기본으로
 			} else {
 				fGetSiteInfoFromServer( topic );
 			} 
@@ -297,8 +303,8 @@
 			$('#pEname').text( myObj.ename );
 			//$('#pHname').text( myObj.hname );
 			
-			//$('#topurl').attr("href", "http://start.hansung.ac.kr/?topic="+myObj.name)
-			$('#topurl').text('http://start.hansung.ac.kr/?topic='+myObj.name);
+			//$('#topurl').attr("href", "https://photonrusher.github.io/?topic="+myObj.name)
+			$('#topurl').text('https://photonrusher.github.io/?topic='+myObj.name);
 			
 
 
