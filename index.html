@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>startWeb</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your Web from here">
+	<meta name="generator" content="6071">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	 crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+
+	<style>
+	body { 
+	    background: #f2f2f2; 
+	}
+	ul {
+    	padding: 0; /* To remove default left padding */
+	}
+	li {
+    	word-spacing: 0.2em;
+    	font-weight: bold; 
+    	font-family : "Noto Sans KR", "맑은 고딕", "Malgun Gothic", Sans-serif, "궁서체";
+		list-style-type: none; /* list 앞 기호표시 */
+		word-wrap: normal; /* 적용 안되는 듯 */
+	}
+	li a {
+    	font-size: 110%;
+    	color:  #004d99;
+	}
+	li:hover { 
+	    background-color: #dfdfdf;
+    } 
+	li a:hover { 
+	    background-color: #ffff99;
+	}
+	.groups {
+		display: inline-block;
+	}
+	.sites {
+		display: inline;
+		/*text-indent: -1em;
+		margin-left: 1em;*/
+	}
+	
+
+
+	body {
+		font-size: 1.2rem;	/* .875rem */
+	}
+
+	.feather {
+		width: 16px;
+		height: 16px;
+		vertical-align: text-bottom;
+	}
+
+	/* Sidebar */
+
+	.sidebar {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 100; /* Behind the navbar */
+		padding: 48px 0 0; /* Height of navbar */
+		box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+	}
+
+	.sidebar-sticky {
+	position: relative;
+	top: 0;
+	height: calc(100vh - 48px);
+	padding-top: .5rem;
+	overflow-x: hidden;
+	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	}
+
+	@supports ((position: -webkit-sticky) or (position: sticky)) {
+	.sidebar-sticky {
+		position: -webkit-sticky;
+		position: sticky;
+	}
+	}
+
+	.sidebar .nav-link {
+	font-weight: 500;
+	color: #333;
+	}
+
+	.sidebar .nav-link .feather {
+	margin-right: 4px;
+	color: #999;
+	}
+
+	.sidebar .nav-link.active {
+	color: #007bff;
+	}
+
+	.sidebar .nav-link:hover .feather,
+	.sidebar .nav-link.active .feather {
+	color: inherit;
+	}
+
+	.sidebar-heading {
+	font-size: .75rem;
+	text-transform: uppercase;
+	}
+
+	/* Content */
+
+	[role="main"] {
+		padding-top: 100px; /* Space for fixed navbar : 처음 133px */
+	}
+
+	@media (min-width: 768px) {
+	[role="main"] {
+		padding-top: 48px; /* Space for fixed navbar */
+	}
+	}
+
+	/* Navbar */
+
+	.navbar-brand {
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		font-size: 1rem;
+		background-color: rgba(0, 0, 0, .25);
+		box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+	}
+
+	.navbar .form-control {
+		padding: .75rem 1rem;
+		border-width: 0;
+		border-radius: 0;
+	}
+
+	.topurl {
+		color: #fff;
+		background-color: rgba(255, 255, 255, .1);
+		border-color: rgba(255, 255, 255, .1);
+	}
+
+
+
+	/*
+	.form-control-dark {
+		color: #fff;
+		background-color: rgba(255, 255, 255, .1);
+		border-color: rgba(255, 255, 255, .1);
+	}
+
+	.form-control-dark:focus {
+		border-color: transparent;
+		box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+	}
+	*/
+
+
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="http://start.hansung.ac.kr">Start your Web</a>
+		<span class="topurl col-sm-9 col-md-10" id="topurl">http://start.hansung.ac.kr/?topic=[your Topic]</span>
+		<!--input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+		<ul class="navbar-nav px-3">
+		  <li class="nav-item text-nowrap">
+			<a class="nav-link" href="#">Sign out</a>
+		  </li>
+		</ul-->
+	</nav>	
+
+	<div class="container-fluid">
+		<div class="row">
+		  <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+			<div class="sidebar-sticky">
+			  <ul class="nav flex-column">
+				<li class="nav-item">
+				  <a class="nav-link active" href="#">
+					<p id="pEname">Topic</p>
+				  </a>
+				</li>
+			  </ul>
+	  
+			  <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+				<span>Top 10 Topics</span>
+				<a class="d-flex align-items-center text-muted" href="#">
+				</a>
+			  </h6>
+			  <ul class="nav flex-column mb-2">
+				<li class="nav-item">
+					<a class="nav-link" href="http://start.hansung.ac.kr/?topic=hansung">
+					  Hansung University
+					</a>
+				  </li>
+				</ul>
+				<li class="nav-item">
+				  <a class="nav-link" href="http://start.hansung.ac.kr/?topic=main">
+					기본 홈페이지
+				  </a>
+				</li>
+			</div>
+		  </nav>
+	  
+		  <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+			<!--div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-1 border-bottom">
+			  <h1 class="h2" id="pHname">Topic</h1>
+			</div-->	  
+	  
+			<div class="row" >  
+				<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-2 pb-2 mb-1 border-bottom">
+					<div id="siteList"></div>
+				</div> 
+			</div> 
+
+			</main>
+		</div>
+	</div>
+	  
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	 crossorigin="anonymous"></script>
+
+	<script>
+		$(function () {
+			
+			var topic = getUrlParameter('topic');	// 파라미터 체크
+
+			if(typeof topic == "undefined" || topic == null || topic == "") {
+				fGetSiteInfoFromServer( 'hansung' ); // 현 서버에서는 hansung을 기본으로
+			} else {
+				fGetSiteInfoFromServer( topic );
+			} 
+
+		}) // end if function () 
+		
+		// 사이트 정보 가져오기. 
+		function fGetSiteInfoFromServer( pTopic ) {
+			// json 데이터 요청
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					var jsObj = JSON.parse(this.responseText);
+					fSetSiteList( jsObj );
+				} else if (this.readyState == 4 && this.status == 404) {
+					document.title = "The topic name [" + pTopic + "] is not available.";
+				}
+			};
+
+			document.title = "startWeb - " + pTopic ;	// title topic 이름으로 변경
+			var gUrl="./siteinfo/" + pTopic + ".json";
+			xmlhttp.open("GET", gUrl, true);
+			//xmlhttp.open("GET", "./siteinfo/youngki.json", true);
+			xmlhttp.send();
+		}
+		// json 데이터로 화면 표시
+		function fSetSiteList( jsObj ) {
+			var myObj = jsObj;	
+			
+			var i, j, k, x = "";
+			for (i in myObj.category) {
+				x += "<h4>" + myObj.category[i].categoryname + "</h4><ul>";
+				for (j in myObj.category[i].group) {
+					x += "<li><div class=\"groups\"><span>";
+					x += myObj.category[i].group[j].groupname + " ";
+					x += "</span><div class=\"sites\">";
+					for (k in myObj.category[i].group[j].sites) {
+						x += "<a href=\""
+						   + myObj.category[i].group[j].sites[k].url
+						   + "\">"
+						   + myObj.category[i].group[j].sites[k].name
+						   + "</a> "
+						 ;
+					}
+					x += "</div></div>";
+					x += "</li>";
+				}
+				x += "</li></ul>";
+			}
+			$("#siteList").html(x);
+			fShowToolTip();
+
+			//$('#pEname').text( myObj.ename );
+			$('#pEname').text( myObj.ename );
+			//$('#pHname').text( myObj.hname );
+			
+			//$('#topurl').attr("href", "http://start.hansung.ac.kr/?topic="+myObj.name)
+			$('#topurl').text('http://start.hansung.ac.kr/?topic='+myObj.name);
+			
+
+
+		}
+
+		// 툴팁 보여주기
+		function fShowToolTip(  ) {
+			//$("li > a").each(function (i, obj) {
+			$("li > div > div > a").each(function (i, obj) {
+				$(obj).attr({
+					'title': $(obj).attr("href").replace(/(www.|http:\/\/|https:\/\/)/gi, ""),
+					'data-toggle': 'tooltip',
+					'data-placement': 'top'
+				});
+			});
+			$('[data-toggle="tooltip"]').tooltip();	// initialize tooltip
+		}
+
+		// 주소의 파라미터 값 가져오는 함수
+		function getUrlParameter(sParam) {
+			var sPageURL = window.location.search.substring(1),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+				}
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>

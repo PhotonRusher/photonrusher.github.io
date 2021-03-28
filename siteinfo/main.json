@@ -1,0 +1,109 @@
+{
+	"name": "main",
+    "ename": "Main",
+    "hname": "기본",
+	"category": [ 
+
+        {
+            "categoryname": "기타",
+            "group": [
+                {"groupname": "포탈",
+                    "sites": [
+                        {"url": "http://www.google.co.kr","name": "구글"},
+                        {"url": "http://www.daum.net","name": "다음"},
+                        {"url": "http://www.naver.com","name": "네이버"},
+						{"url":"http://www.nate.com","name":"네이트"},
+                        {"url": "http://www.youtube.com","name": "유투브"}
+				]},
+                {"groupname": "커뮤니티",
+                    "sites": [
+						{"url":"http://www.clien.net","name":"클리앙"},
+						{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
+						{"url":"http://www.dcinside.com","name":"디씨"},
+						{"url":"http://www.ddanzi.com","name":"딴지일보"},
+						{"url":"http://www.ruliweb.com","name":"루리웹"},
+						{"url":"http://www.fmkorea.com","name":"에펨"},
+						{"url":"http://www.humoruniv.com","name":"웃대"},
+						{"url":"http://www.inven.co.kr","name":"인벤"},
+						{"url":"http://www.etoland.co.kr","name":"이토"},
+						{"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"},
+						{"url":"http://www.dotal.or.kr","name":"도탈"}
+						 
+				]},
+				{"groupname": "SNS",
+					"sites": [
+						{"url":"http://www.facebook.com","name":"페이스북"},
+						{"url":"http://www.twitter.com","name":"트위터"},
+						{"url":"http://www.instagram.com","name":"인스타"}
+				]},
+				{"groupname": "멀티미디어",
+                    "sites": [
+						{"url":"http://www.youtube.com","name":"유투브"},
+						{"url":"http://afreecatv.com","name":"아프리크"},
+						{"url":"http://www.twitch.tv","name":"트위치"}
+				]},
+                {"groupname": "wiki",
+                    "sites": [
+                        {"url": "http://ko.wikipedia.org","name": "위키"},
+                        {"url": "https://namu.wiki","name": "나무위키"}
+				]},
+                {"groupname": "뉴스",
+                    "sites": [
+                        {"url": "http://www.ddanzi.com","name": "구글뉴스"},
+                        {"url": "http://media.daum.net","name": "다음뉴스"},
+                        {"url": "http://news.naver.com","name": "네이버뉴스"},
+						{"url":"http://www.ddanzi.com","name":"딴지일보"},
+						{"url": "","name": ""}
+				]}
+
+            ]
+        },
+
+        {
+            "categoryname": "쇼핑",
+            "group": [
+                {"groupname": "가격정보",
+                    "sites": [
+						{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
+						{"url":"http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic","name":"딜바다"},
+                        {"url": "http://www.danawa.com","name": "다나와"},
+                        {"url": "http://www.homeplus.co.kr","name": "홈플러스"}
+				]},
+
+                {"groupname": "쇼핑",
+                    "sites": [
+                        {"url": "http://www.gmarket.co.kr","name": "쥐마켓"},
+                        {"url": "http://www.auction.co.kr","name": "옥션"},
+                        {"url": "http://www.11st.co.kr","name": "11번가"},
+                        {"url": "http://www.ticketmonster.co.kr/home","name": "티몬"},
+                        {"url": "http://www.coupang.com","name": "쿠팡"},
+                        {"url": "http://www.wemakeprice.com","name": "위메프"},
+                        {"url": "http://www.interpark.com","name": "인터파크"},
+                        {"url": "https://www.amazon.com","name": "아마존"},
+                        {"url": "http://www.homeplus.co.kr","name": "홈플러스"}
+				]},
+                {"groupname": "책",
+                    "sites": [
+                        {"url": "http://www.kyobobook.co.kr","name": "교보문고"},
+                        {"url": "http://www.interpark.com","name": "인터파크"},
+                        {"url": "http://www.aladin.co.kr","name": "알라딘"},
+                        {"url": "http://www.yes24.com","name": "예스24"}
+				]},
+				{  "groupname":"부동산","sites":[
+					{"url":"https://hogangnono.com","name":"호갱노노"},
+					{"url":"https://land.naver.com","name":"Naver부동산"},
+					{"url":"https://www.apt2you.com","name":"아파트4U"},
+					{"url":"http://www.onnara.go.kr","name":"온나라"},
+					{"url":"http://rt.moct.go.kr/","name":"공시지가"},
+					{"url":"http://www.kbstar.com","name":"국민은행"}]
+				}
+		
+
+            ]
+        }
+
+
+
+
+    ]
+}
