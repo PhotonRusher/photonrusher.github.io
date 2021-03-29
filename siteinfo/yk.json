@@ -148,7 +148,10 @@
 			{"url":"","name":"웹메일관리"},
 			{"url":"","name":"O365관리"},
 			{"url":"","name":"프린트"},
-			{"url":"","name":"필터링"}]
+			{"url":"","name":"필터링"},
+			{"url":"","name":"JeusAdmin"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
 		},
 		{  "groupname":"교외-기관","sites":[
 			{"url":"https://cyber.ecsc.go.kr","name":"교육부사이버안전센터"},
@@ -206,7 +209,7 @@
 	"group":[
 		{  "groupname":"프로그래밍","sites":[
 		{"url":"https://github.com","name":"github.com"},
-		{"url":"http://start.hansung.ac.kr/report_by_goaccess.html/","name":"startweb-analysis"},
+		{"url":"https://slack.com/intl/ko-kr/","name":"slack"},
 		{"url":"http://startweb.woobi.co.kr/","name":"startweb-woobi"},
 		{"url":"http://startweb.woobi.co.kr/startweb/startPage.html","name":"startPage-woobi"},
 		{"url":"https://developers.google.com/speed/pagespeed/insights","name":"구글pagespeedInsights"},
@@ -217,9 +220,29 @@
 		{"url":"https://www.wishket.com/","name":"wishket-구인"},
 		{"url":"https://insights.stackoverflow.com/survey/2018/","name":"stackoverflow/survey"}]
 },  
-	{  "groupname":"시스템","sites":[
+	{  "groupname":"Swift(iOS)","sites":[
+		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift_official_doc_한글"},
+		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift_official_doc"},
+		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI_apple_doc"},
+		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Cheat_Sheet"},
+		{"url":"","name":""}]
+	},
+	{  "groupname":"기술블로그","sites":[
+		{"url":"","name":""},
+		{"url":"","name":""},
+		{"url":"https://gonslab.tistory.com/","name":"GonsLab"},
+		{"url":"https://hururuek-chapchap.tistory.com/","name":"짭짤이"},
+		{"url":"https://brunch.co.kr/@joonwonlee#articles","name":"이준원"},
+		{"url":"https://pilgwon.github.io/","name":"pilgwon"},
+		{"url":"","name":""},
+		{"url":"https://tech.ssut.me/","name":"tech.ssut"},
+		{"url":"","name":""},
+		{"url":"","name":""}]
+	},
+{  "groupname":"시스템","sites":[
 		{"url":"https://aws.amazon.com/ko/","name":"AWS"},
 		{"url":"https://www.awseducate.com/signin/SiteLogin","name":"awsEducate"},
+		{"url":"https://technet.tmaxsoft.com/upload/download/online/jeus/pver-20170202-000001/index.html","name":"Jeus8_Doc"},
 		{"url":"https://www.2cpu.co.kr","name":"2cpu"},
 		{"url":"https://csp30.ktcdn.com/","name":"KT_CDN"},
 		{"url":"https://xn--c79as89aj0e29b77z.xn--3e0b707e/","name":"whois"},
@@ -231,6 +254,7 @@
 	},
 			{  "groupname":"교육","sites":[
 		{"url":"https://opentutorials.org/course/1","name":"생활코딩"},
+		{"url":"https://fastcampus.co.kr/","name":"fastcampus"},
 		{"url":"https://www.onoffmix.com/","name":"onoffmix"},
 		{"url":"https://www.inflearn.com/","name":"인프런"},
 		{"url":"https://www.sharedit.co.kr/","name":"쉐어드IT"},
