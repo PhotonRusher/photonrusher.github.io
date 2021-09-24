@@ -4,7 +4,7 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Portal_v-20210531",
+{    "categoryname":"Portal_v-20210923",
     "group":[
 			{  "groupname":"커뮤니티-yk","sites":[
 			{"url":"http://www.dotal.or.kr","name":"Dotal"}, 
@@ -221,9 +221,9 @@
 		{"url":"https://insights.stackoverflow.com/survey/2018/","name":"stackoverflow/survey"}]
 },  
 	{  "groupname":"Swift(iOS)","sites":[
-		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift_official_doc_한글"},
-		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift_official_doc"},
-		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI_apple_doc"},
+		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift공식문서(한글)"},
+		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift공식문서"},
+		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI애플문서"},
 		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Cheat_Sheet"},
 		{"url":"","name":""}]
 	},
@@ -277,7 +277,7 @@
 		{"url":"https://jsfiddle.net","name":"fiddle"}
 		]
 },
-				{  "groupname":"Jquery","sites":[
+	{  "groupname":"Jquery","sites":[
 		{"url":"http://jquery.com","name":"jquery"},
 		{"url":"http://jqueryui.com","name":"jqueryui"},
 		{"url":"http://overapi.com/jquery","name":"jqueryCheatSheet"},
@@ -285,7 +285,32 @@
 		{"url":"http://trirand.com/blog/jqgrid/jqgrid.html","name":"jqgridDemo"},
 		{"url":"http://www.trirand.com/jqgridwiki/doku.php","name":"jqgridWiki"},
 		{"url":"","name":""}]
-}]
+},
+{  "groupname":"커뮤니티","sites":[
+	{"url":"https://iphonedev.co.kr","name":"iphonedev"},
+	{"url":"https://okky.kr/articles/community","name":"okky"},
+	{"url":"","name":""},
+	{"url":"","name":""},
+	{"url":"","name":""},
+	{"url":"","name":""}]
+},
+{  "groupname":"외부라이브러리","sites":[
+	{"url":"https://cms.catchloc.com","name":"catchloc"},
+	{"url":"https://cocoapods.org","name":"cocoapods"},
+	{"url":"https://github.com/navermaps/ios-map-sdk","name":"navermaps"},
+	{"url":"https://firebase.google.com/?hl=ko","name":"firebase"},
+	{"url":"","name":""},
+	{"url":"","name":""}]
+},
+{  "groupname":"기타","sites":[
+	{"url":"https://www.wishket.com","name":"프리구인(wishket)"},
+	{"url":"http://trirand.com/blog/jqgrid/jqgrid.html","name":"jqgridDemo"},
+	{"url":"https://appicon.co","name":"appicon만들기"},
+	{"url":"","name":""},
+	{"url":"","name":""},
+	{"url":"","name":""}]
+}
+]
 },
 
 {    "categoryname":"Shop",
@@ -325,6 +350,7 @@
 			{"url":"https://land.naver.com","name":"Naver부동산"},
 			{"url":"https://www.applyhome.co.kr/","name":"청약홈"},
 			{"url":"https://www.apt2you.com","name":"아파트4U"},
+			{"url":"https://www.사전청약.kr/main.do","name":"사전청약"},
 			{"url":"http://www.onnara.go.kr","name":"온나라"},
 			{"url":"http://rt.moct.go.kr/front/aptrealpric_200701/htmlfile/pric/2007_2/1100000000_1168000000.html","name":"공시지가"},
 			{"url":"http://www.kbstar.com","name":"국민은행"}]
@@ -366,13 +392,15 @@
 				{"url":"http://ycsports.or.kr","name":"양천구체육회"},
 				{"url":"","name":""}]
 			},
-			{  "groupname":"게임","sites":[
+		{  "groupname":"게임","sites":[
 				{"url":"https://www.ygosu.com/community/st1","name":"와이고수"},
 				{"url":"https://kr.forums.blizzard.com/ko/starcraft/latest/","name":"블리자드게시판"},
 				{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
 				{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
+				{"url":"https://bbs.ruliweb.com/nin","name":"루리웹"},
+				{"url":"https://www.fafan.kr/","name":"파판"},
 				{"url":"","name":""}]
-			},
+		},
           {  "groupname":"음악","sites":[
 			{"url":"http://www.indistreet.com","name":"인디스트릿"},
 			{"url":"http://www.allthatjazz.kr","name":"올댓재즈"},
@@ -390,7 +418,7 @@
 			{"url":"https://store.naver.com/flights/","name":"네이버항공권"},
 			{"url":"http://cafe.daum.net/owtm","name":"오불당"}]
   },  
-          {  "groupname":"여행예약","sites":[
+{  "groupname":"여행예약","sites":[
 			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
 			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
 			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
@@ -401,11 +429,19 @@
 			{"url":"http://www.travelocity.com","name":"트레벨로씨티"},
 			{"url":"http://tour.interpark.com/home","name":"인터파크여행"}]
   },    
-          {  "groupname":"영화","sites":[
+	{  "groupname":"영화","sites":[
 			{"url":"https://www.rottentomatoes.com","name":"로튼토마토"},
 			{"url":"http://movie.daum.net","name":"Daum영화"},
 			{"url":"http://movie.naver.com","name":"Naver영화"}]
-  }]  
+	},
+	{  "groupname":"토렝이","sites":[
+		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
+		{"url":"https://토렌트큐큐.com","name":"토렌트큐큐"},
+		{"url":"https://www.토렌트사이트.com","name":"토렌트다이아"},
+		{"url":"https://주주토렌트.com","name":"Daum영화"},
+		{"url":"","name":""}]
+}
+]  
 },
 
 {    "categoryname":"Etc",
