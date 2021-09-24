@@ -211,9 +211,16 @@
 	"group":[
 		{  "groupname":"커뮤니티","sites":[
 			{"url":"https://iphonedev.co.kr","name":"iphonedev"},
+			{"url":"https://www.clien.net/service/board/cm_app","name":"clien"},
+			{"url":"https://www.ppomppu.co.kr/zboard/zboard.php?id=developer","name":"뽐뿌"},
 			{"url":"https://okky.kr/articles/community","name":"okky"},
+			{"url":"https://kldp.org/tracker","name":"kldp"},
 			{"url":"https://xetown.com/topics","name":"xetown"},
-			{"url":"","name":""},
+			{"url":"http://www.devkorea.co.kr/","name":"devkorea"},
+			{"url":"https://www.androidpub.com/devfree","name":"androidpub"},
+			{"url":"https://www.codentalks.com/","name":"codentalks"},
+			{"url":"https://velog.io/","name":"velog"},
+			{"url":"https://httpd.co.kr/","name":"httpd"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
