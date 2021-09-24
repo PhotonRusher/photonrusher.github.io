@@ -196,10 +196,12 @@
 			{"url":"http://www.law.go.kr/","name":"개인정보보호법"},
 			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}]
 		},
-		{  "groupname":"프로그래밍","sites":[
+		{  "groupname":"기타-프로그래밍","sites":[
 			{"url":"https://play.google.com/apps/publish/signup","name":"구글플레이스토어콘솔"},
 			{"url":"https://developer.apple.com","name":"애플개발자콘솔"},
 			{"url":"https://itunesconnect.apple.com","name":"iTunesConnect"},
+			{"url":"https://kakaobusiness.gitbook.io/main/","name":"카카오비즈니스"},
+			{"url":"","name":""},
 			{"url":"https://www.google.com/intl/ko_KR/analytics","name":"구글웹로그분석"}]
 		}]
 },
@@ -207,6 +209,14 @@
 
 {    "categoryname":"Programming",
 	"group":[
+		{  "groupname":"커뮤니티","sites":[
+			{"url":"https://iphonedev.co.kr","name":"iphonedev"},
+			{"url":"https://okky.kr/articles/community","name":"okky"},
+			{"url":"https://xetown.com/topics","name":"xetown"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},
 		{  "groupname":"프로그래밍","sites":[
 		{"url":"https://github.com","name":"github.com"},
 		{"url":"https://slack.com/intl/ko-kr/","name":"slack"},
@@ -228,13 +238,10 @@
 		{"url":"","name":""}]
 	},
 	{  "groupname":"기술블로그","sites":[
-		{"url":"","name":""},
-		{"url":"","name":""},
 		{"url":"https://gonslab.tistory.com/","name":"GonsLab"},
 		{"url":"https://hururuek-chapchap.tistory.com/","name":"짭짤이"},
 		{"url":"https://brunch.co.kr/@joonwonlee#articles","name":"이준원"},
 		{"url":"https://pilgwon.github.io/","name":"pilgwon"},
-		{"url":"","name":""},
 		{"url":"https://tech.ssut.me/","name":"tech.ssut"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
@@ -286,19 +293,14 @@
 		{"url":"http://www.trirand.com/jqgridwiki/doku.php","name":"jqgridWiki"},
 		{"url":"","name":""}]
 },
-{  "groupname":"커뮤니티","sites":[
-	{"url":"https://iphonedev.co.kr","name":"iphonedev"},
-	{"url":"https://okky.kr/articles/community","name":"okky"},
-	{"url":"","name":""},
-	{"url":"","name":""},
-	{"url":"","name":""},
-	{"url":"","name":""}]
-},
 {  "groupname":"외부라이브러리","sites":[
 	{"url":"https://cms.catchloc.com","name":"catchloc"},
 	{"url":"https://cocoapods.org","name":"cocoapods"},
 	{"url":"https://github.com/navermaps/ios-map-sdk","name":"navermaps"},
 	{"url":"https://firebase.google.com/?hl=ko","name":"firebase"},
+	{"url":"https://material.io/","name":"material"},
+	{"url":"","name":""},
+	{"url":"","name":""},
 	{"url":"","name":""},
 	{"url":"","name":""}]
 },
@@ -365,7 +367,38 @@
 
 {    "categoryname":"Hobby",
     "group":[
-          {  "groupname":"책","sites":[
+		{  "groupname":"여행정보","sites":[
+			{"url":"http://6071.tistory.com","name":"일단가보자"},
+			{"url":"http://www.emuartspace.com/","name":"emu"},
+			{"url":"","name":""},
+			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
+			{"url":"https://www.clien.net/service/board/cm_food/1517518?","name":"맛집/클리앙"},
+			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
+			{"url":"http://www.seoulland.co.kr/index.asp","name":"서울랜드"},
+			{"url":"https://store.naver.com/flights/","name":"네이버항공권"},
+			{"url":"http://cafe.daum.net/owtm","name":"오불당"}]
+  },  
+	{  "groupname":"여행예약","sites":[
+			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
+			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
+			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
+			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
+			{"url":"http://farm.gg.go.kr","name":"강씨봉"},
+			{"url":"https://grandpark.seoul.go.kr/main/campingMain.do?headerId=41263","name":"서울대공원캠핑"},
+			{"url":"http://www.hostelworld.com","name":"호스텔월드"},
+			{"url":"http://www.travelocity.com","name":"트레벨로씨티"},
+			{"url":"https://flight.naver.com/","name":"네이버항공권"},
+			{"url":"http://tour.interpark.com/home","name":"인터파크여행"}]
+  	},    
+	  {  "groupname":"공연정보","sites":[
+		{"url":"http://ticket.interpark.com/webzine/paper/TPNoticeList.asp?tid1=in_scroll&tid2=ticketopen&tid3=board_main&tid4=board_main","name":"인터파크"},
+		{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
+		{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
+		{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
+		{"url":"","name":""},
+		{"url":"","name":""}]
+  },    
+	  {  "groupname":"책","sites":[
 			{"url":"http://hsel.hansung.ac.kr","name":"한성대도서관"},
 			{"url":"http://ebook.hansung.ac.kr","name":"한성대전자책도서관"},
 			{"url":"http://cafe.naver.com/ebook.cafe","name":"네이버카페"},
@@ -385,7 +418,7 @@
 				{"url":"","name":""},
 				{"url":"","name":""}]
 			},
-			{  "groupname":"주변정보","sites":[
+			{  "groupname":"집주변정보","sites":[
 				{"url":"http://www.yangcheon.go.kr/","name":"양천구"},
 				{"url":"https://xn--z92b72qn1at0nqrn.kr/","name":"양천문화원"},
 				{"url":"https://blog.naver.com/yfac2019","name":"양천문화재단블로그"},
@@ -409,26 +442,6 @@
 			{"url":"https://www.akaipro.com/kb/akai-pro-mpk-mini-mkii---complete-setup-with-garageband","name":"AKAI"},
 			{"url":"http://ticket.interpark.com","name":"인터파크티켓"}]
   },  
-          {  "groupname":"여행정보","sites":[
-			{"url":"http://6071.tistory.com","name":"일단가보자"},
-			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
-			{"url":"https://www.clien.net/service/board/cm_food/1517518?","name":"맛집/클리앙"},
-			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
-			{"url":"http://www.seoulland.co.kr/index.asp","name":"서울랜드"},
-			{"url":"https://store.naver.com/flights/","name":"네이버항공권"},
-			{"url":"http://cafe.daum.net/owtm","name":"오불당"}]
-  },  
-{  "groupname":"여행예약","sites":[
-			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
-			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
-			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
-			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
-			{"url":"http://farm.gg.go.kr","name":"강씨봉"},
-			{"url":"https://grandpark.seoul.go.kr/main/campingMain.do?headerId=41263","name":"서울대공원캠핑"},
-			{"url":"http://www.hostelworld.com","name":"호스텔월드"},
-			{"url":"http://www.travelocity.com","name":"트레벨로씨티"},
-			{"url":"http://tour.interpark.com/home","name":"인터파크여행"}]
-  },    
 	{  "groupname":"영화","sites":[
 			{"url":"https://www.rottentomatoes.com","name":"로튼토마토"},
 			{"url":"http://movie.daum.net","name":"Daum영화"},
@@ -438,7 +451,7 @@
 		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
 		{"url":"https://토렌트큐큐.com","name":"토렌트큐큐"},
 		{"url":"https://www.토렌트사이트.com","name":"토렌트다이아"},
-		{"url":"https://주주토렌트.com","name":"Daum영화"},
+		{"url":"https://www.bbongtv.com","name":"bbongtv"},
 		{"url":"","name":""}]
 }
 ]  
@@ -460,7 +473,7 @@
 			{"url":"http://www.golfzon.com","name":"골프존"},
 			{"url":"https://earth.google.com/web","name":"구글어스"},
 			{"url":"https://smss.seoulmetro.co.kr/traininfo/traininfoUserView.do","name":"지하철실시간"},
-			{"url":"https://www.weather.go.kr/weather/lifenindustry/jisudaymap_D06.jsp","name":"꽃가루경보"},
+			{"url":"https://web.kma.go.kr/weather/lifenindustry/jisudaymap_D08.jsp","name":"꽃가루경보"},
 			{"url":"","name":""}
 		]
   }]
