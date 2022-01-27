@@ -4,9 +4,9 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Portal_v-20210923",
+{    "categoryname":"Favorite_v20220127",
     "group":[
-			{  "groupname":"커뮤니티-yk","sites":[
+			{  "groupname":"커뮤니티","sites":[
 			{"url":"http://www.dotal.or.kr","name":"Dotal"}, 
 			{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
 			{"url":"http://www.clien.net","name":"Clien"},
@@ -206,6 +206,56 @@
 		}]
 },
 
+{    "categoryname":"Shopping",
+    "group":[
+          {  "groupname":"정보","sites":[
+			{"url":"http://www.ppomppu.co.kr","name":"뽐뿌"},
+			{"url":"http://enuri.com","name":"에누리"},
+			{"url":"http://www.danawa.co.kr","name":"다나와"},
+			{"url":"http://www.cetizen.com","name":"세티즌"},
+			{"url":"https://www.happymoney.co.kr","name":"해피머니"},
+			{"url":"http://www.cultureland.co.kr","name":"컬쳐랜드"}]
+  },
+          {  "groupname":"오픈마켓","sites":[
+			{"url":"http://www.auction.co.kr","name":"옥션"},
+			{"url":"http://www.gmarket.co.kr","name":"쥐마켓"},
+			{"url":"http://www.11st.co.kr","name":"11번가"},
+			{"url":"http://www.ticketmonster.co.kr/home","name":"티몬"},
+			{"url":"http://www.coupang.com","name":"쿠팡"},
+			{"url":"http://www.wemakeprice.com","name":"위메프"},
+			{"url":"http://www.g9.co.kr","name":"G9"},
+			{"url":"http://www.daisomall.co.kr","name":"다이소"},
+			{"url":"http://www.interpark.com","name":"인터파크"},
+			{"url":"https://www.amazon.com","name":"Amazon"}]
+  },
+          {  "groupname":"Shop","sites":[
+			{"url":"https://www.kimyongmin.com/","name":"김용민"},
+			{"url":"https://www.musinsa.com/","name":"무신사"},
+			{"url":"http://www.homeplus.co.kr","name":"홈플러스"},
+			{"url":"http://emart.ssg.com/","name":"이마트"},
+			{"url":"http://www.lottemart.com","name":"롯데마트"},
+			{"url":"http://www.unicef.or.kr/main.asp","name":"유니세프"},
+			{"url":"http://www.misobike.com/","name":"미소바이크"},
+			{"url":"http://skopi.com","name":"스코피"}]
+  },
+          {  "groupname":"부동산","sites":[
+			{"url":"https://hogangnono.com","name":"호갱노노"},
+			{"url":"https://land.naver.com","name":"Naver부동산"},
+			{"url":"https://www.applyhome.co.kr/","name":"청약홈"},
+			{"url":"https://www.apt2you.com","name":"아파트4U"},
+			{"url":"https://www.사전청약.kr/main.do","name":"사전청약"},
+			{"url":"http://www.onnara.go.kr","name":"온나라"},
+			{"url":"http://rt.moct.go.kr/front/aptrealpric_200701/htmlfile/pric/2007_2/1100000000_1168000000.html","name":"공시지가"},
+			{"url":"http://www.kbstar.com","name":"국민은행"}]
+  },
+          {  "groupname":"책","sites":[
+			{"url":"http://www.interpark.com","name":"인터파크"},
+			{"url":"http://www.yes24.com","name":"예스24"},
+			{"url":"http://www.kyobobook.co.kr","name":"교보문고"},
+			{"url":"http://www.aladin.co.kr","name":"알라딘"}]
+  }]  
+},
+
 
 {    "categoryname":"Programming",
 	"group":[
@@ -320,56 +370,6 @@
 	{"url":"","name":""}]
 }
 ]
-},
-
-{    "categoryname":"Shop",
-    "group":[
-          {  "groupname":"정보","sites":[
-			{"url":"http://www.ppomppu.co.kr","name":"뽐뿌"},
-			{"url":"http://enuri.com","name":"에누리"},
-			{"url":"http://www.danawa.co.kr","name":"다나와"},
-			{"url":"http://www.cetizen.com","name":"세티즌"},
-			{"url":"https://www.happymoney.co.kr","name":"해피머니"},
-			{"url":"http://www.cultureland.co.kr","name":"컬쳐랜드"}]
-  },
-          {  "groupname":"오픈마켓","sites":[
-			{"url":"http://www.auction.co.kr","name":"옥션"},
-			{"url":"http://www.gmarket.co.kr","name":"쥐마켓"},
-			{"url":"http://www.11st.co.kr","name":"11번가"},
-			{"url":"http://www.ticketmonster.co.kr/home","name":"티몬"},
-			{"url":"http://www.coupang.com","name":"쿠팡"},
-			{"url":"http://www.wemakeprice.com","name":"위메프"},
-			{"url":"http://www.g9.co.kr","name":"G9"},
-			{"url":"http://www.daisomall.co.kr","name":"다이소"},
-			{"url":"http://www.interpark.com","name":"인터파크"},
-			{"url":"https://www.amazon.com","name":"Amazon"}]
-  },
-          {  "groupname":"Shop","sites":[
-			{"url":"https://www.kimyongmin.com/","name":"김용민"},
-			{"url":"https://www.musinsa.com/","name":"무신사"},
-			{"url":"http://www.homeplus.co.kr","name":"홈플러스"},
-			{"url":"http://emart.ssg.com/","name":"이마트"},
-			{"url":"http://www.lottemart.com","name":"롯데마트"},
-			{"url":"http://www.unicef.or.kr/main.asp","name":"유니세프"},
-			{"url":"http://www.misobike.com/","name":"미소바이크"},
-			{"url":"http://skopi.com","name":"스코피"}]
-  },
-          {  "groupname":"부동산","sites":[
-			{"url":"https://hogangnono.com","name":"호갱노노"},
-			{"url":"https://land.naver.com","name":"Naver부동산"},
-			{"url":"https://www.applyhome.co.kr/","name":"청약홈"},
-			{"url":"https://www.apt2you.com","name":"아파트4U"},
-			{"url":"https://www.사전청약.kr/main.do","name":"사전청약"},
-			{"url":"http://www.onnara.go.kr","name":"온나라"},
-			{"url":"http://rt.moct.go.kr/front/aptrealpric_200701/htmlfile/pric/2007_2/1100000000_1168000000.html","name":"공시지가"},
-			{"url":"http://www.kbstar.com","name":"국민은행"}]
-  },
-          {  "groupname":"책","sites":[
-			{"url":"http://www.interpark.com","name":"인터파크"},
-			{"url":"http://www.yes24.com","name":"예스24"},
-			{"url":"http://www.kyobobook.co.kr","name":"교보문고"},
-			{"url":"http://www.aladin.co.kr","name":"알라딘"}]
-  }]  
 },
 
 {    "categoryname":"Hobby",
