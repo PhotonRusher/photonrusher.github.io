@@ -7,6 +7,7 @@
 {    "categoryname":"Favorite_v20220127",
     "group":[
 			{  "groupname":"커뮤니티","sites":[
+			{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
 			{"url":"http://www.dotal.or.kr","name":"Dotal"}, 
 			{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
 			{"url":"http://www.clien.net","name":"Clien"},
@@ -24,7 +25,11 @@
 			{"url":"http://www.gmail.com","name":"Gmail"},
 			{"url":"http://map.naver.com","name":"Naver지도"},
 			{"url":"http://map.daum.net","name":"Daum지도"},
-			{"url":"https://www.google.com/maps","name":"Google지도"}]
+			{"url":"https://www.google.com/maps","name":"Google지도"},
+			{"url":"https://www.office.com/?auth=2","name":"오피스"},
+			{"url":"https://o365hansung-my.sharepoint.com/personal/youngki_hansung_edu/_layouts/15/onedrive.aspx","name":"원드라이브"},
+			{"url":"","name":""}
+		]
 			},
 			{  "groupname":"정보","sites":[
 			{"url":"https://namu.wiki","name":"NamuWiki"},
@@ -37,11 +42,12 @@
 			{"url":"http://news.google.com","name":"구글뉴스"},
 			{"url":"http://www.ddanzi.com","name":"딴지일보"},
 			{"url":"http://www.sisain.co.kr","name":"시사IN"},
-			{"url":"http://www.dt.co.kr","name":"디지털타임즈"},
-			{"url":"http://www.etimesi.com/index.html","name":"전자신문"},
 			{"url":"https://blog.naver.com/santa_croce","name":"santa_croce"},
 			{"url":"https://newstapa.org","name":"뉴스타파"},
 			{"url":"https://www.reportrash.com","name":"리포트래쉬"},
+			{"url":"http://www.logosian.com/","name":"평화나무"},
+			{"url":"","name":""},
+			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""}]
   },
@@ -49,7 +55,6 @@
 			{"url":"http://www.olleh.com","name":"KT"},
 			{"url":"http://www.lgtelecom.com","name":"LGT"},
 			{"url":"http://www.tworld.co.kr","name":"SKT"},
-			{"url":"https://www.sk7mobile.com","name":"SK7"},		
 			{"url":"https://www.ktmmobile.com","name":"KTm"},		
 			{"url":"https://www.uplussave.com","name":"U+알뜰"},		
 			{"url":"","name":""}]
@@ -70,33 +75,38 @@
 },
 {    "categoryname":"Work",
     "group":[
-			{  "groupname":"교내-정보화팀","sites":[
-			{"url":"http://www.hansung.ac.kr","name":"한성대"},
-			{"url":"http://old.hansung.ac.kr","name":"(구)한성대"},
+			{  "groupname":"교내-주요","sites":[
+			{"url":"http://www.hansung.ac.kr","name":"한성대홈페이지"},
+			{"url":"http://old.hansung.ac.kr","name":"(구)한성대홈페이지"},
 			{"url":"http://info.hansung.ac.kr","name":"종합정보"},
+			{"url":"http://mail.hansung.ac.kr","name":"웹메일"},
+			{"url":"http://enter.hansung.ac.kr","name":"입학"},
+			{"url":"https://edu.hansung.ac.kr/","name":"EDU"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},
+		{  "groupname":"교내-교직원","sites":[
 			{"url":"http://intra.hansung.ac.kr","name":"인트라넷"},
 			{"url":"https://sms.hansung.ac.kr","name":"SMS"},
-			{"url":"http://mail.hansung.ac.kr","name":"웹메일"},
-			{"url":"https://smart.hansung.ac.kr","name":"전자출결"},
 			{"url":"https://research.hansung.ac.kr","name":"연구업적"},
-			{"url":"https://recruit.hansung.ac.kr","name":"채용포탈"},
 			{"url":"http://idisk.hansung.ac.kr","name":"인터넷디스크"},
+			{"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
+			{"url":"https://hsdw.hansung.ac.kr/","name":"DW"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-학사","sites":[
-		{"url":"https://learn.hansung.ac.kr/","name":"LMS"},
+		{"url":"https://smart.hansung.ac.kr","name":"전자출결"},
+		{"url":"https://learn.hansung.ac.kr/","name":"e-class"},
 		{"url":"https://cms.hansung.ac.kr/","name":"CMS"},
-		{"url":"http://enter.hansung.ac.kr","name":"입학"},
-		{"url":"https://edu.hansung.ac.kr/","name":"EDU"},
 		{"url":"https://writingcenter.hansung.ac.kr/","name":"사고와표현"},
-		{"url":"https://hsdw.hansung.ac.kr/","name":"DW"},
 		{"url":"https://hope.hansung.ac.kr/","name":"HOPE"},
 		{"url":"http://capstone.hansung.ac.kr","name":"캡스톤"},
 		{"url":"http://coop.hansung.ac.kr/","name":"현장실습"},
 		{"url":"https://hsportal.hansung.ac.kr/","name":"스마트자기관리"},
+		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
-	{  "groupname":"교내-도서관_평교_언어","sites":[
+	{  "groupname":"교내-학술정보관_평교_언어","sites":[
 		{"url":"http://hsel.hansung.ac.kr","name":"도서관"},
 		{"url":"https://book.hansung.ac.kr/","name":"상상독서"},
 		{"url":"http://ebook.hansung.ac.kr","name":"전자책"},
@@ -104,105 +114,35 @@
 		{"url":"https://edulms.hansung.ac.kr","name":"평교원LMS"},
 		{"url":"http://hansung.ac.kr/~language","name":"한국어과정"},
 		{"url":"http://korean.hansung.ac.kr/","name":"언어교육원"},
+		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
-	{  "groupname":"교내-일반","sites":[
-		{"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
+	{  "groupname":"교내-기타","sites":[
 		{"url":"https://ipp.hansung.ac.kr/","name":"IPP"},
-		{"url":"https://eist.hansung.ac.kr/","name":"교육혁신원"},
 		{"url":"https://dorm.hansung.ac.kr/","name":"기숙사"},
 		{"url":"http://cncschool.hansung.ac.kr","name":"상상파크"},
+		{"url":"https://recruit.hansung.ac.kr","name":"채용포탈"},
 		{"url":"https://recruit.hansung.ac.kr/xabdmxgr/lgn/admLoginView.do","name":"채용관리"},
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
 		{"url":"https://rule.hansung.ac.kr/","name":"규정관리"},
+		{"url":"https://hansung.ac.kr/sites/info/index.do","name":"정보전산원"},
+		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
 	{  "groupname":"교내-외부","sites":[
 		{"url":"http://gspa.hansung.ac.kr","name":"행정대학원"},
-		{"url":"http://kscon.hansung.ac.kr","name":"지식서비스컨설팅"},
 		{"url":"http://hsmba.hansung.ac.kr","name":"경영대학원"},
 		{"url":"http://cse.hansung.ac.kr","name":"컴퓨터공학부"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
 		{  "groupname":"교내-Link","sites":[
-			{"url":"https://www.hansung.ac.kr/hansung/1819/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGFuc3VuZyUyRjE0MyUyRmFydGNsTGlzdC5kbyUzRmJic0NsU2VxJTNEMjM2JTI2","name":"학사공지"},
-			{"url":"https://www.hansung.ac.kr/bbs/hansung/194/artclList.do?layout=unknown","name":"낙메"},
-			{"url":"https://www.hansung.ac.kr/hansung/1921/subview.do","name":"식단"},
+			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"한성공지"},
+			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGFuc3VuZyUyRjE0MyUyRmFydGNsTGlzdC5kbyUzRmJic0NsU2VxJTNEMjM2JTI2YmJzT3BlbldyZFNlcSUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnNyY2hDb2x1bW4lM0RzaiUyNnNyY2hXcmQlM0QlMjY%3D","name":"학사공지"},
+			{"url":"https://www.hansung.ac.kr/hansung/1921/subview.do","name":"교직원식단"},
 			{"url":"https://www.hansung.ac.kr/hansung/1758/subview.do","name":"전화번호"},
-			{"url":"https://www.hansung.ac.kr/hansung/3808/subview.do","name":"학사일정"},
-			{"url":"https://hansung.ac.kr/sites/info/index.do","name":"정보전산원"},
-			{"url":"http://old.hansung.ac.kr/web/employ","name":"교수초빙"},
-			{"url":"http://old.hansung.ac.kr/web/ksemploy/","name":"강사채용"},
-			{"url":"https://info.hansung.ac.kr/notice/error.html","name":"에러페이지"},
-			{"url":"https://info.hansung.ac.kr/jsp/popup/gong_private_agree.jsp","name":"개인정보동의"},
+			{"url":"https://www.hansung.ac.kr/eduinfo/3808/subview.do","name":"학사일정"},
 			{"url":"","name":""}]
-		},
-		{  "groupname":"교내-Hidden","sites":[
-			{"url":"","name":"zenius"},
-			{"url":"","name":"ip관리"},
-			{"url":"","name":"jeniffer"},
-			{"url":"","name":"access"},
-			{"url":"","name":"nosso"},
-			{"url":"","name":"유지보수예정일"},
-			{"url":"","name":"웹메일관리"},
-			{"url":"","name":"O365관리"},
-			{"url":"","name":"프린트"},
-			{"url":"","name":"필터링"},
-			{"url":"","name":"JeusAdmin"},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},
-		{  "groupname":"교외-기관","sites":[
-			{"url":"https://cyber.ecsc.go.kr","name":"교육부사이버안전센터"},
-			{"url":"https://www.epki.go.kr","name":"교육부행정전자서명"}, 
-			{"url":"https://adminvpn.epki.go.kr/","name":"교육부인증서발급"},
-			{"url":"http://kren.kr","name":"교육전산망"},
-			{"url":"http://www.ebiz4u.co.kr","name":"조달ebiz"},
-			{"url":"https://www.moe.go.kr/","name":"교육부"},
-			{"url":"http://www.kri.go.kr/hansung","name":"KRI"},
-			{"url":"http://hi.kedi.re.kr/home/main/main","name":"고등교육통계"},
-			{"url":"https://www.academyinfo.go.kr","name":"대학알리미"},
-			{"url":"http://www.g2b.go.kr/","name":"나라장터"},
-			{"url":"","name":""}]
-		},
-		{  "groupname":"교외-시스템","sites":[
-			{"url":"https://www.office.com","name":"Office"},
-			{"url":"https://inames.co.kr/","name":"도메인-inames"},
-			{"url":"https://technet.tmaxsoft.com/","name":"TMAX테크넷"},
-			{"url":"https://sms.uplus.co.kr/ver2/jsp/main/index.jsp","name":"U+Biz"}, 
-			{"url":"https://wincert.com/","name":"윈서트-ssl"},
-			{"url":"https://www.microsoft.com/Licensing/servicecenter/default.aspx","name":"MS/VolumnLicense"},
-			{"url":"","name":""}]
-		},
-		{  "groupname":"솔루션","sites":[
-			{"url":"http://m2soft.co.kr/index.asp","name":"엠투소프트"},
-			{"url":"http://jennifersoft.com/ko","name":"재니퍼소프트"},
-			{"url":"https://www.rview.com/ko/","name":"리모트뷰"},
-			{"url":"https://www.remotecall.io/ko/","name":"리모트콜"},
-			{"url":"https://front.jennifersoft.com","name":"재니퍼프론트"},
-			{"url":"","name":""}]
-		},
-			{  "groupname":"교외-공통","sites":[
-			{"url":"http://gall.dcinside.com/list.php?id=hansung","name":"DC한성대"},
-			{"url":"https://www.facebook.com/HANSUNGSPEAKER","name":"한대말"},
-			{"url":"https://ko-kr.facebook.com/HSUGrove/","name":"한대숲"},
-			{"url":"https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%8C%80%ED%95%99_%EB%AA%A9%EB%A1%9D","name":"대학목록"},
-			{"url":"https://blog.naver.com/hansungnews","name":"신문사"},
-			{"url":"https://blog.naver.com/wnsduf51","name":"교육관련뉴스"},
-			{"url":"","name":""}]
-		},
-		{  "groupname":"보안","sites":[
-			{"url":"http://www.law.go.kr/","name":"개인정보보호법"},
-			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}]
-		},
-		{  "groupname":"기타-프로그래밍","sites":[
-			{"url":"https://play.google.com/apps/publish/signup","name":"구글플레이스토어콘솔"},
-			{"url":"https://developer.apple.com","name":"애플개발자콘솔"},
-			{"url":"https://itunesconnect.apple.com","name":"iTunesConnect"},
-			{"url":"https://kakaobusiness.gitbook.io/main/","name":"카카오비즈니스"},
-			{"url":"","name":""},
-			{"url":"https://www.google.com/intl/ko_KR/analytics","name":"구글웹로그분석"}]
 		}]
 },
 
@@ -254,6 +194,80 @@
 			{"url":"http://www.kyobobook.co.kr","name":"교보문고"},
 			{"url":"http://www.aladin.co.kr","name":"알라딘"}]
   }]  
+},
+
+{    "categoryname":"System",
+    "group":[
+		{  "groupname":"교외-기관","sites":[
+			{"url":"https://cyber.ecsc.go.kr","name":"교육부사이버안전센터"},
+			{"url":"https://www.epki.go.kr","name":"교육부행정전자서명"}, 
+			{"url":"https://adminvpn.epki.go.kr/","name":"교육부인증서발급"},
+			{"url":"http://kren.kr","name":"교육전산망"},
+			{"url":"http://www.ebiz4u.co.kr","name":"조달ebiz"},
+			{"url":"https://www.moe.go.kr/","name":"교육부"},
+			{"url":"http://www.kri.go.kr/hansung","name":"KRI"},
+			{"url":"http://hi.kedi.re.kr/home/main/main","name":"고등교육통계"},
+			{"url":"https://www.academyinfo.go.kr","name":"대학알리미"},
+			{"url":"http://www.g2b.go.kr/","name":"나라장터"},
+			{"url":"","name":""}]
+		},
+		{  "groupname":"교외-시스템","sites":[
+			{"url":"https://www.office.com","name":"Office"},
+			{"url":"https://inames.co.kr/","name":"도메인-inames"},
+			{"url":"https://technet.tmaxsoft.com/","name":"TMAX테크넷"},
+			{"url":"https://sms.uplus.co.kr/ver2/jsp/main/index.jsp","name":"U+Biz"}, 
+			{"url":"https://wincert.com/","name":"윈서트-ssl"},
+			{"url":"https://www.microsoft.com/Licensing/servicecenter/default.aspx","name":"MS/VolumnLicense"},
+			{"url":"https://accounts.kakao.com/login/kakaobusiness","name":"카카오비즈니스"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},
+		{  "groupname":"솔루션","sites":[
+			{"url":"http://m2soft.co.kr/index.asp","name":"엠투소프트"},
+			{"url":"http://jennifersoft.com/ko","name":"재니퍼소프트"},
+			{"url":"https://www.rview.com/ko/","name":"리모트뷰"},
+			{"url":"https://www.remotecall.io/ko/","name":"리모트콜"},
+			{"url":"https://front.jennifersoft.com","name":"재니퍼프론트"},
+			{"url":"","name":""}]
+		},
+			{  "groupname":"교외-공통","sites":[
+			{"url":"http://gall.dcinside.com/list.php?id=hansung","name":"DC한성대"},
+			{"url":"https://www.facebook.com/HANSUNGSPEAKER","name":"한대말"},
+			{"url":"https://ko-kr.facebook.com/HSUGrove/","name":"한대숲"},
+			{"url":"https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%8C%80%ED%95%99_%EB%AA%A9%EB%A1%9D","name":"대학목록"},
+			{"url":"https://blog.naver.com/hansungnews","name":"신문사"},
+			{"url":"https://blog.naver.com/wnsduf51","name":"교육관련뉴스"},
+			{"url":"","name":""}]
+		},
+		{  "groupname":"보안","sites":[
+			{"url":"http://www.law.go.kr/","name":"개인정보보호법"},
+			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}]
+		},
+		{  "groupname":"기타-프로그래밍","sites":[
+			{"url":"https://play.google.com/apps/publish/signup","name":"구글플레이스토어콘솔"},
+			{"url":"https://developer.apple.com","name":"애플개발자콘솔"},
+			{"url":"https://itunesconnect.apple.com","name":"iTunesConnect"},
+			{"url":"https://kakaobusiness.gitbook.io/main/","name":"카카오비즈니스"},
+			{"url":"","name":""},
+			{"url":"https://www.google.com/intl/ko_KR/analytics","name":"구글웹로그분석"}]
+		},
+		{  "groupname":"교내-Hidden","sites":[
+			{"url":"","name":"zenius"},
+			{"url":"","name":"ip관리"},
+			{"url":"","name":"jeniffer"},
+			{"url":"","name":"access"},
+			{"url":"","name":"nosso"},
+			{"url":"","name":"유지보수예정일"},
+			{"url":"","name":"웹메일관리"},
+			{"url":"","name":"O365관리"},
+			{"url":"","name":"프린트"},
+			{"url":"","name":"필터링"},
+			{"url":"","name":"JeusAdmin"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		}
+	]
 },
 
 
@@ -402,6 +416,10 @@
 		{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
 		{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
 		{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
+		{"url":"https://www.sejongpac.or.kr/portal/performance/performance/list.do?menuNo=200004","name":"세종문화회관"},
+		{"url":"https://www.culture.go.kr/perform/performList.do","name":"문화포털"},
+		{"url":"https://www.facebook.com/SpaceStation2017/","name":"우주정거장"},
+		{"url":"","name":""},
 		{"url":"","name":""},
 		{"url":"","name":""}]
   },    
@@ -481,6 +499,7 @@
 			{"url":"https://earth.google.com/web","name":"구글어스"},
 			{"url":"https://smss.seoulmetro.co.kr/traininfo/traininfoUserView.do","name":"지하철실시간"},
 			{"url":"https://web.kma.go.kr/weather/lifenindustry/jisudaymap_D08.jsp","name":"꽃가루경보"},
+			{"url":"https://car.go.kr/ri/recall/list.do","name":"자동차리콜센터"},
 			{"url":"","name":""}
 		]
   }]

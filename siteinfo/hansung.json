@@ -5,285 +5,149 @@
     "category": [
         {
             "categoryname": "교내",
-            "group": [
-                {
-                    "groupname": "주요",
-                    "sites": [
-                        {
-                            "url": "http://www.hansung.ac.kr",
-                            "name": "한성대_홈페이지"
+
+                "group":[
+                        {  "groupname":"커뮤니티","sites":[
+                        {"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
+                        {"url":"http://www.dotal.or.kr","name":"Dotal"}, 
+                        {"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
+                        {"url":"http://www.clien.net","name":"Clien"},
+                        {"url":"http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic","name":"딜바다"},
+                        {"url":"http://www.youtube.com","name":"YouTube"},
+                        {"url":"http://www.facebook.com","name":"Facebook"},
+                        {"url":"http://www.ddanzi.com","name":"딴지일보"},
+                        {"url":"http://www.dcinside.com","name":"DC"},
+                        {"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"}]
                         },
-                        {
-                            "url": "http://info.hansung.ac.kr",
-                            "name": "종합정보시스템"
-                        },
-                        {
-                            "url": "https://edubank.hansung.ac.kr/",
-                            "name": "디자인아트평생교육원"
-                        },
-                        {
-                            "url": "https://edulms.hansung.ac.kr",
-                            "name": "평교원LMS"
-                        },
-                        {
-                            "url": "http://hansung.ac.kr/~language",
-                            "name": "한국어과정"
-                        }
+                        {  "groupname":"포탈","sites":[
+                        {"url":"http://www.google.co.kr","name":"Google"},
+                        {"url":"http://www.daum.net","name":"Daum"},
+                        {"url":"http://www.naver.com","name":"Naver"},
+                        {"url":"http://www.gmail.com","name":"Gmail"},
+                        {"url":"http://map.naver.com","name":"Naver지도"},
+                        {"url":"http://map.daum.net","name":"Daum지도"},
+                        {"url":"https://www.google.com/maps","name":"Google지도"},
+                        {"url":"https://www.office.com/?auth=2","name":"오피스"},
+                        {"url":"https://o365hansung-my.sharepoint.com/personal/youngki_hansung_edu/_layouts/15/onedrive.aspx","name":"원드라이브"},
+                        {"url":"","name":""}
                     ]
+                        },
+                        {  "groupname":"정보","sites":[
+                        {"url":"https://namu.wiki","name":"NamuWiki"},
+                        {"url":"http://ko.wikipedia.org","name":"Wiki"},
+                        {"url":"http://en.wikipedia.org","name":"Wiki-영어"},
+                        {"url":"https://dict.naver.com/","name":"네이버사전"},
+                        {"url":"https://www.korean.go.kr/","name":"국립국어원"}]
+                      },
+                        {  "groupname":"뉴스","sites":[
+                        {"url":"http://news.google.com","name":"구글뉴스"},
+                        {"url":"http://www.ddanzi.com","name":"딴지일보"},
+                        {"url":"http://www.sisain.co.kr","name":"시사IN"},
+                        {"url":"https://blog.naver.com/santa_croce","name":"santa_croce"},
+                        {"url":"https://newstapa.org","name":"뉴스타파"},
+                        {"url":"https://www.reportrash.com","name":"리포트래쉬"},
+                        {"url":"http://www.logosian.com/","name":"평화나무"},
+                        {"url":"","name":""},
+                        {"url":"","name":""},
+                        {"url":"","name":""},
+                        {"url":"","name":""}]
+              },
+                      {  "groupname":"통신","sites":[
+                        {"url":"http://www.olleh.com","name":"KT"},
+                        {"url":"http://www.lgtelecom.com","name":"LGT"},
+                        {"url":"http://www.tworld.co.kr","name":"SKT"},
+                        {"url":"https://www.ktmmobile.com","name":"KTm"},		
+                        {"url":"https://www.uplussave.com","name":"U+알뜰"},		
+                        {"url":"","name":""}]
+                        
+              },  
+                      {  "groupname":"금융","sites":[
+                        {"url":"http://www.ibk.co.kr","name":"기업"},
+                        {"url":"http://www.kbstar.com","name":"국민"},
+                        {"url":"https://www.oksavingsbank.com","name":"OK저축"},
+                        {"url":"https://www.acuonsb.co.kr/","name":"애큐온"},
+                        {"url":"http://www.moneta.co.kr","name":"모네타"},
+                        {"url":"http://www.wooribank.com","name":"우리"},
+                        {"url":"https://www.bccard.com","name":"BC"},
+                        {"url":"http://finlife.fss.or.kr","name":"금융비교"},
+                        {"url":"https://thek.ibs.fsb.or.kr/","name":"TheK"},
+                        {"url":"","name":""}]
+              }]
+            },
+            {    "categoryname":"Work",
+                "group":[
+                        {  "groupname":"교내-주요","sites":[
+                        {"url":"http://www.hansung.ac.kr","name":"한성대홈페이지"},
+                        {"url":"http://old.hansung.ac.kr","name":"(구)한성대홈페이지"},
+                        {"url":"http://info.hansung.ac.kr","name":"종합정보"},
+                        {"url":"http://mail.hansung.ac.kr","name":"웹메일"},
+                        {"url":"http://enter.hansung.ac.kr","name":"입학"},
+                        {"url":"https://edu.hansung.ac.kr/","name":"EDU"},
+                        {"url":"","name":""},
+                        {"url":"","name":""}]
+                    },
+                    {  "groupname":"교내-교직원","sites":[
+                        {"url":"http://intra.hansung.ac.kr","name":"인트라넷"},
+                        {"url":"https://sms.hansung.ac.kr","name":"SMS"},
+                        {"url":"https://research.hansung.ac.kr","name":"연구업적"},
+                        {"url":"http://idisk.hansung.ac.kr","name":"인터넷디스크"},
+                        {"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
+                        {"url":"https://hsdw.hansung.ac.kr/","name":"DW"},
+                        {"url":"","name":""}]
+                    },
+                    {  "groupname":"교내-학사","sites":[
+                    {"url":"https://smart.hansung.ac.kr","name":"전자출결"},
+                    {"url":"https://learn.hansung.ac.kr/","name":"e-class"},
+                    {"url":"https://cms.hansung.ac.kr/","name":"CMS"},
+                    {"url":"https://writingcenter.hansung.ac.kr/","name":"사고와표현"},
+                    {"url":"https://hope.hansung.ac.kr/","name":"HOPE"},
+                    {"url":"http://capstone.hansung.ac.kr","name":"캡스톤"},
+                    {"url":"http://coop.hansung.ac.kr/","name":"현장실습"},
+                    {"url":"https://hsportal.hansung.ac.kr/","name":"스마트자기관리"},
+                    {"url":"","name":""},
+                    {"url":"","name":""}]
                 },
-                {
-                    "groupname": "내부",
-                    "sites": [
-                        {
-                            "url": "http://hsel.hansung.ac.kr",
-                            "name": "학술정보관"
-                        },
-                        {
-                            "url": "http://ebook.hansung.ac.kr",
-                            "name": "전자책도서관"
-                        },
-                        {
-                            "url": "http://mail.hansung.ac.kr",
-                            "name": "웹메일"
-                        },
-                        {
-                            "url": "http://enter.hansung.ac.kr",
-                            "name": "입학"
-                        },
-                        {
-                            "url": "https://abeek.hansung.ac.kr/",
-                            "name": "공학인증"
-                        }
-                    ]
+                {  "groupname":"교내-학술정보관_평교_언어","sites":[
+                    {"url":"http://hsel.hansung.ac.kr","name":"도서관"},
+                    {"url":"https://book.hansung.ac.kr/","name":"상상독서"},
+                    {"url":"http://ebook.hansung.ac.kr","name":"전자책"},
+                    {"url":"https://edubank.hansung.ac.kr/","name":"평교원"},
+                    {"url":"https://edulms.hansung.ac.kr","name":"평교원LMS"},
+                    {"url":"http://hansung.ac.kr/~language","name":"한국어과정"},
+                    {"url":"http://korean.hansung.ac.kr/","name":"언어교육원"},
+                    {"url":"","name":""},
+                    {"url":"","name":""}]
                 },
-                {
-                    "groupname": "시스템",
-                    "sites": [
-                        {
-                            "url": "https://writingcenter.hansung.ac.kr/",
-                            "name": "글쓰기센터"
-                        },
-                        {
-                            "url": "https://learn.hansung.ac.kr/",
-                            "name": "E-Class"
-                        },
-                        {
-                            "url": "https://hope.hansung.ac.kr/",
-                            "name": "e-포트폴리오"
-                        },
-                        {
-                            "url": "http://dorm.hansung.ac.kr/",
-                            "name": "생활관"
-                        }
-
-                    ]
+                {  "groupname":"교내-기타","sites":[
+                    {"url":"https://ipp.hansung.ac.kr/","name":"IPP"},
+                    {"url":"https://dorm.hansung.ac.kr/","name":"기숙사"},
+                    {"url":"http://cncschool.hansung.ac.kr","name":"상상파크"},
+                    {"url":"https://recruit.hansung.ac.kr","name":"채용포탈"},
+                    {"url":"https://recruit.hansung.ac.kr/xabdmxgr/lgn/admLoginView.do","name":"채용관리"},
+                    {"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
+                    {"url":"https://rule.hansung.ac.kr/","name":"규정관리"},
+                    {"url":"https://hansung.ac.kr/sites/info/index.do","name":"정보전산원"},
+                    {"url":"","name":""},
+                    {"url":"","name":""}]
                 },
-                {
-                    "groupname": "링크",
-                    "sites": [
-                        {
-                            "url": "https://www.hansung.ac.kr/web/www/cmty_01_03",
-                            "name": "학사공지"
-                        },
-                        {
-                            "url": "https://www.hansung.ac.kr/web/www/cmty_03_01",
-                            "name": "낙산의메아리"
-                        },
-                        {
-                            "url": "https://www.hansung.ac.kr/web/www/life_03_01_t2",
-                            "name": "식단"
-                        },
-                        {
-                            "url": "http://www.hansung.ac.kr/web/www/intro_03_11",
-                            "name": "전화번호"
-                        },
-                        {
-                            "url": "https://www.hansung.ac.kr/web/www/life_01_01",
-                            "name": "학사일정"
-                        },
-                        {
-                            "url": "http://www.hansung.ac.kr/web/english/admission_e",
-                            "name": "교환학생"
-                        }
-                    ]
-                }
-
-
-            ]
-        },
-
-        {
-            "categoryname": "교외",
-            "group": [
-                {
-                    "groupname": "커뮤니티",
-                    "sites": [
-                        {
-                            "url": "https://www.facebook.com/HANSUNGSPEAKER",
-                            "name": "한대말"
-                        },
-                        {
-                            "url": "https://ko-kr.facebook.com/HSUGrove/",
-                            "name": "한대숲"
-                        },
-                        {
-                            "url": "https://blog.naver.com/hansungnews",
-                            "name": "신문사"
-                        }
-                    ]
+                {  "groupname":"교내-외부","sites":[
+                    {"url":"http://gspa.hansung.ac.kr","name":"행정대학원"},
+                    {"url":"http://hsmba.hansung.ac.kr","name":"경영대학원"},
+                    {"url":"http://cse.hansung.ac.kr","name":"컴퓨터공학부"},
+                    {"url":"","name":""},
+                    {"url":"","name":""}]
                 },
-                {
-                    "groupname": "취업",
-                    "sites": [
-                        {
-                            "url": "http://cafe.daum.net/breakjob",
-                            "name": "취뽀"
-                        },
-                        {
-                            "url": "http://www.saramin.co.kr",
-                            "name": "사람인"
-                        },
-                        {
-                            "url": "http://www.incruit.co.kr",
-                            "name": "인크루트"
-                        },
-                        {
-                            "url": "http://www.scout.co.kr",
-                            "name": "스카우트"
-                        },
-                        {
-                            "url": "http://www.jobkorea.co.kr",
-                            "name": "잡코리아"
-                        },
-                        {
-                            "url": "http://www.joblink.co.kr",
-                            "name": "잡링크"
-                        }
-                    ]
-                },
+                    {  "groupname":"교내-Link","sites":[
+                        {"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"한성공지"},
+                        {"url":"https://www.hansung.ac.kr/hansung/8380/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGFuc3VuZyUyRjE0MyUyRmFydGNsTGlzdC5kbyUzRmJic0NsU2VxJTNEMjM2JTI2YmJzT3BlbldyZFNlcSUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnNyY2hDb2x1bW4lM0RzaiUyNnNyY2hXcmQlM0QlMjY%3D","name":"학사공지"},
+                        {"url":"https://www.hansung.ac.kr/hansung/1921/subview.do","name":"교직원식단"},
+                        {"url":"https://www.hansung.ac.kr/hansung/1758/subview.do","name":"전화번호"},
+                        {"url":"https://www.hansung.ac.kr/eduinfo/3808/subview.do","name":"학사일정"},
+                        {"url":"","name":""}]
+                    }]
+            },
+            
 
-                {
-                    "groupname": "교육",
-                    "sites": [
-                        {
-                            "url": "https://www.gseek.kr",
-                            "name": "경기도지식"
-                        },
-                        {
-                            "url": "https://opentutorials.org/course/1",
-                            "name": "생활코딩"
-                        },
-                        {
-                            "url": "https://www.onoffmix.com/",
-                            "name": "onoffmix"
-                        },
-                        {
-                            "url": "http://www.alzio.co.kr/",
-                            "name": "Alzio"
-                        },
-                        {
-                            "url": "http://www.multicampus.co.kr",
-                            "name": "멀티캠퍼스"
-                        },
-                        {
-                            "url": "http://www.modenedu.com/",
-                            "name": "모든에듀"
-                        }
-                    ]
-                }
-
-            ]
-        },
-
-
-        {
-            "categoryname": "교직원",
-            "group": [
-                {
-                    "groupname": "교내",
-                    "sites": [
-                        {
-                            "url": "http://intra.hansung.ac.kr",
-                            "name": "인트라넷"
-                        },
-                        {
-                            "url": "https://research.hansung.ac.kr",
-                            "name": "한성대연구업적"
-                        },
-                        {
-                            "url": "https://sms.hansung.ac.kr",
-                            "name": "SMS"
-                        },
-                        {
-                            "url": "http://idisk.hansung.ac.kr",
-                            "name": "인터넷디스크"
-                        },
-                        {
-                            "url": "https://smart.hansung.ac.kr",
-                            "name": "전자출결"
-                        },
-                        {
-                            "url": "https://rndb.hansung.ac.kr",
-                            "name": "산학erp"
-                        },
-                        {
-                            "url": "https://www.epki.go.kr",
-                            "name": "교육부행정전자서명"
-                        }
-                    ]
-                },
-
-                {
-                    "groupname": "교내_링크",
-                    "sites": [
-                        {
-                            "url": "http://www.hansung.ac.kr/web/www/intro_03_11",
-                            "name": "전화번호"
-                        },
-                        {
-                            "url": "http://www.hansung.ac.kr/web/www/intro_01_06_01",
-                            "name": "규정집"
-                        },
-                        {
-                            "url": "http://www.hansung.ac.kr/web/employ",
-                            "name": "교수초빙"
-                        },
-                        {
-                            "url": "http://www.hansung.ac.kr/web/staff/home",
-                            "name": "직원채용"
-                        }
-                    ]
-                },
-
-
-                {
-                    "groupname": "교외",
-                    "sites": [
-                        {
-                            "url": "http://hi.kedi.re.kr/home/main/main",
-                            "name": "고등교육통계"
-                        },
-                        {
-                            "url": "http://www.ebiz4u.co.kr",
-                            "name": "조달"
-                        },
-                        {
-                            "url": "http://www.kri.go.kr/hansung",
-                            "name": "KRI"
-                        },
-                        {
-                            "url": "https://blog.naver.com/wnsduf51",
-                            "name": "교육관련뉴스"
-                        },
-                        {
-                            "url": "http://www.academyinfo.go.kr/UIPISA/uipnh/unt/ipsrch/UntUnvAcdtSrchPupExtrn.do?schlId=0000200",
-                            "name": "정보공시"
-                        }
-
-                    ]
-                }
-            ]
-        },
 
         {
             "categoryname": "기타",
