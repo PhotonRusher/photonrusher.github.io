@@ -40,7 +40,6 @@
   		},
 			{  "groupname":"뉴스","sites":[
 			{"url":"http://news.google.com","name":"구글뉴스"},
-			{"url":"http://www.ddanzi.com","name":"딴지일보"},
 			{"url":"http://www.sisain.co.kr","name":"시사IN"},
 			{"url":"https://blog.naver.com/santa_croce","name":"santa_croce"},
 			{"url":"https://newstapa.org","name":"뉴스타파"},
@@ -73,7 +72,7 @@
 			{"url":"","name":""}]
   }]
 },
-{    "categoryname":"Work",
+{    "categoryname":"Hansung",
     "group":[
 			{  "groupname":"교내-주요","sites":[
 			{"url":"http://www.hansung.ac.kr","name":"한성대홈페이지"},
@@ -81,7 +80,6 @@
 			{"url":"http://info.hansung.ac.kr","name":"종합정보"},
 			{"url":"http://mail.hansung.ac.kr","name":"웹메일"},
 			{"url":"http://enter.hansung.ac.kr","name":"입학"},
-			{"url":"https://edu.hansung.ac.kr/","name":"EDU"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
@@ -120,7 +118,7 @@
 	{  "groupname":"교내-기타","sites":[
 		{"url":"https://ipp.hansung.ac.kr/","name":"IPP"},
 		{"url":"https://dorm.hansung.ac.kr/","name":"기숙사"},
-		{"url":"http://cncschool.hansung.ac.kr","name":"상상파크"},
+		{"url":"https://edu.hansung.ac.kr/","name":"EDU"},
 		{"url":"https://recruit.hansung.ac.kr","name":"채용포탈"},
 		{"url":"https://recruit.hansung.ac.kr/xabdmxgr/lgn/admLoginView.do","name":"채용관리"},
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
