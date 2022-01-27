@@ -4,77 +4,8 @@
     "hname": "한성대학교", 
     "category": [
         {
-            "categoryname": "교내",
 
-                "group":[
-                        {  "groupname":"커뮤니티","sites":[
-                        {"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
-                        {"url":"http://www.dotal.or.kr","name":"Dotal"}, 
-                        {"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
-                        {"url":"http://www.clien.net","name":"Clien"},
-                        {"url":"http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic","name":"딜바다"},
-                        {"url":"http://www.youtube.com","name":"YouTube"},
-                        {"url":"http://www.facebook.com","name":"Facebook"},
-                        {"url":"http://www.ddanzi.com","name":"딴지일보"},
-                        {"url":"http://www.dcinside.com","name":"DC"},
-                        {"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"}]
-                        },
-                        {  "groupname":"포탈","sites":[
-                        {"url":"http://www.google.co.kr","name":"Google"},
-                        {"url":"http://www.daum.net","name":"Daum"},
-                        {"url":"http://www.naver.com","name":"Naver"},
-                        {"url":"http://www.gmail.com","name":"Gmail"},
-                        {"url":"http://map.naver.com","name":"Naver지도"},
-                        {"url":"http://map.daum.net","name":"Daum지도"},
-                        {"url":"https://www.google.com/maps","name":"Google지도"},
-                        {"url":"https://www.office.com/?auth=2","name":"오피스"},
-                        {"url":"https://o365hansung-my.sharepoint.com/personal/youngki_hansung_edu/_layouts/15/onedrive.aspx","name":"원드라이브"},
-                        {"url":"","name":""}
-                    ]
-                        },
-                        {  "groupname":"정보","sites":[
-                        {"url":"https://namu.wiki","name":"NamuWiki"},
-                        {"url":"http://ko.wikipedia.org","name":"Wiki"},
-                        {"url":"http://en.wikipedia.org","name":"Wiki-영어"},
-                        {"url":"https://dict.naver.com/","name":"네이버사전"},
-                        {"url":"https://www.korean.go.kr/","name":"국립국어원"}]
-                      },
-                        {  "groupname":"뉴스","sites":[
-                        {"url":"http://news.google.com","name":"구글뉴스"},
-                        {"url":"http://www.ddanzi.com","name":"딴지일보"},
-                        {"url":"http://www.sisain.co.kr","name":"시사IN"},
-                        {"url":"https://blog.naver.com/santa_croce","name":"santa_croce"},
-                        {"url":"https://newstapa.org","name":"뉴스타파"},
-                        {"url":"https://www.reportrash.com","name":"리포트래쉬"},
-                        {"url":"http://www.logosian.com/","name":"평화나무"},
-                        {"url":"","name":""},
-                        {"url":"","name":""},
-                        {"url":"","name":""},
-                        {"url":"","name":""}]
-              },
-                      {  "groupname":"통신","sites":[
-                        {"url":"http://www.olleh.com","name":"KT"},
-                        {"url":"http://www.lgtelecom.com","name":"LGT"},
-                        {"url":"http://www.tworld.co.kr","name":"SKT"},
-                        {"url":"https://www.ktmmobile.com","name":"KTm"},		
-                        {"url":"https://www.uplussave.com","name":"U+알뜰"},		
-                        {"url":"","name":""}]
-                        
-              },  
-                      {  "groupname":"금융","sites":[
-                        {"url":"http://www.ibk.co.kr","name":"기업"},
-                        {"url":"http://www.kbstar.com","name":"국민"},
-                        {"url":"https://www.oksavingsbank.com","name":"OK저축"},
-                        {"url":"https://www.acuonsb.co.kr/","name":"애큐온"},
-                        {"url":"http://www.moneta.co.kr","name":"모네타"},
-                        {"url":"http://www.wooribank.com","name":"우리"},
-                        {"url":"https://www.bccard.com","name":"BC"},
-                        {"url":"http://finlife.fss.or.kr","name":"금융비교"},
-                        {"url":"https://thek.ibs.fsb.or.kr/","name":"TheK"},
-                        {"url":"","name":""}]
-              }]
-            },
-            {    "categoryname":"Work",
+            "categoryname":"Hansung",
                 "group":[
                         {  "groupname":"교내-주요","sites":[
                         {"url":"http://www.hansung.ac.kr","name":"한성대홈페이지"},
