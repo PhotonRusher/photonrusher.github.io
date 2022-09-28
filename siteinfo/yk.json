@@ -4,7 +4,7 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20220127",
+{    "categoryname":"Favorite_v20220928",
     "group":[
 			{  "groupname":"커뮤니티","sites":[
 			{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
@@ -40,10 +40,8 @@
   		},
 			{  "groupname":"뉴스","sites":[
 			{"url":"http://news.google.com","name":"구글뉴스"},
-			{"url":"http://www.sisain.co.kr","name":"시사IN"},
-			{"url":"https://blog.naver.com/santa_croce","name":"santa_croce"},
 			{"url":"https://newstapa.org","name":"뉴스타파"},
-			{"url":"https://www.reportrash.com","name":"리포트래쉬"},
+			{"url":"http://www.sisain.co.kr","name":"시사IN"},
 			{"url":"http://www.logosian.com/","name":"평화나무"},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -124,6 +122,9 @@
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
 		{"url":"https://rule.hansung.ac.kr/","name":"규정관리"},
 		{"url":"https://hansung.ac.kr/sites/info/index.do","name":"정보전산원"},
+		{"url":"https://help.hansung.ac.kr/","name":"help"},
+		{"url":"","name":""},
+		{"url":"","name":""},
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
@@ -194,7 +195,7 @@
   }]  
 },
 
-{    "categoryname":"System",
+{    "categoryname":"Work-System",
     "group":[
 		{  "groupname":"교외-기관","sites":[
 			{"url":"https://cyber.ecsc.go.kr","name":"교육부사이버안전센터"},
