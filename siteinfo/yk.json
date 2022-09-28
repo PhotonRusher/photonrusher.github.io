@@ -486,8 +486,10 @@
 		},
 	{  "groupname":"토렝이","sites":[
 		{"url":"https://누누.com","name":"누누"},
-		{"url":"https://www.bbongtv.com","name":"bbongtv"},
 		{"url":"http://www.thepara.de/","name":"thepara"},
+		{"url":"https://www.bbongtv.com","name":"bbongtv"},
+		{"url":"https://tvnolgo.com","name":"tvnolgo"},
+		{"url":"","name":""},
 		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
 		{"url":"https://토렌트큐큐.com","name":"토렌트큐큐"},
 		{"url":"https://www.토렌트사이트.com","name":"토렌트다이아"},
