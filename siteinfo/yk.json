@@ -21,16 +21,6 @@
 				{"url":"","name":""},
 				{"url":"","name":""}]
 			},
-			{  "groupname":"커뮤니티","sites":[
-				{"url":"http://www.dcinside.com","name":"DC"},
-				{"url":"http://www.facebook.com","name":"Facebook"},
-				{"url":"http://www.ddanzi.com","name":"딴지일보"},
-				{"url":"https://theminjoo.kr/","name":"민주당"},
-				{"url":"","name":""},
-				{"url":"","name":""},
-				{"url":"","name":""},
-				{"url":"","name":""}]
-			},
 			{  "groupname":"포탈","sites":[
 				{"url":"http://www.google.co.kr","name":"Google"},
 				{"url":"http://www.gmail.com","name":"Gmail"},
@@ -65,6 +55,16 @@
 				{"url":"","name":""}
 				]
 			},
+			{  "groupname":"커뮤니티","sites":[
+				{"url":"http://www.dcinside.com","name":"DC"},
+				{"url":"http://www.facebook.com","name":"Facebook"},
+				{"url":"http://www.ddanzi.com","name":"딴지일보"},
+				{"url":"https://theminjoo.kr/","name":"민주당"},
+				{"url":"","name":""},
+				{"url":"","name":""},
+				{"url":"","name":""},
+				{"url":"","name":""}]
+			},
           {  "groupname":"통신","sites":[
 			{"url":"https://www.freet.co.kr/","name":"프리티"},
 			{"url":"https://www.ktmmobile.com","name":"KTm"},		
@@ -92,10 +92,10 @@
 			{"url":"","name":""}]
   }]
 },
-{    "categoryname":"Hansung",
+{    "categoryname":"HS",
     "group":[
 			{  "groupname":"교내-주요","sites":[
-			{"url":"http://www.hansung.ac.kr","name":"한성대홈페이지"},
+			{"url":"http://www.hansung.ac.kr","name":"대표홈페이지"},
 			{"url":"http://info.hansung.ac.kr","name":"종합정보"},
 			{"url":"http://intra.hansung.ac.kr","name":"인트라넷"},
 			{"url":"http://mail.hansung.ac.kr","name":"웹메일"},
@@ -105,7 +105,7 @@
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-교직원","sites":[
-			{"url":"http://old.hansung.ac.kr","name":"(구)한성대홈페이지"},
+			{"url":"http://old.hansung.ac.kr","name":"(구)대표홈페이지"},
 			{"url":"http://intraold.hansung.ac.kr","name":"(구)인트라넷"},
 			{"url":"https://research.hansung.ac.kr","name":"연구업적"},
 			{"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
@@ -156,7 +156,7 @@
 	},
 		{  "groupname":"교내-Link","sites":[
 			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"한성공지"},
-			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGFuc3VuZyUyRjE0MyUyRmFydGNsTGlzdC5kbyUzRmJic0NsU2VxJTNEMjM2JTI2YmJzT3BlbldyZFNlcSUzRCUyNmlzVmlld01pbmUlM0RmYWxzZSUyNnNyY2hDb2x1bW4lM0RzaiUyNnNyY2hXcmQlM0QlMjY%3D","name":"학사공지"},
+			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"학사공지"},
 			{"url":"https://www.hansung.ac.kr/hansung/1921/subview.do","name":"교직원식단"},
 			{"url":"https://www.hansung.ac.kr/hansung/1758/subview.do","name":"전화번호"},
 			{"url":"https://www.hansung.ac.kr/eduinfo/3808/subview.do","name":"학사일정"},
