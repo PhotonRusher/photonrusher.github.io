@@ -4,13 +4,14 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20230526-3",
+{    "categoryname":"Favorite_v20230526-4",
     "group":[
 			{  "groupname":"자주","sites":[
 				{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
 				{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
 				{"url":"https://www.clien.net/service/board/park","name":"Clien"},
 				{"url":"http://www.youtube.com","name":"YouTube"},
+				{"url":"https://music.youtube.com/","name":"YouTubeMusic"},
 				{"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"},
 				{"url":"http://www.dotal.or.kr","name":"Dotal"}, 
 				{"url":"http://map.naver.com","name":"Naver지도"},
@@ -471,11 +472,16 @@
 			},
 		{  "groupname":"게임","sites":[
 			{"url":"https://bbs.ruliweb.com/nin","name":"루리웹"},
+			{"url":"https://opencourse.kr","name":"오픈코스"},
+			{"url":"https://www.metacritic.com/game/switch","name":"메타크리틱"},
 			{"url":"https://www.ygosu.com/community/st1","name":"와이고수"},
 			{"url":"https://kr.forums.blizzard.com/ko/starcraft/latest/","name":"블리자드게시판"},
 			{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
 			{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
 			{"url":"https://www.fafan.kr/","name":"파판"},
+			{"url":"https://nxbrew.com/","name":"nxbrew"},
+			{"url":"","name":""},
+			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"영화","sites":[
@@ -490,7 +496,8 @@
 	{  "groupname":"토렝이","sites":[
 		{"url":"https://www.bbongtv.com","name":"bbongtv"},
 		{"url":"https://tvnolgo.com","name":"tvnolgo"},
-		{"url":"","name":""},
+		{"url":"https://gltv82.com","name":"gltv82"},
+		{"url":"http://cooltv1.com","name":"cooltv1"},
 		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
 		{"url":"https://토렌트큐큐.com","name":"토렌트큐큐"},
 		{"url":"https://www.토렌트사이트.com","name":"토렌트다이아"},
