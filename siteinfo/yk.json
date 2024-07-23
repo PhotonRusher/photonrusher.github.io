@@ -4,12 +4,12 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20230526-4",
+{    "categoryname":"Favorite_v20240723-1",
     "group":[
 			{  "groupname":"자주","sites":[
 				{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
 				{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
-				{"url":"https://www.clien.net/service/board/park","name":"Clien"},
+				{"url":"https://damoang.net/free","name":"다모앙"},
 				{"url":"http://www.youtube.com","name":"YouTube"},
 				{"url":"https://music.youtube.com/","name":"YouTubeMusic"},
 				{"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"},
@@ -40,7 +40,11 @@
 				{"url":"http://ko.wikipedia.org","name":"Wiki"},
 				{"url":"http://en.wikipedia.org","name":"Wiki-영어"},
 				{"url":"https://dict.naver.com/","name":"네이버사전"},
-				{"url":"https://www.korean.go.kr/","name":"국립국어원"}]
+				{"url":"https://www.korean.go.kr/","name":"국립국어원"},
+				{"url":"https://trends.google.co.kr/trends/?geo=KR","name":"구글트렌드"},
+				{"url":"","name":""},
+				{"url":"","name":""},
+				{"url":"","name":""}]
 	  		},
 			{  "groupname":"뉴스","sites":[
 				{"url":"http://news.google.com","name":"구글뉴스"},
@@ -49,7 +53,6 @@
 				{"url":"","name":""},
 				{"url":"https://newstapa.org","name":"뉴스타파"},
 				{"url":"http://www.sisain.co.kr","name":"시사IN"},
-				{"url":"http://www.logosian.com/","name":"평화나무"},
 				{"url":"","name":""},
 				{"url":"","name":""},
 				{"url":"","name":""},
@@ -57,9 +60,11 @@
 				]
 			},
 			{  "groupname":"커뮤니티","sites":[
+				{"url":"https://damoang.net/","name":"다모앙"},
 				{"url":"http://www.dcinside.com","name":"DC"},
-				{"url":"http://www.facebook.com","name":"Facebook"},
 				{"url":"http://www.ddanzi.com","name":"딴지일보"},
+				{"url":"https://www.clien.net/service/board/park","name":"Clien"},
+				{"url":"http://www.facebook.com","name":"Facebook"},
 				{"url":"https://theminjoo.kr/","name":"민주당"},
 				{"url":"","name":""},
 				{"url":"","name":""},
@@ -71,11 +76,11 @@
 			{"url":"https://www.ktmmobile.com","name":"KTm"},		
 			{"url":"https://www.uplussave.com","name":"U+알뜰"},		
 			{"url":"https://www.skbroadband.com/Main.do","name":"SKB"},
-			{"url":"http://www.olleh.com","name":"KT"},
+			{"url":"http://www.kt.com","name":"KT"},
 			{"url":"http://www.lgtelecom.com","name":"LGT"},
 			{"url":"http://www.tworld.co.kr","name":"SKT"},
-			{"url":"","name":""},
-			{"url":"","name":""},
+			{"url":"https://www.moyoplan.com/","name":"모요"},
+			{"url":"https://www.yytelecom.co.kr/","name":"여유"},
 			{"url":"","name":""}]
 			
   },  
@@ -106,14 +111,13 @@
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-교직원","sites":[
-			{"url":"http://old.hansung.ac.kr","name":"(구)대표홈페이지"},
-			{"url":"http://intraold.hansung.ac.kr","name":"(구)인트라넷"},
 			{"url":"https://research.hansung.ac.kr","name":"연구업적"},
 			{"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
 			{"url":"https://hsdw.hansung.ac.kr/","name":"DW"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-학사","sites":[
+		{"url":"https://campus.heyoung.co.kr/admin/screen/HCO0101M01","name":"헤이영"},
 		{"url":"https://smart.hansung.ac.kr","name":"전자출결"},
 		{"url":"https://learn.hansung.ac.kr/","name":"e-class"},
 		{"url":"https://writingcenter.hansung.ac.kr/","name":"사고와표현"},
@@ -124,11 +128,11 @@
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
-	{  "groupname":"교내-학술정보관_평교_언어","sites":[
+	{  "groupname":"교내-학술_평교_언어","sites":[
 		{"url":"http://hsel.hansung.ac.kr","name":"도서관"},
 		{"url":"https://book.hansung.ac.kr/","name":"상상독서"},
 		{"url":"http://ebook.hansung.ac.kr","name":"전자책"},
-		{"url":"https://edubank.hansung.ac.kr/","name":"평교원"},
+		{"url":"https://old-edubank.hansung.ac.kr/","name":"(구)평교원"},
 		{"url":"https://edulms.hansung.ac.kr","name":"평교원LMS"},
 		{"url":"http://hansung.ac.kr/~language","name":"한국어과정"},
 		{"url":"http://korean.hansung.ac.kr/","name":"언어교육원"},
@@ -172,17 +176,18 @@
 			{"url":"https://blog.naver.com/hansungnews","name":"신문사"},
 			{"url":"http://gall.dcinside.com/list.php?id=hansung","name":"DC한성대"},
 			{"url":"https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%8C%80%ED%95%99_%EB%AA%A9%EB%A1%9D","name":"대학목록"},
-			{"url":"","name":""},
+			{"url":"https://www.hansung.ac.kr/hansung/8387/subview.do","name":"입찰/견적공고"},
 			{"url":"","name":""}]
 		}	
 	]
 },
 
-{    "categoryname":"Shopping",
+{    "categoryname":"Shop",
     "group":[
           {  "groupname":"정보","sites":[
 			{"url":"http://www.ppomppu.co.kr","name":"뽐뿌"},
 			{"url":"http://www.danawa.co.kr","name":"다나와"},
+			{"url":"https://shopping.naver.com/home","name":"네이버쇼핑"},
 			{"url":"http://enuri.com","name":"에누리"},
 			{"url":"http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic","name":"딜바다"},
 			{"url":"http://www.cultureland.co.kr","name":"컬쳐랜드"},
@@ -194,24 +199,25 @@
           {  "groupname":"오픈마켓","sites":[
 			{"url":"http://www.gmarket.co.kr","name":"G마켓"},
 			{"url":"http://www.auction.co.kr","name":"옥션"},
-			{"url":"http://www.11st.co.kr","name":"11번가"},
-			{"url":"https://www.tmon.co.kr/","name":"티몬"},
 			{"url":"http://www.coupang.com","name":"쿠팡"},
-			{"url":"http://www.wemakeprice.com","name":"위메프"},
+			{"url":"http://www.11st.co.kr","name":"11번가"},
+			{"url":"https://ko.aliexpress.com/","name":"aliexpress"},
 			{"url":"http://www.daisomall.co.kr","name":"다이소"},
+			{"url":"https://www.amazon.com","name":"Amazon"},
+			{"url":"https://www.tmon.co.kr/","name":"티몬"},
+			{"url":"http://www.wemakeprice.com","name":"위메프"},
 			{"url":"http://www.interpark.com","name":"인터파크"},
 			{"url":"https://www.qoo10.com/","name":"큐텐"},
 			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"https://www.amazon.com","name":"Amazon"}]
-  },
+			{"url":"","name":""}]
+		  },
           {  "groupname":"Shop","sites":[
 			{"url":"http://www.homeplus.co.kr","name":"홈플러스"},
 			{"url":"http://emart.ssg.com/","name":"이마트"},
 			{"url":"http://www.lottemart.com","name":"롯데마트"},
 			{"url":"https://www.musinsa.com/","name":"무신사"},
 			{"url":"","name":""}]
-  },
+  		},
           {  "groupname":"부동산","sites":[
 			{"url":"https://hogangnono.com","name":"호갱노노"},
 			{"url":"https://land.naver.com","name":"Naver부동산"},
@@ -223,7 +229,12 @@
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""}]
-  },
+  		},
+          {  "groupname":"와인","sites":[
+			{"url":"https://www.idataground.com/","name":"도토리와인"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+  		},
           {  "groupname":"책","sites":[
 			{"url":"http://www.kyobobook.co.kr","name":"교보문고"},
 			{"url":"http://www.interpark.com","name":"인터파크"},
@@ -248,6 +259,7 @@
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교외-시스템","sites":[
+			{"url":"https://uptimerobot.com/","name":"uptimerobot"},
 			{"url":"https://www.office.com","name":"Office"},
 			{"url":"https://inames.co.kr/","name":"도메인-inames"},
 			{"url":"https://technet.tmaxsoft.com/","name":"TMAX테크넷"},
@@ -262,12 +274,12 @@
 		{  "groupname":"솔루션","sites":[
 			{"url":"http://m2soft.co.kr/index.asp","name":"엠투소프트"},
 			{"url":"http://jennifersoft.com/ko","name":"재니퍼소프트"},
-			{"url":"https://www.rview.com/ko/","name":"리모트뷰"},
 			{"url":"https://www.remotecall.io/ko/","name":"리모트콜"},
 			{"url":"https://front.jennifersoft.com","name":"재니퍼프론트"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"보안","sites":[
+			{"url":"https://www.virustotal.com/gui/home/upload","name":"virustotal"},
 			{"url":"http://www.law.go.kr/","name":"개인정보보호법"},
 			{"url":"","name":""}
 		]
@@ -330,18 +342,9 @@
 		{"url":"https://www.wishket.com/","name":"wishket-구인"},
 		{"url":"https://insights.stackoverflow.com/survey/2018/","name":"stackoverflow/survey"}]
 	},  
-	{  "groupname":"Swift(iOS)","sites":[
-		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift공식문서(한글)"},
-		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift공식문서"},
-		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI애플문서"},
-		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Cheat_Sheet"},
-		{"url":"https://cocoapods.org","name":"cocoapods"},
-		{"url":"https://github.com/navermaps/ios-map-sdk","name":"navermaps"},
-		{"url":"https://firebase.google.com/?hl=ko","name":"firebase"},
-		{"url":"https://material.io/","name":"material"},
-		{"url":"","name":""}]
-	},
 	{  "groupname":"기술블로그","sites":[
+		{"url":"https://www.codenary.co.kr/","name":"codenary"},
+		{"url":"https://news.hada.io/","name":"GeekNews"},
 		{"url":"https://gonslab.tistory.com/","name":"GonsLab"},
 		{"url":"https://hururuek-chapchap.tistory.com/","name":"짭짤이"},
 		{"url":"https://brunch.co.kr/@joonwonlee#articles","name":"이준원"},
@@ -366,6 +369,17 @@
 		{"url":"","name":""}
 		]
 	},
+	{  "groupname":"Swift(iOS)","sites":[
+		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift공식문서(한글)"},
+		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift공식문서"},
+		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI애플문서"},
+		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Cheat_Sheet"},
+		{"url":"https://cocoapods.org","name":"cocoapods"},
+		{"url":"https://github.com/navermaps/ios-map-sdk","name":"navermaps"},
+		{"url":"https://firebase.google.com/?hl=ko","name":"firebase"},
+		{"url":"https://material.io/","name":"material"},
+		{"url":"","name":""}]
+	},
 	{  "groupname":"기타","sites":[
 		{"url":"https://www.wishket.com","name":"프리구인(wishket)"},
 		{"url":"","name":""},
@@ -378,10 +392,9 @@
 {    "categoryname":"Hobby",
     "group":[
 		{  "groupname":"여행정보","sites":[
+			{"url":"https://blog.naver.com/kim4993300","name":"블로그-일상도여행처럼"},
 			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
-			{"url":"http://www.seoulland.co.kr/index.asp","name":"서울랜드"},
 			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
-			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},  
@@ -399,19 +412,23 @@
 		{  "groupname":"비행기","sites":[
 			{"url":"https://www.skyscanner.co.kr/","name":"스카이스캐너"},
 			{"url":"https://flight.naver.com/","name":"네이버항공권"},
+			{"url":"https://www.jejuair.net/","name":"제주항공"},
 			{"url":"https://www.twayair.com","name":"티웨이"},
 			{"url":"https://www.jinair.com","name":"진에어"},
+			{"url":"https://www.eastarjet.com","name":"이스타"},
+			{"url":"https://www.modetour.com/flights/discount-flight?query=%7B%22departureCity%22%3A%22%22%2C%22arrivalCity%22%3A%22%22%2C%22continentCode%22%3A%22ASIA%22%2C%22departureDate%22%3A%222024-07-24%22%2C%22arrivalDate%22%3A%222024-08-23%22%7D","name":"모두투어"},
+			{"url":"https://www.hanatour.com/trp/air/CHPC0AIR0233M200","name":"하나투어"},
+			{"url":"https://www.ttang.com/ttangair/index.do","name":"땡처리"},
 			{"url":"https://www.airbusan.com","name":"에어부산"},
 			{"url":"https://flyairseoul.com/","name":"에어서울"},
-			{"url":"https://www.hi-airlines.com/","name":"하이에어"},
-			{"url":"https://www.eastarjet.com","name":"이스타"},
 			{"url":"https://www.airpremia.com/","name":"에어프레미아"},
-			{"url":"","name":""},
+			{"url":"https://www.hi-airlines.com/","name":"하이에어"},
+			{"url":"https://www.vietjetair.com/ko","name":"비엣젯"},
 			{"url":"","name":""},
 			{"url":"","name":""}
 		]
   		},    
-		{  "groupname":"공연정보","sites":[
+		{  "groupname":"공연","sites":[
 			{"url":"http://ticket.interpark.com/webzine/paper/TPNoticeList.asp?tid1=in_scroll&tid2=ticketopen&tid3=board_main&tid4=board_main","name":"인터파크"},
 			{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
 			{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
@@ -429,12 +446,16 @@
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},    
+		{  "groupname":"전시","sites":[
+			{"url":"https://theqoo.net/finearts","name":"더쿠"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},    
 		{  "groupname":"음악","sites":[
 			{"url":"http://www.indistreet.com","name":"인디스트릿"},
 			{"url":"https://xindieticket.kr/","name":"씬디티켓"},
 			{"url":"http://www.clubevans.com","name":"클럽에반스"},
-			{"url":"http://www.thepara.de/","name":"thepara"},
-			{"url":"http://www.allthatjazz.kr","name":"올댓재즈"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -463,6 +484,7 @@
 				{"url":"","name":""}]
 			},
 			{  "groupname":"집주변동네","sites":[
+				{"url":"https://yplus.kr/yp/","name":"양천구와플"},
 				{"url":"http://www.yangcheon.go.kr/","name":"양천구"},
 				{"url":"https://xn--z92b72qn1at0nqrn.kr/","name":"양천문화원"},
 				{"url":"https://yfac.kr/","name":"양천문화재단"},
@@ -478,18 +500,27 @@
 			{"url":"https://kr.forums.blizzard.com/ko/starcraft/latest/","name":"블리자드게시판"},
 			{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
 			{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
+			{"url":"https://howlongtobeat.com/","name":"howlongtobeat"},
 			{"url":"https://www.fafan.kr/","name":"파판"},
 			{"url":"https://nxbrew.com/","name":"nxbrew"},
+			{"url":"https://nsw2u.com/","name":"nsw2u"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"영화","sites":[
+			{"url":"https://pedia.watcha.com/ko-KR/users/DgwxAeQYNxrMj/contents/movies/ratings","name":"이동진"},
 			{"url":"http://movie.daum.net","name":"Daum영화"},
 			{"url":"https://www.rottentomatoes.com","name":"로튼토마토"},
 			{"url":"https://www.koreafilm.or.kr/main","name":"영상자료원"},
 			{"url":"https://serieson.naver.com/v3/movie/free","name":"네이버무료영화"},
-			{"url":"","name":""},
+			{"url":"https://www.cgv.co.kr/","name":"cgv"},
+			{"url":"https://megabox.co.kr/","name":"megabox"},
+			{"url":"https://www.lottecinema.co.kr/","name":"lottecinema"},
+			{"url":"https://www.justwatch.com/","name":"justwatch"},
+			{"url":"https://m.kinolights.com/","name":"kinolights-ott신작"},
+			{"url":"https://namu.wiki/w/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4/%EC%9E%A5%EB%A5%B4%EB%B3%84%EB%A1%9C%20%EB%B3%B4%EB%8A%94%20%EB%B2%95","name":"넷플릭스장르별주소"},
+			{"url":"http://cine21.com/movie/lists/playing","name":"cine21"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
@@ -498,10 +529,10 @@
 		{"url":"https://tvnolgo.com","name":"tvnolgo"},
 		{"url":"https://gltv82.com","name":"gltv82"},
 		{"url":"http://cooltv1.com","name":"cooltv1"},
+		{"url":"https://www.google.com/search?q=누누티비","name":"누누티비"},
+		{"url":"https://www.google.com/search?q=티비위키","name":"티비위키"},
+		{"url":"https://www.google.com/search?q=놀고가","name":"놀고가"},
 		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
-		{"url":"https://토렌트큐큐.com","name":"토렌트큐큐"},
-		{"url":"https://www.토렌트사이트.com","name":"토렌트다이아"},
-		{"url":"","name":""},
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	}
