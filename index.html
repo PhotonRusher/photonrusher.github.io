@@ -15,16 +15,18 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
 
 	<style>
+	html { font-size: 120%; }
+
 	body { 
 	    /*background: #f2f2f2; */
 	    background-color: black;
     	color:  #569CD6;
 		font-size: 1.2rem;	/* .875rem */
-
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -200,7 +202,7 @@
 
 			if(typeof topic == "undefined" || topic == null || topic == "") {
 				fGetSiteInfoFromServer( 'yk' ); // 현 서버에서는 yk를 기본으로
-			} else if(topic === "test") { 			// index.html?topic=test  //내장 테스트 JSON으로 동작
+			} else if(topic === "test") { 			
 				const json = JSON.parse(document.getElementById("localjson").textContent);
 				fSetSiteList(json);
 				document.title = "startWeb:TEST";
@@ -213,7 +215,10 @@
 	</script>
 
 
-	<!-- 1. 테스트 JSON 삽입 -->
+	<!-- 테스트 JSON 삽입 : 내장 테스트 JSON으로 동작
+	https://photonrusher.github.io/index.html?topic=test
+	file:///C:/MyWorkPrj/04_worksplace/photonrusher.github.io/index.html?topic=test
+	-->
 	<script id="localjson" type="application/json">
 		{
 			"name": "yk",
