@@ -4,7 +4,7 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20250620-3",
+{    "categoryname":"Favorite_v20250620-4",
     "group":[
 			{  "groupname":"자주","sites":[
 				{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
@@ -40,10 +40,8 @@
 				{"url":"https://www.perplexity.ai","name":"Perplexity"},
 				{"url":"https://claude.ai/","name":"Claude"},
 				{"url":"http://ko.wikipedia.org","name":"Wiki"},
-				{"url":"http://en.wikipedia.org","name":"Wiki-영어"},
 				{"url":"https://dict.naver.com/","name":"네이버사전"},
 				{"url":"https://www.korean.go.kr/","name":"국립국어원"},
-				{"url":"https://trends.google.co.kr/trends/?geo=KR","name":"구글트렌드"},
 				{"url":"","name":""},
 				{"url":"","name":""},
 				{"url":"","name":""}]
@@ -52,7 +50,6 @@
 				{"url":"http://news.google.com","name":"구글뉴스"},
 				{"url":"https://news.naver.com/","name":"네이버뉴스"},
 				{"url":"https://news.daum.net/","name":"다음뉴스"},
-				{"url":"","name":""},
 				{"url":"https://newstapa.org","name":"뉴스타파"},
 				{"url":"http://www.sisain.co.kr","name":"시사IN"},
 				{"url":"","name":""},
@@ -68,7 +65,6 @@
 				{"url":"https://www.clien.net/service/board/park","name":"Clien"},
 				{"url":"http://www.facebook.com","name":"Facebook"},
 				{"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"},
-				{"url":"https://theminjoo.kr/","name":"민주당"},
 				{"url":"https://theqoo.net/total","name":"더쿠"},
 				{"url":"","name":""},
 				{"url":"","name":""},
@@ -125,7 +121,7 @@
 		},
 		{  "groupname":"교내-학사","sites":[
 		{"url":"https://campus.heyoung.co.kr/admin/screen/HCO0101M01","name":"헤이영"},
-		{"url":"https://smart.hansung.ac.kr","name":"전자출결"},
+		{"url":"https://smart.hansung.ac.kr","name":"(구)전자출결"},
 		{"url":"https://learn.hansung.ac.kr/","name":"e-class"},
 		{"url":"https://writingcenter.hansung.ac.kr/","name":"사고와표현"},
 		{"url":"http://capstone.hansung.ac.kr","name":"캡스톤"},
@@ -140,9 +136,7 @@
 		{"url":"https://book.hansung.ac.kr/","name":"상상독서"},
 		{"url":"http://ebook.hansung.ac.kr","name":"전자책"},
 		{"url":"https://dspace.hansung.ac.kr/","name":"oak"},
-		{"url":"https://old-edubank.hansung.ac.kr/","name":"(구)평교원"},
-		{"url":"https://edulms.hansung.ac.kr","name":"평교원LMS"},
-		{"url":"http://hansung.ac.kr/~language","name":"한국어과정"},
+		{"url":"https://edulms.hansung.ac.kr","name":"평교LMS"},
 		{"url":"http://korean.hansung.ac.kr/","name":"언어교육원"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
@@ -252,27 +246,26 @@
 {   "categoryname":"Work-System",
     "group":[
 		{  "groupname":"교외-기관","sites":[
-			{"url":"https://cyber.ecsc.go.kr","name":"교육부사이버안전센터"},
-			{"url":"https://www.epki.go.kr","name":"교육부행정전자서명"}, 
-			{"url":"https://adminvpn.epki.go.kr/","name":"교육부인증서발급"},
+			{"url":"https://cyber.ecsc.go.kr","name":"ecsc"},
+			{"url":"https://www.epki.go.kr","name":"epki"}, 
+			{"url":"https://adminvpn.epki.go.kr/","name":"epkiVPN"},
 			{"url":"http://kren.kr","name":"교육정보화재단"},
-			{"url":"http://www.ebiz4u.co.kr","name":"조달ebiz"},
+			{"url":"http://www.ebiz4u.co.kr","name":"ebiz"},
 			{"url":"http://www.g2b.go.kr/","name":"나라장터"},
 			{"url":"https://www.moe.go.kr/","name":"교육부"},
 			{"url":"http://www.kri.go.kr/hansung","name":"KRI"},
-			{"url":"http://hi.kedi.re.kr/","name":"고등교육통계"},
-			{"url":"https://www.academyinfo.go.kr","name":"대학알리미"},
+			{"url":"https://www.academyinfo.go.kr","name":"알리미"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교외-시스템","sites":[
 			{"url":"https://uptimerobot.com/","name":"uptimerobot"},
 			{"url":"https://www.office.com","name":"Office"},
-			{"url":"https://inames.co.kr/","name":"도메인-inames"},
-			{"url":"https://technet.tmaxsoft.com/","name":"TMAX테크넷"},
+			{"url":"https://inames.co.kr/","name":"도메인inames"},
+			{"url":"https://technet.tmaxsoft.com/","name":"tmax테크넷"},
 			{"url":"https://sms.uplus.co.kr/ver2/jsp/main/index.jsp","name":"U+Biz"}, 
-			{"url":"https://wincert.com/","name":"윈서트-ssl"},
-			{"url":"https://www.microsoft.com/Licensing/servicecenter/default.aspx","name":"MS/VolumnLicense"},
-			{"url":"https://accounts.kakao.com/login/kakaobusiness","name":"카카오비즈니스"},
+			{"url":"https://wincert.com/","name":"윈서트ssl"},
+			{"url":"https://www.microsoft.com/Licensing/servicecenter/default.aspx","name":"MS-License"},
+			{"url":"https://accounts.kakao.com/login/kakaobusiness","name":"카카오비즈"},
 			{"url":"https://www.auisoft.net/","name":"auisoft"},
 			{"url":"https://support.oracle.com/signin","name":"oracle"},
 			{"url":"","name":""},
@@ -314,49 +307,47 @@
 
 {    "categoryname":"Programming",
 	"group":[
+		{  "groupname":"교육(기관)","sites":[
+			{"url":"http://sec.keris.or.kr","name":"정보보호교육센터"},
+			{"url":"https://www.gseek.kr","name":"경기도지식"},
+			{"url":"https://e-koreatech.step.or.kr/","name":"기술교육대"},
+			{"url":"http://www.modenedu.com/","name":"모든에듀"},
+			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}
+			]
+		},
 		{  "groupname":"교육","sites":[
 			{"url":"https://opentutorials.org/course/1","name":"생활코딩"},
 			{"url":"https://fastcampus.co.kr/","name":"fastcampus"},
 			{"url":"https://www.onoffmix.com/","name":"onoffmix"},
 			{"url":"https://www.inflearn.com/","name":"인프런"},
 			{"url":"https://www.sharedit.co.kr/","name":"쉐어드IT"},
-			{"url":"http://sec.keris.or.kr","name":"정보보호교육센터"},
-			{"url":"https://www.fastcampus.co.kr/","name":"FastCampus"},
-			{"url":"https://www.gseek.kr","name":"경기도지식"},
 			{"url":"http://www.alzio.co.kr/","name":"Alzio"},
 			{"url":"http://www.multicampus.co.kr","name":"멀티캠퍼스"},
-			{"url":"https://kr.tmaxsoft.com/service/educationList.do","name":"Tmax"},
-			{"url":"https://e-koreatech.step.or.kr/","name":"기술교육대"},
-			{"url":"http://www.modenedu.com/","name":"모든에듀"},
-			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}
+			{"url":"https://kr.tmaxsoft.com/service/educationList.do","name":"Tmax"}
 			]
-			},
+		},
 		{  "groupname":"커뮤니티","sites":[
 			{"url":"https://www.2cpu.co.kr","name":"2cpu"},
 			{"url":"https://iphonedev.co.kr","name":"iphonedev"},
 			{"url":"https://www.clien.net/service/board/cm_app","name":"clien"},
 			{"url":"https://www.ppomppu.co.kr/zboard/zboard.php?id=developer","name":"뽐뿌"},
 			{"url":"https://okky.kr/articles/community","name":"okky"},
-			{"url":"https://kldp.org/tracker","name":"kldp"},
-			{"url":"https://xetown.com/topics","name":"xetown"},
 			{"url":"http://www.devkorea.co.kr/","name":"devkorea"},
-			{"url":"https://www.androidpub.com/devfree","name":"androidpub"},
-			{"url":"https://www.codentalks.com/","name":"codentalks"},
 			{"url":"https://velog.io/","name":"velog"},
-			{"url":"https://httpd.co.kr/","name":"httpd"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"프로그래밍","sites":[
 		{"url":"https://github.com","name":"github.com"},
 		{"url":"https://slack.com/intl/ko-kr/","name":"slack"},
-		{"url":"https://developers.google.com/speed/pagespeed/insights","name":"구글pagespeedInsights"},
+		{"url":"https://developers.google.com/speed/pagespeed/insights","name":"구글pageInsights"},
 		{"url":"http://unicode-table.com/en","name":"Unicode"},
 		{"url":"https://developers.naver.com/main/","name":"Naver개발자"},
 		{"url":"https://caniuse.com/","name":"canIuse"},
 		{"url":"https://www.reddit.com/r/webdev/","name":"reddit/webdev"},
-		{"url":"https://www.wishket.com/","name":"wishket-구인"},
-		{"url":"https://insights.stackoverflow.com/survey/2018/","name":"stackoverflow/survey"}]
+		{"url":"https://www.wishket.com/","name":"wishket구인"},
+		{"url":"","name":""},
+		{"url":"","name":""}]
 	},  
 	{  "groupname":"기술블로그","sites":[
 		{"url":"https://www.codenary.co.kr/","name":"codenary"},
@@ -386,10 +377,10 @@
 		]
 	},
 	{  "groupname":"Swift(iOS)","sites":[
-		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift공식문서(한글)"},
-		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift공식문서"},
-		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI애플문서"},
-		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Cheat_Sheet"},
+		{"url":"https://jusung.gitbook.io/the-swift-language-guide/","name":"Swift공식(한글)"},
+		{"url":"https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html","name":"Swift공식"},
+		{"url":"https://developer.apple.com/tutorials/swiftui/","name":"SwiftUI애플"},
+		{"url":"https://github.com/SimpleBoilerplates/SwiftUI-Cheat-Sheet","name":"SwiftUI_Sheet"},
 		{"url":"https://cocoapods.org","name":"cocoapods"},
 		{"url":"https://github.com/navermaps/ios-map-sdk","name":"navermaps"},
 		{"url":"https://firebase.google.com/?hl=ko","name":"firebase"},
@@ -416,13 +407,12 @@
 		},  
 		{  "groupname":"여행예약","sites":[
 			{"url":"https://www.agoda.com/ko-kr","name":"agoda"},
+			{"url":"https://agodascanner.com/","name":"agoda스캐너"},
 			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
-			{"url":"https://grandpark.seoul.go.kr/main/campingMain.do?headerId=41263","name":"서울대공원캠핑"},
 			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
 			{"url":"https://res.knps.or.kr/","name":"국립공원공단예약"},
 			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
 			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
-			{"url":"http://farm.gg.go.kr","name":"강씨봉"},
 			{"url":"http://tour.interpark.com/home","name":"인터파크여행"},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -441,9 +431,6 @@
 			{"url":"https://www.hanatour.com/trp/air/CHPC0AIR0233M200","name":"하나투어"},
 			{"url":"https://www.ttang.com/ttangair/index.do","name":"땡처리"},
 			{"url":"https://www.airbusan.com","name":"에어부산"},
-			{"url":"https://flyairseoul.com/","name":"에어서울"},
-			{"url":"https://www.airpremia.com/","name":"에어프레미아"},
-			{"url":"https://www.hi-airlines.com/","name":"하이에어"},
 			{"url":"https://www.vietjetair.com/ko","name":"비엣젯"},
 			{"url":"","name":""},
 			{"url":"","name":""}
@@ -453,6 +440,7 @@
 			{"url":"http://ticket.interpark.com/webzine/paper/TPNoticeList.asp?tid1=in_scroll&tid2=ticketopen&tid3=board_main&tid4=board_main","name":"인터파크"},
 			{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
 			{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
+			{"url":"https://timeticket.co.kr/","name":"타임티켓"},
 			{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
 			{"url":"https://www.sejongpac.or.kr/portal/performance/performance/list.do?menuNo=200004","name":"세종문화회관"},
 			{"url":"https://www.culture.go.kr/perform/performList.do","name":"문화포털"},
@@ -486,7 +474,7 @@
 
   {  "groupname":"책","sites":[
 			{"url":"http://hsel.hansung.ac.kr","name":"한성대도서관"},
-			{"url":"http://ebook.hansung.ac.kr","name":"한성대전자책도서관"},
+			{"url":"http://ebook.hansung.ac.kr","name":"한성대전자책"},
 			{"url":"http://cafe.naver.com/ebook.cafe","name":"네이버카페"},
 			{"url":"https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp","name":"서울시전자구독"},
 			{"url":"https://lib.yangcheon.or.kr/yclib/contents.do?idx=3829","name":"양천구전자"},
@@ -499,7 +487,7 @@
 				{"url":"https://cls.edunet.net/","name":"e학습터"},
 				{"url":"https://typing.malangmalang.com","name":"타자연습"},
 				{"url":"https://www.lego.com/ko-kr","name":"레고"},
-				{"url":"https://www.tjmedia.co.kr/tjsong/song_search.asp","name":"태진미디어"},
+				{"url":"https://www.tjmedia.com/song/accompaniment","name":"태진"},
 				{"url":"http://www.saenggeum.es.kr/","name":"생금초"},
 				{"url":"","name":""},
 				{"url":"","name":""}]
@@ -518,12 +506,10 @@
 			{"url":"https://opencourse.kr","name":"오픈코스"},
 			{"url":"https://www.metacritic.com/game/switch","name":"메타크리틱"},
 			{"url":"https://www.ygosu.com/community/st1","name":"와이고수"},
-			{"url":"https://kr.forums.blizzard.com/ko/starcraft/latest/","name":"블리자드게시판"},
 			{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
 			{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
 			{"url":"https://howlongtobeat.com/","name":"howlongtobeat"},
 			{"url":"https://www.fafan.kr/","name":"파판"},
-			{"url":"https://nxbrew.com/","name":"nxbrew"},
 			{"url":"https://nsw2u.com/","name":"nsw2u"},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -531,6 +517,7 @@
 		},
 		{  "groupname":"영화","sites":[
 			{"url":"https://pedia.watcha.com/ko-KR/users/DgwxAeQYNxrMj/contents/movies/ratings","name":"이동진"},
+			{"url":"https://theqoo.net/movie","name":"더쿠영화"},
 			{"url":"http://movie.daum.net","name":"Daum영화"},
 			{"url":"https://www.rottentomatoes.com","name":"로튼토마토"},
 			{"url":"https://www.koreafilm.or.kr/main","name":"영상자료원"},
@@ -540,7 +527,6 @@
 			{"url":"https://www.justwatch.com/","name":"justwatch"},
 			{"url":"https://m.kinolights.com/","name":"kinolights-ott신작"},
 			{"url":"https://www.moviechart.co.kr/rank/boxoffice","name":"무비차트"},
-			{"url":"http://cine21.com/movie/lists/playing","name":"cine21"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
