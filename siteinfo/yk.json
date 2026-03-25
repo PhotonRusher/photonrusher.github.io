@@ -12,7 +12,7 @@
 				{"url":"https://damoang.net/free","name":"다모앙"},
 				{"url":"http://www.youtube.com","name":"YouTube"},
 				{"url":"https://music.youtube.com/","name":"YouTubeMusic"},
-				{"url":"https://www.weather.go.kr/w/weather/forecast/short-term.do?nolayout=Y#dong/1111065000/37.58204391787134/127.00194500977393/%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EB%AA%85%EB%A5%9C4%EA%B0%80/SCH/%ED%98%9C%ED%99%94%EC%97%AD%204%ED%98%B8%EC%84%A0","name":"날씨예보"},
+				{"url":"https://weather.naver.com/compare","name":"날씨"},
 				{"url":"http://www.dotal.or.kr","name":"Dotal"}, 
 				{"url":"http://map.naver.com","name":"Naver지도"},
 				{"url":"http://map.daum.net","name":"Daum지도"},
@@ -36,9 +36,8 @@
 			},
 			{  "groupname":"정보","sites":[
 				{"url":"https://namu.wiki","name":"NamuWiki"},
-				{"url":"https://chat.openai.com","name":"ChatGPT"},
-				{"url":"https://www.perplexity.ai","name":"Perplexity"},
 				{"url":"https://claude.ai/","name":"Claude"},
+				{"url":"https://chat.openai.com","name":"ChatGPT"},
 				{"url":"http://ko.wikipedia.org","name":"Wiki"},
 				{"url":"https://dict.naver.com/","name":"네이버사전"},
 				{"url":"https://www.korean.go.kr/","name":"국립국어원"},
@@ -89,15 +88,10 @@
   },  
           {  "groupname":"금융","sites":[
 			{"url":"http://finlife.fss.or.kr","name":"금리비교"},
-			{"url":"https://misaving.mibank.me/deposit","name":"금리비교마이뱅크"},
 			{"url":"http://www.ibk.co.kr","name":"기업"},
 			{"url":"http://www.kbstar.com","name":"국민"},
-			{"url":"https://www.oksavingsbank.com","name":"OK저축"},
-			{"url":"https://www.acuonsb.co.kr/","name":"에큐온"},
 			{"url":"http://www.moneta.co.kr","name":"모네타"},
-			{"url":"http://www.wooribank.com","name":"우리"},
 			{"url":"https://www.bccard.com","name":"BC"},
-			{"url":"https://thek.ibs.fsb.or.kr/","name":"TheK"},
 			{"url":"","name":""}]
   }]
 },
@@ -138,13 +132,13 @@
 		{"url":"https://dspace.hansung.ac.kr/","name":"oak"},
 		{"url":"https://edulms.hansung.ac.kr","name":"평교LMS"},
 		{"url":"http://korean.hansung.ac.kr/","name":"언어교육원"},
+		{"url":"https://koreandev.hansung.ac.kr/","name":"한국어과정개발"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
 	{  "groupname":"교내-기타","sites":[
 		{"url":"https://ipp.hansung.ac.kr/","name":"IPP"},
 		{"url":"https://dorm.hansung.ac.kr/","name":"기숙사"},
-		{"url":"https://edu.hansung.ac.kr/","name":"EDU"},
 		{"url":"https://recruit.hansung.ac.kr","name":"채용포탈"},
 		{"url":"https://recruit.hansung.ac.kr/xabdmxgr/lgn/admLoginView.do","name":"채용관리"},
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
@@ -158,17 +152,17 @@
 	{  "groupname":"교내-외부","sites":[
 		{"url":"http://cse.hansung.ac.kr","name":"컴퓨터공학부"},
 		{"url":"http://enter.hansung.ac.kr","name":"입학"},
+		{"url":"https://archives.hansung.ac.kr/","name":"아카이브"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
 	},
 		{  "groupname":"교내-Link","sites":[
-			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"한성공지"},
-			{"url":"https://www.hansung.ac.kr/hansung/8380/subview.do","name":"학사공지"},
-			{"url":"https://www.hansung.ac.kr/hansung/1921/subview.do","name":"교직원식단"},
-			{"url":"https://www.hansung.ac.kr/hansung/1758/subview.do","name":"전화번호"},
-			{"url":"https://www.hansung.ac.kr/eduinfo/3808/subview.do","name":"학사일정"},
-			{"url":"https://hansung.ac.kr/sites/homepage/index.do","name":"CMS안내"},
-			{"url":"https://hansung.ac.kr/sites/info/index.do","name":"정보전산원"},
+			{"url":"https://www.hansung.ac.kr/hansung/6172/subview.do","name":"한성공지"},
+			{"url":"https://www.hansung.ac.kr/hansung/6172/subview.do?enc=Zm5jdDF8QEB8JTJGYmJzJTJGaGFuc3VuZyUyRjIxMjclMkZhcnRjbExpc3QuZG8lM0ZmaW5kQ2xTZXElM0QzMzUlMjZmaW5kT3Bud3JkJTNEJTI2ZmluZFR5cGUlM0RzaiUyNmZpbmRXb3JkJTNEJTI2","name":"학사공지"},
+			{"url":"https://www.hansung.ac.kr/hansung/6333/subview.do","name":"교직원식단"},
+			{"url":"https://www.hansung.ac.kr/hansung/6061/subview.do","name":"전화번호"},
+			{"url":"https://www.hansung.ac.kr/hansung/6015/subview.do","name":"학사일정"},
+			{"url":"https://hansung.ac.kr/sites/info/index.do","name":"디지털정보처"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -193,7 +187,6 @@
 			{"url":"https://shopping.naver.com/home","name":"네이버쇼핑"},
 			{"url":"http://enuri.com","name":"에누리"},
 			{"url":"http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic","name":"딜바다"},
-			{"url":"http://www.cultureland.co.kr","name":"컬쳐랜드"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 
@@ -242,6 +235,154 @@
 			{"url":"http://www.aladin.co.kr","name":"알라딘"}]
   }]  
 },
+
+
+{    "categoryname":"Hobby",
+    "group":[
+		{  "groupname":"영화","sites":[
+			{"url":"https://pedia.watcha.com/ko-KR/users/DgwxAeQYNxrMj/contents/movies/ratings","name":"이동진"},
+			{"url":"https://theqoo.net/movie","name":"더쿠"},
+			{"url":"https://www.cgv.co.kr/","name":"cgv"},
+			{"url":"https://megabox.co.kr/","name":"mega"},
+			{"url":"https://www.lottecinema.co.kr/","name":"lotte"},
+			{"url":"http://movie.daum.net","name":"Daum"},
+			{"url":"https://www.koreafilm.or.kr/main","name":"영상자료원"},
+			{"url":"https://www.seoulfilmcenter.com/index.do","name":"영화센터"},
+			{"url":"https://www.justwatch.com/","name":"justwatch"},
+			{"url":"https://m.kinolights.com/","name":"kino-ott신작"},
+			{"url":"https://www.rottentomatoes.com","name":"로튼"},
+			{"url":"https://www.moviechart.co.kr/rank/boxoffice","name":"무비차트"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},
+		{  "groupname":"공연예약","sites":[
+			{"url":"https://time.navyism.com/","name":"네이비즘"},
+			{"url":"http://ticket.interpark.com","name":"인터파크"},
+			{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
+			{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
+			{"url":"https://timeticket.co.kr/","name":"타임티켓"},
+			{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
+			{"url":"http://www.emuartspace.com/","name":"emu"},
+			{"url":"https://xindieticket.kr/","name":"씬디티켓"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},    
+		{  "groupname":"공연정보","sites":[
+			{"url":"http://www.indistreet.com","name":"인디스트릿"},
+			{"url":"https://litt.ly/cafe.unplugged ","name":"언플러그드홍대"},
+			{"url":"https://www.ctrplus.com/jebi","name":"제비다방"},
+			{"url":"https://linktr.ee/clubbbang","name":"클럽빵"},
+			{"url":"http://www.clubevans.com","name":"에반스"},
+			{"url":"https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp","name":"문화체육관광부"},
+			{"url":"https://www.sfac.or.kr/participation/artsnet/qenre.do","name":"서울문화재단"},
+			{"url":"https://www.seoul.go.kr/thismteventfstvl/list.do","name":"서울시행사"},
+			{"url":"https://www.culture.go.kr/perform/performList.do","name":"문화포털"},
+			{"url":"https://www.facebook.com/SpaceStation2017/","name":"우주정거장"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},    
+		{  "groupname":"전시","sites":[
+			{"url":"https://theqoo.net/finearts","name":"더쿠"},
+			{"url":"https://www.k-auction.com/","name":"k-auction"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},    
+		{  "groupname":"책","sites":[
+			{"url":"http://hsel.hansung.ac.kr","name":"한성대도서관"},
+			{"url":"http://ebook.hansung.ac.kr","name":"한성대전자책"},
+			{"url":"http://cafe.naver.com/ebook.cafe","name":"네이버카페"},
+			{"url":"https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp","name":"서울시전자구독"},
+			{"url":"https://lib.yangcheon.or.kr/yclib/contents.do?idx=3829","name":"양천구전자"},
+			{"url":"https://lib.yangcheon.or.kr/main/main.do","name":"양천구립"},
+			{"url":"","name":""}]
+		  },
+		  {  "groupname":"여행정보","sites":[
+			{"url":"https://blog.naver.com/kim4993300","name":"블로그-일상도여행처럼"},
+			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
+			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},  
+		{  "groupname":"여행예약","sites":[
+			{"url":"https://www.agoda.com/ko-kr","name":"agoda"},
+			{"url":"https://agodascanner.com/","name":"agoda스캐너"},
+			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
+			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
+			{"url":"https://res.knps.or.kr/","name":"국립공원공단예약"},
+			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
+			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
+			{"url":"http://tour.interpark.com/home","name":"인터파크여행"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}
+		]
+  		},    
+		{  "groupname":"비행기","sites":[
+			{"url":"https://www.google.com/travel/flights?hl=ko","name":"구글항공권"},
+			{"url":"https://www.skyscanner.co.kr/","name":"스카이스캐너"},
+			{"url":"https://flight.naver.com/","name":"네이버항공권"},
+			{"url":"https://www.jejuair.net/","name":"제주항공"},
+			{"url":"https://www.twayair.com","name":"티웨이"},
+			{"url":"https://www.jinair.com","name":"진에어"},
+			{"url":"https://www.eastarjet.com","name":"이스타"},
+			{"url":"https://www.modetour.com/flights/discount-flight?query=%7B%22departureCity%22%3A%22%22%2C%22arrivalCity%22%3A%22%22%2C%22continentCode%22%3A%22ASIA%22%2C%22departureDate%22%3A%222024-07-24%22%2C%22arrivalDate%22%3A%222024-08-23%22%7D","name":"모두투어"},
+			{"url":"https://www.hanatour.com/trp/air/CHPC0AIR0233M200","name":"하나투어"},
+			{"url":"https://www.ttang.com/ttangair/index.do","name":"땡처리"},
+			{"url":"https://www.airbusan.com","name":"에어부산"},
+			{"url":"https://www.vietjetair.com/ko","name":"비엣젯"},
+			{"url":"","name":""},
+			{"url":"","name":""}
+		]
+  		},    
+			{  "groupname":"산하","sites":[
+				{"url":"https://sinseo.sen.ms.kr/","name":"신서중"},
+				{"url":"https://smartthingsfind.samsung.com/login","name":"스마트find"},
+				{"url":"https://cls.edunet.net/","name":"e학습터"},
+				{"url":"https://www.tjmedia.com/song/accompaniment","name":"태진"},
+				{"url":"http://www.saenggeum.es.kr/","name":"생금초"},
+				{"url":"","name":""},
+				{"url":"","name":""}]
+			},
+			{  "groupname":"집주변동네","sites":[
+				{"url":"https://yplus.kr/yp/","name":"양천구와플"},
+				{"url":"http://www.yangcheon.go.kr/","name":"양천구"},
+				{"url":"https://xn--z92b72qn1at0nqrn.kr/","name":"양천문화원"},
+				{"url":"https://yfac.kr/","name":"양천문화재단"},
+				{"url":"https://blog.naver.com/yfac2019","name":"양천문화재단블로그"},
+				{"url":"http://ycsports.or.kr","name":"양천구체육회"},
+				{"url":"","name":""}]
+			},
+		{  "groupname":"게임","sites":[
+			{"url":"https://bbs.ruliweb.com/nin","name":"루리웹"},
+			{"url":"https://gall.dcinside.com/mgallery/board/lists/?id=ps5","name":"ps5"},
+			{"url":"https://opencourse.kr","name":"오픈코스"},
+			{"url":"https://www.metacritic.com/game/switch","name":"메타크리틱"},
+			{"url":"https://www.ygosu.com/community/st1","name":"와이고수"},
+			{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
+			{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
+			{"url":"https://howlongtobeat.com/","name":"howlongtobeat"},
+			{"url":"https://www.fafan.kr/","name":"파판"},
+			{"url":"https://nsw2u.com/","name":"nsw2u"},
+			{"url":"","name":""},
+			{"url":"","name":""},
+			{"url":"","name":""}]
+		},
+	{  "groupname":"미디어","sites":[
+		{"url":"https://www.netflix.com/kr/","name":"넷플릭스"},
+		{"url":"https://www.bbongtv.com","name":"bbongtv"},
+		{"url":"https://www.google.com/search?q=누누티비","name":"누누티비"},
+		{"url":"https://www.google.com/search?q=티비위키","name":"티비위키"},
+		{"url":"https://www.google.com/search?q=놀고가","name":"놀고가"},
+		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
+		{"url":"","name":""},
+		{"url":"","name":""}]
+	}
+]  
+},
+
 
 {   "categoryname":"Work-System",
     "group":[
@@ -394,152 +535,6 @@
 		{"url":"","name":""}]
 	}
 ]
-},
-
-{    "categoryname":"Hobby",
-    "group":[
-		{  "groupname":"영화","sites":[
-			{"url":"https://pedia.watcha.com/ko-KR/users/DgwxAeQYNxrMj/contents/movies/ratings","name":"이동진"},
-			{"url":"https://theqoo.net/movie","name":"더쿠영화"},
-			{"url":"http://movie.daum.net","name":"Daum영화"},
-			{"url":"https://www.rottentomatoes.com","name":"로튼토마토"},
-			{"url":"https://www.koreafilm.or.kr/main","name":"영상자료원"},
-			{"url":"https://www.cgv.co.kr/","name":"cgv"},
-			{"url":"https://megabox.co.kr/","name":"mega"},
-			{"url":"https://www.lottecinema.co.kr/","name":"lottea"},
-			{"url":"https://www.justwatch.com/","name":"justwatch"},
-			{"url":"https://m.kinolights.com/","name":"kino-ott신작"},
-			{"url":"https://www.moviechart.co.kr/rank/boxoffice","name":"무비차트"},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},
-		{  "groupname":"공연예약","sites":[
-			{"url":"http://ticket.interpark.com","name":"인터파크"},
-			{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
-			{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
-			{"url":"https://timeticket.co.kr/","name":"타임티켓"},
-			{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
-			{"url":"http://www.emuartspace.com/","name":"emu"},
-			{"url":"https://xindieticket.kr/","name":"씬디티켓"},
-			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},    
-		{  "groupname":"공연정보","sites":[
-			{"url":"http://www.indistreet.com","name":"인디스트릿"},
-			{"url":"https://litt.ly/cafe.unplugged ","name":"언플러그드홍대"},
-			{"url":"https://www.ctrplus.com/jebi","name":"제비다방"},
-			{"url":"https://linktr.ee/clubbbang","name":"클럽빵"},
-			{"url":"http://www.clubevans.com","name":"에반스"},
-			{"url":"https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp","name":"문화체육관광부"},
-			{"url":"https://www.sfac.or.kr/participation/artsnet/qenre.do","name":"서울문화재단"},
-			{"url":"https://www.seoul.go.kr/thismteventfstvl/list.do","name":"서울시행사"},
-			{"url":"https://www.culture.go.kr/perform/performList.do","name":"문화포털"},
-			{"url":"https://www.facebook.com/SpaceStation2017/","name":"우주정거장"},
-			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},    
-		{  "groupname":"전시","sites":[
-			{"url":"https://theqoo.net/finearts","name":"더쿠"},
-			{"url":"https://www.k-auction.com/","name":"k-auction"},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},    
-		{  "groupname":"책","sites":[
-			{"url":"http://hsel.hansung.ac.kr","name":"한성대도서관"},
-			{"url":"http://ebook.hansung.ac.kr","name":"한성대전자책"},
-			{"url":"http://cafe.naver.com/ebook.cafe","name":"네이버카페"},
-			{"url":"https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp","name":"서울시전자구독"},
-			{"url":"https://lib.yangcheon.or.kr/yclib/contents.do?idx=3829","name":"양천구전자"},
-			{"url":"https://lib.yangcheon.or.kr/main/main.do","name":"양천구립"},
-			{"url":"","name":""}]
-		  },
-		  {  "groupname":"여행정보","sites":[
-			{"url":"https://blog.naver.com/kim4993300","name":"블로그-일상도여행처럼"},
-			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
-			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},  
-		{  "groupname":"여행예약","sites":[
-			{"url":"https://www.agoda.com/ko-kr","name":"agoda"},
-			{"url":"https://agodascanner.com/","name":"agoda스캐너"},
-			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
-			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
-			{"url":"https://res.knps.or.kr/","name":"국립공원공단예약"},
-			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
-			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
-			{"url":"http://tour.interpark.com/home","name":"인터파크여행"},
-			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"","name":""}
-		]
-  		},    
-		{  "groupname":"비행기","sites":[
-			{"url":"https://www.google.com/travel/flights?hl=ko","name":"구글항공권"},
-			{"url":"https://www.skyscanner.co.kr/","name":"스카이스캐너"},
-			{"url":"https://flight.naver.com/","name":"네이버항공권"},
-			{"url":"https://www.jejuair.net/","name":"제주항공"},
-			{"url":"https://www.twayair.com","name":"티웨이"},
-			{"url":"https://www.jinair.com","name":"진에어"},
-			{"url":"https://www.eastarjet.com","name":"이스타"},
-			{"url":"https://www.modetour.com/flights/discount-flight?query=%7B%22departureCity%22%3A%22%22%2C%22arrivalCity%22%3A%22%22%2C%22continentCode%22%3A%22ASIA%22%2C%22departureDate%22%3A%222024-07-24%22%2C%22arrivalDate%22%3A%222024-08-23%22%7D","name":"모두투어"},
-			{"url":"https://www.hanatour.com/trp/air/CHPC0AIR0233M200","name":"하나투어"},
-			{"url":"https://www.ttang.com/ttangair/index.do","name":"땡처리"},
-			{"url":"https://www.airbusan.com","name":"에어부산"},
-			{"url":"https://www.vietjetair.com/ko","name":"비엣젯"},
-			{"url":"","name":""},
-			{"url":"","name":""}
-		]
-  		},    
-			{  "groupname":"산하","sites":[
-				{"url":"http://gyenam.sen.es.kr","name":"계남초"},
-				{"url":"https://smartthingsfind.samsung.com/login","name":"스마트find"},
-				{"url":"https://cls.edunet.net/","name":"e학습터"},
-				{"url":"https://typing.malangmalang.com","name":"타자연습"},
-				{"url":"https://www.lego.com/ko-kr","name":"레고"},
-				{"url":"https://www.tjmedia.com/song/accompaniment","name":"태진"},
-				{"url":"http://www.saenggeum.es.kr/","name":"생금초"},
-				{"url":"","name":""},
-				{"url":"","name":""}]
-			},
-			{  "groupname":"집주변동네","sites":[
-				{"url":"https://yplus.kr/yp/","name":"양천구와플"},
-				{"url":"http://www.yangcheon.go.kr/","name":"양천구"},
-				{"url":"https://xn--z92b72qn1at0nqrn.kr/","name":"양천문화원"},
-				{"url":"https://yfac.kr/","name":"양천문화재단"},
-				{"url":"https://blog.naver.com/yfac2019","name":"양천문화재단블로그"},
-				{"url":"http://ycsports.or.kr","name":"양천구체육회"},
-				{"url":"","name":""}]
-			},
-		{  "groupname":"게임","sites":[
-			{"url":"https://bbs.ruliweb.com/nin","name":"루리웹"},
-			{"url":"https://opencourse.kr","name":"오픈코스"},
-			{"url":"https://www.metacritic.com/game/switch","name":"메타크리틱"},
-			{"url":"https://www.ygosu.com/community/st1","name":"와이고수"},
-			{"url":"https://store.steampowered.com/?l=koreana","name":"스팀"},
-			{"url":"https://www.epicgames.com/store/ko/","name":"에픽게임즈"},
-			{"url":"https://howlongtobeat.com/","name":"howlongtobeat"},
-			{"url":"https://www.fafan.kr/","name":"파판"},
-			{"url":"https://nsw2u.com/","name":"nsw2u"},
-			{"url":"","name":""},
-			{"url":"","name":""},
-			{"url":"","name":""}]
-		},
-	{  "groupname":"토렝이","sites":[
-		{"url":"https://www.bbongtv.com","name":"bbongtv"},
-		{"url":"https://tvnolgo.com","name":"tvnolgo"},
-		{"url":"https://gltv82.com","name":"gltv82"},
-		{"url":"https://www.google.com/search?q=누누티비","name":"누누티비"},
-		{"url":"https://www.google.com/search?q=티비위키","name":"티비위키"},
-		{"url":"https://www.google.com/search?q=놀고가","name":"놀고가"},
-		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
-		{"url":"","name":""},
-		{"url":"","name":""}]
-	}
-]  
 },
 
 {    "categoryname":"Etc",
