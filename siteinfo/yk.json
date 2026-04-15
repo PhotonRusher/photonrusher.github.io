@@ -4,7 +4,7 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20260415-1",
+{    "categoryname":"Daily_v20260415-2",
     "group":[
 			{  "groupname":"자주","sites":[
 				{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
@@ -56,8 +56,12 @@
 				{"url":"","name":""},
 				{"url":"","name":""}
 				]
-			},
-			{  "groupname":"커뮤니티","sites":[
+			}
+		]
+},
+{    "categoryname":"Daily-커뮤",
+    "group":[
+		{  "groupname":"커뮤니티","sites":[
 				{"url":"https://damoang.net/","name":"다모앙"},
 				{"url":"http://www.dcinside.com","name":"DC"},
 				{"url":"http://www.ddanzi.com","name":"딴지일보"},
