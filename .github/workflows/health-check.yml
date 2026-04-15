@@ -1,0 +1,77 @@
+name: Site Health Check
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'   # 10분마다 자동 실행
+  workflow_dispatch:          # 수동 실행 버튼
+
+permissions:
+  contents: write             # status.json 커밋을 위해 필요
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check sites and update status.json
+        run: |
+          python3 << 'PYEOF'
+          import json
+          import subprocess
+          from datetime import datetime, timezone
+
+          # sites.json 읽기
+          with open('sitecheck/sites.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+
+          results = []
+          for site in data['sites']:
+              name = site['name']
+              url  = site['url']
+              if not url:
+                  continue
+              try:
+                  proc = subprocess.run(
+                      [
+                          'curl', '-o', '/dev/null', '-s',
+                          '-w', '%{http_code} %{time_total}',
+                          '--max-time', '15',
+                          '-L',          # 리다이렉트 따라가기
+                          '--compressed', # gzip 지원
+                          url
+                      ],
+                      capture_output=True, text=True, timeout=20
+                  )
+                  parts  = proc.stdout.strip().split()
+                  status = int(parts[0]) if parts else 0
+                  ms     = round(float(parts[1]) * 1000) if len(parts) > 1 else 0
+              except Exception as e:
+                  print(f"Error checking {url}: {e}")
+                  status = 0
+                  ms     = 0
+
+              results.append({'name': name, 'url': url, 'status': status, 'ms': ms})
+              print(f"  [{status}] {ms}ms  {name}  ({url})")
+
+          output = {
+              'updated': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+              'sites': results
+          }
+
+          with open('sitecheck/status.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print("\nstatus.json 저장 완료.")
+          PYEOF
+
+      - name: Commit and push status.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitecheck/status.json
+          # 변경 없으면 커밋 생략 (|| true)
+          git diff --cached --quiet || git commit -m "chore: update health check status [skip ci]"
+          git push

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Health Check</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+      font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", monospace, sans-serif;
+      font-size: 0.95rem;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      color: #569CD6;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .meta {
+      color: #6A9955;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      background-color: #2d2d2d;
+      color: #569CD6;
+      border: 1px solid #569CD6;
+      padding: 0.35rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-family: inherit;
+      transition: background 0.2s;
+    }
+    button:hover { background-color: #3a3a3a; }
+
+    .auto-refresh-label {
+      color: #808080;
+      font-size: 0.83rem;
+    }
+
+    table {
+      width: 100%;
+      max-width: 860px;
+      border-collapse: collapse;
+    }
+
+    th {
+      background-color: #252526;
+      color: #D7BA7D;
+      text-align: left;
+      padding: 0.55rem 0.8rem;
+      border-bottom: 1px solid #3a3a3a;
+      font-weight: bold;
+    }
+
+    td {
+      padding: 0.5rem 0.8rem;
+      border-bottom: 1px solid #2d2d2d;
+      vertical-align: middle;
+    }
+
+    tr:hover td { background-color: #252526; }
+
+    .status-icon {
+      font-size: 1.1rem;
+      margin-right: 0.4rem;
+    }
+
+    .status-ok   { color: #4ec94e; }
+    .status-warn { color: #e5c07b; }
+    .status-err  { color: #e06c75; }
+
+    .code-ok   { color: #4ec94e; }
+    .code-warn { color: #e5c07b; }
+    .code-err  { color: #e06c75; }
+
+    .url-cell a {
+      color: #569CD6;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+    .url-cell a:hover { text-decoration: underline; }
+
+    .ms-cell { color: #808080; font-size: 0.85rem; }
+
+    #loading {
+      color: #808080;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    #error-msg {
+      color: #e06c75;
+      margin-top: 1rem;
+      display: none;
+    }
+
+    .summary {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #808080;
+    }
+    .summary span { color: #D7BA7D; }
+  </style>
+</head>
+<body>
+
+  <h1>Site Health Check</h1>
+  <div class="meta" id="last-updated">마지막 체크: —</div>
+
+  <div class="controls">
+    <button onclick="loadStatus()">새로고침</button>
+    <label class="auto-refresh-label">
+      <input type="checkbox" id="auto-refresh" onchange="toggleAutoRefresh()">
+      자동 새로고침 (60초)
+    </label>
+  </div>
+
+  <div id="loading">불러오는 중...</div>
+  <div id="error-msg">status.json을 불러올 수 없습니다. GitHub Actions가 아직 실행 전일 수 있습니다.</div>
+
+  <table id="result-table" style="display:none;">
+    <thead>
+      <tr>
+        <th style="width:2.5rem;">#</th>
+        <th>사이트명</th>
+        <th>URL</th>
+        <th style="width:6rem;">상태코드</th>
+        <th style="width:6rem;">응답(ms)</th>
+      </tr>
+    </thead>
+    <tbody id="result-body"></tbody>
+  </table>
+
+  <div class="summary" id="summary" style="display:none;"></div>
+
+  <script>
+    let autoTimer = null;
+
+    function loadStatus() {
+      const loading = document.getElementById('loading');
+      const errMsg  = document.getElementById('error-msg');
+      const table   = document.getElementById('result-table');
+      const summary = document.getElementById('summary');
+
+      loading.style.display = 'block';
+      errMsg.style.display  = 'none';
+      table.style.display   = 'none';
+      summary.style.display = 'none';
+
+      // 캐시 무력화를 위해 타임스탬프 쿼리 추가
+      fetch('./status.json?t=' + Date.now())
+        .then(r => {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(data => {
+          loading.style.display = 'none';
+          render(data);
+        })
+        .catch(() => {
+          loading.style.display = 'none';
+          errMsg.style.display  = 'block';
+        });
+    }
+
+    function render(data) {
+      const updated = document.getElementById('last-updated');
+      const tbody   = document.getElementById('result-body');
+      const table   = document.getElementById('result-table');
+      const summary = document.getElementById('summary');
+
+      updated.textContent = '마지막 체크: ' + (data.updated || '정보 없음');
+
+      if (!data.sites || data.sites.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" style="color:#808080; padding:1rem;">데이터가 없습니다. GitHub Actions 실행 후 새로고침하세요.</td></tr>';
+        table.style.display = 'table';
+        return;
+      }
+
+      let okCount = 0;
+      let rows = '';
+
+      data.sites.forEach((site, i) => {
+        const s      = site.status;
+        const isOk   = s >= 200 && s < 300;
+        const isWarn = s >= 300 && s < 500;
+        const isErr  = !isOk && !isWarn;
+
+        const icon     = isOk ? '🟢' : (isWarn ? '🟡' : '🔴');
+        const codeClass = isOk ? 'code-ok' : (isWarn ? 'code-warn' : 'code-err');
+        if (isOk) okCount++;
+
+        const msText = site.ms > 0 ? site.ms + ' ms' : '—';
+
+        rows += `<tr>
+          <td style="color:#808080;">${i + 1}</td>
+          <td><span class="status-icon">${icon}</span>${escHtml(site.name)}</td>
+          <td class="url-cell"><a href="${escHtml(site.url)}" target="_blank" rel="noopener">${escHtml(site.url)}</a></td>
+          <td class="${codeClass}">${s || '—'}</td>
+          <td class="ms-cell">${msText}</td>
+        </tr>`;
+      });
+
+      tbody.innerHTML = rows;
+      table.style.display  = 'table';
+      summary.style.display = 'block';
+      summary.innerHTML = `총 <span>${data.sites.length}</span>개 사이트 ·  정상 <span style="color:#4ec94e">${okCount}</span>개 · 오류 <span style="color:#e06c75">${data.sites.length - okCount}</span>개`;
+    }
+
+    function escHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function toggleAutoRefresh() {
+      const cb = document.getElementById('auto-refresh');
+      if (cb.checked) {
+        autoTimer = setInterval(loadStatus, 60000);
+      } else {
+        clearInterval(autoTimer);
+        autoTimer = null;
+      }
+    }
+
+    // 페이지 로드 시 즉시 실행
+    loadStatus();
+  </script>
+</body>
+</html>
