@@ -21,7 +21,7 @@ jobs:
           python3 << 'PYEOF'
           import json
           import subprocess
-          from datetime import datetime, timezone
+          from datetime import datetime, timezone, timedelta
 
           # sites.json 읽기
           with open('sitecheck/sites.json', 'r', encoding='utf-8') as f:
@@ -57,7 +57,7 @@ jobs:
               print(f"  [{status}] {ms}ms  {name}  ({url})")
 
           output = {
-              'updated': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
+              'updated': datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST'),
               'sites': results
           }
 

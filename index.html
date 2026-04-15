@@ -301,6 +301,9 @@
 			updatePinBtns();
 		}
 
+		// 처음 방문 시 기본으로 닫힐 카테고리 (base name 기준)
+		var DEFAULT_CLOSED = ['Daily-커뮤','HS-Link','Hobby-문화','Hobby-여행','Hobby-여가','Work-System','Programming','Programming-개발','Etc'];
+
 		// 카테고리 접기/펼치기 초기화
 		function initCategories() {
 			var saved = {};
@@ -308,7 +311,14 @@
 
 			$('.category').each(function() {
 				var catName = $(this).data('cat');
-				if (saved[catName] === false) {
+				var catBase = catName.split('_')[0];  // 버전 제거 (Daily_v20260415 → Daily)
+				var isCollapsed;
+				if (typeof saved[catName] !== 'undefined') {
+					isCollapsed = (saved[catName] === false);  // 사용자가 저장한 상태 우선
+				} else {
+					isCollapsed = DEFAULT_CLOSED.indexOf(catBase) >= 0;  // 첫 방문 기본값
+				}
+				if (isCollapsed) {
 					$(this).find('.cat-body').hide();
 					$(this).find('.cat-arrow').text('▸');
 				}
@@ -423,7 +433,7 @@
 		function doSearch(q) {
 			if (!q) {
 				// 검색 해제 → 저장된 접힘 상태 복원
-				$('.sites a').show();
+				$('.sites .lw').show();
 				$('.groups').show();
 				var saved = {};
 				try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
@@ -444,22 +454,22 @@
 			// 영타 자모 변환 준비
 			var jamoQ = isEngOnly(q) ? engToJamo(q) : '';
 
-			// 링크 이름 + URL 필터링
-			$('.sites a').each(function() {
-				var text = $(this).text().toLowerCase();
-				var href = ($(this).attr('href') || '').toLowerCase();
+			// 링크 이름 + URL 필터링 (.lw 단위로 숨겨서 ☆도 같이 처리)
+			$('.sites .lw').each(function() {
+				var $a   = $(this).find('a');
+				var text = $a.text().toLowerCase();
+				var href = ($a.attr('href') || '').toLowerCase();
 				var match = text.indexOf(q) >= 0 || href.indexOf(q) >= 0;
-				// 영타 변환 검색: 자모 분해 후 비교
 				if (!match && jamoQ) {
 					match = decomposeKo(text).indexOf(jamoQ) >= 0;
 				}
 				this.style.display = match ? '' : 'none';
 			});
 
-			// 매칭 링크 없는 그룹 숨김 (style.display 직접 확인)
+			// 매칭 링크 없는 그룹 숨김
 			$('.groups').each(function() {
 				var hasMatch = false;
-				$(this).find('.sites a').each(function() {
+				$(this).find('.sites .lw').each(function() {
 					if (this.style.display !== 'none') { hasMatch = true; return false; }
 				});
 				this.style.display = hasMatch ? '' : 'none';
