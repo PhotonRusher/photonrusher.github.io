@@ -139,12 +139,73 @@
 		display: inline-block;
 	}
 
+	/* ── 즐겨찾기 섹션 ── */
+	#pin-section {
+		width: 100%;
+		max-width: 860px;
+		margin-bottom: 0.4rem;
+		text-align: center;
+	}
+	#pin-section h4 {
+		color: #D7BA7D;
+		margin-bottom: 0.2rem;
+	}
+	.pin-links { display: inline; }
+	.pin-item {
+		display: inline;
+		white-space: nowrap;
+	}
+	.pin-item a {
+		color: #D7BA7D;
+	}
+	.pin-item a:hover { background-color: #ffff99; }
+	.pin-x {
+		color: #555;
+		font-size: 0.6rem;
+		cursor: pointer;
+		margin-left: 1px;
+		margin-right: 4px;
+		vertical-align: super;
+	}
+	.pin-x:hover { color: #e06c75; }
+
+	/* ── 링크 래퍼 (☆ 버튼 포함) ── */
+	.lw {
+		display: inline;
+		white-space: nowrap;
+	}
+	.lw a { color: #6A9955; }
+	.lw a:hover { background-color: #ffff99; }
+	.pb {                     /* pin button ☆/★ */
+		font-size: 0.6rem;
+		cursor: pointer;
+		color: #333;
+		visibility: hidden;
+		margin-left: 1px;
+		vertical-align: super;
+		line-height: 1;
+	}
+	.pb.on { color: #D7BA7D; visibility: visible; }  /* 핀된 상태 */
+	.lw:hover .pb { visibility: visible; }
+
+	/* ── 방문 표시 점 ── */
+	.vd {
+		display: inline-block;
+		width: 4px; height: 4px;
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-right: 1px;
+	}
+	.vd-t { background: #4ec94e; }   /* 오늘 */
+	.vd-w { background: #569CD6; }   /* 일주일 내 */
+
 	/* 모바일 */
 	@media (max-width: 600px) {
 		html { font-size: 100%; }
 		#searchBox { max-width: 100%; padding: 0 0.4rem; }
 		li { font-size: 0.88rem; }
 		#searchInput { font-size: 1rem; } /* 모바일 자동 확대 방지 */
+		.pb { visibility: visible; }      /* 모바일: ☆ 항상 표시 */
 	}
 
 </style>
@@ -166,6 +227,7 @@
 			<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 		</div>
 
+		<div id="pin-section" style="display:none;"></div>
 		<div class="text-center" id="siteList"></div>
 	</div>
 
@@ -212,11 +274,13 @@
 					x += myObj.category[i].group[j].groupname + " ";
 					x += "</span><div class=\"sites\">";
 					for (k in myObj.category[i].group[j].sites) {
-						x += "<a href=\""
-						   + myObj.category[i].group[j].sites[k].url
-						   + "\">"
-						   + myObj.category[i].group[j].sites[k].name
-						   + "</a> ";
+						var s = myObj.category[i].group[j].sites[k];
+						if (!s.url || !s.name) continue;
+						x += '<span class="lw">'
+						   + visitDotHtml(s.url)
+						   + '<a href="' + s.url + '">' + s.name + '</a>'
+						   + '<span class="pb" data-url="' + s.url + '" data-name="' + s.name + '">☆</span>'
+						   + '</span> ';
 					}
 					x += "</div></div></li>";
 				}
@@ -233,6 +297,8 @@
 			$('#data-ver').text(verIdx >= 0 ? firstCat.slice(verIdx + 1) : '');
 
 			initCategories();
+			renderPins();
+			updatePinBtns();
 		}
 
 		// 카테고리 접기/펼치기 초기화
@@ -263,6 +329,52 @@
 				s[catName] = !isVisible;
 				localStorage.setItem('catState', JSON.stringify(s));
 			});
+		}
+
+		// ── 즐겨찾기 (Pins) ──────────────────────────────────
+		function getPins() {
+			try { return JSON.parse(localStorage.getItem('pins') || '[]'); } catch(e) { return []; }
+		}
+		function savePins(arr) { localStorage.setItem('pins', JSON.stringify(arr)); }
+
+		function renderPins() {
+			var pins = getPins();
+			var $sec = $('#pin-section');
+			if (!pins.length) { $sec.hide(); return; }
+			var h = '<h4>★ 즐겨찾기</h4><div class="pin-links">';
+			pins.forEach(function(p) {
+				h += '<span class="pin-item">'
+				   + '<a href="' + p.url + '">' + p.name + '</a>'
+				   + '<span class="pin-x" data-url="' + p.url + '">✕</span> '
+				   + '</span>';
+			});
+			h += '</div>';
+			$sec.html(h).show();
+		}
+
+		function updatePinBtns() {
+			var pinUrls = getPins().map(function(p){ return p.url; });
+			$('.pb').each(function() {
+				var isPinned = pinUrls.indexOf($(this).data('url')) >= 0;
+				$(this).text(isPinned ? '★' : '☆').toggleClass('on', isPinned);
+			});
+		}
+
+		// ── 방문 기록 ──────────────────────────────────────────
+		function getVisits() {
+			try { return JSON.parse(localStorage.getItem('visits') || '{}'); } catch(e) { return {}; }
+		}
+		function recordVisit(url) {
+			var v = getVisits(); v[url] = Date.now();
+			localStorage.setItem('visits', JSON.stringify(v));
+		}
+		function visitDotHtml(url) {
+			if (!url) return '';
+			var v = getVisits(); if (!v[url]) return '';
+			var age = Date.now() - v[url], day = 86400000;
+			if (age < day)     return '<span class="vd vd-t" title="오늘 방문"></span>';
+			if (age < day * 7) return '<span class="vd vd-w" title="이번 주 방문"></span>';
+			return '';
 		}
 
 		// ── 영타→한글 자모 변환 ──────────────────────────────
@@ -389,6 +501,35 @@
 			// ESC로 검색 초기화
 			$('#searchInput').on('keydown', function(e) {
 				if (e.key === 'Escape') { $(this).val(''); doSearch(''); }
+			});
+
+			// 링크 클릭 → 방문 기록
+			$(document).on('click', '.sites a, .pin-item a', function() {
+				recordVisit($(this).attr('href'));
+			});
+
+			// ☆/★ 클릭 → 즐겨찾기 토글
+			$(document).on('click', '.pb', function(e) {
+				e.preventDefault(); e.stopPropagation();
+				var url  = $(this).data('url');
+				var name = $(this).data('name');
+				var pins = getPins();
+				var idx  = -1;
+				for (var pi = 0; pi < pins.length; pi++) { if (pins[pi].url === url) { idx = pi; break; } }
+				if (idx >= 0) pins.splice(idx, 1);
+				else          pins.push({url: url, name: name});
+				savePins(pins);
+				renderPins();
+				updatePinBtns();
+			});
+
+			// 즐겨찾기 ✕ 클릭 → 제거
+			$(document).on('click', '.pin-x', function() {
+				var url  = $(this).data('url');
+				var pins = getPins().filter(function(p){ return p.url !== url; });
+				savePins(pins);
+				renderPins();
+				updatePinBtns();
 			});
 
 		});
