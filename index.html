@@ -186,7 +186,7 @@
 		line-height: 1;
 	}
 	.pb.on { color: #D7BA7D; visibility: visible; }  /* 핀된 상태 */
-	.lw:hover .pb { visibility: visible; }
+	/* .lw:hover .pb 는 JS로 처리 */
 
 	/* ── 방문 표시 점 ── */
 	.vd {
@@ -501,6 +501,14 @@
 			// ESC로 검색 초기화
 			$('#searchInput').on('keydown', function(e) {
 				if (e.key === 'Escape') { $(this).val(''); doSearch(''); }
+			});
+
+			// ☆ hover: CSS inline 요소 불안정 → JS로 처리
+			$(document).on('mouseenter', '.lw', function() {
+				$(this).find('.pb').css('visibility', 'visible');
+			}).on('mouseleave', '.lw', function() {
+				var $pb = $(this).find('.pb');
+				if (!$pb.hasClass('on')) $pb.css('visibility', 'hidden');
 			});
 
 			// 링크 클릭 → 방문 기록
