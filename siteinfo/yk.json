@@ -4,7 +4,7 @@
     "hname": "6071",
 	"category": [  
 
-{    "categoryname":"Favorite_v20250620-4",
+{    "categoryname":"Favorite_v20260415-1",
     "group":[
 			{  "groupname":"자주","sites":[
 				{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
@@ -95,7 +95,7 @@
 			{"url":"","name":""}]
   }]
 },
-{    "categoryname":"HS",
+{    "categoryname":"HS-교내",
     "group":[
 			{  "groupname":"교내-주요","sites":[
 			{"url":"http://www.hansung.ac.kr","name":"대표홈페이지"},
@@ -148,7 +148,11 @@
 		{"url":"https://erp.hansung.ac.kr/#/login","name":"아마란스"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
-	},
+	}
+	]
+},
+{    "categoryname":"HS-Link",
+    "group":[
 	{  "groupname":"교내-외부","sites":[
 		{"url":"http://cse.hansung.ac.kr","name":"컴퓨터공학부"},
 		{"url":"http://enter.hansung.ac.kr","name":"입학"},
@@ -237,7 +241,7 @@
 },
 
 
-{    "categoryname":"Hobby",
+{    "categoryname":"Hobby-문화",
     "group":[
 		{  "groupname":"영화","sites":[
 			{"url":"https://pedia.watcha.com/ko-KR/users/DgwxAeQYNxrMj/contents/movies/ratings","name":"이동진"},
@@ -298,7 +302,11 @@
 			{"url":"https://lib.yangcheon.or.kr/yclib/contents.do?idx=3829","name":"양천구전자"},
 			{"url":"https://lib.yangcheon.or.kr/main/main.do","name":"양천구립"},
 			{"url":"","name":""}]
-		  },
+		  }
+		]
+},
+{    "categoryname":"Hobby-여행",
+    "group":[
 		  {  "groupname":"여행정보","sites":[
 			{"url":"https://blog.naver.com/kim4993300","name":"블로그-일상도여행처럼"},
 			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
@@ -336,8 +344,12 @@
 			{"url":"","name":""},
 			{"url":"","name":""}
 		]
-  		},    
-			{  "groupname":"산하","sites":[
+  		}
+		]
+},
+{    "categoryname":"Hobby-여가",
+    "group":[
+		{  "groupname":"산하","sites":[
 				{"url":"https://sinseo.sen.ms.kr/","name":"신서중"},
 				{"url":"https://smartthingsfind.samsung.com/login","name":"스마트find"},
 				{"url":"https://cls.edunet.net/","name":"e학습터"},
@@ -500,7 +512,11 @@
 		{"url":"https://tech.ssut.me/","name":"tech.ssut"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
-	},
+	}
+	]
+},
+{    "categoryname":"Programming-개발",
+    "group":[
 	{  "groupname":"시스템","sites":[
 		{"url":"https://aws.amazon.com/ko/","name":"AWS"},
 		{"url":"https://www.awseducate.com/signin/SiteLogin","name":"awsEducate"},

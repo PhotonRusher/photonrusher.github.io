@@ -179,14 +179,14 @@
 	.pb {                     /* pin button ☆/★ */
 		font-size: 0.6rem;
 		cursor: pointer;
-		color: #333;
-		visibility: hidden;
+		color: #252525;           /* 검정 배경에서 거의 안 보임 */
 		margin-left: 1px;
 		vertical-align: super;
 		line-height: 1;
+		transition: color 0.1s;
 	}
-	.pb.on { color: #D7BA7D; visibility: visible; }  /* 핀된 상태 */
-	/* .lw:hover .pb 는 JS로 처리 */
+	.pb.on { color: #D7BA7D; }   /* 핀된 상태: 황금색 */
+	.lw:hover .pb { color: #777; } /* hover: 살짝 표시 */
 
 	/* ── 방문 표시 점 ── */
 	.vd {
@@ -501,14 +501,6 @@
 			// ESC로 검색 초기화
 			$('#searchInput').on('keydown', function(e) {
 				if (e.key === 'Escape') { $(this).val(''); doSearch(''); }
-			});
-
-			// ☆ hover: CSS inline 요소 불안정 → JS로 처리
-			$(document).on('mouseenter', '.lw', function() {
-				$(this).find('.pb').css('visibility', 'visible');
-			}).on('mouseleave', '.lw', function() {
-				var $pb = $(this).find('.pb');
-				if (!$pb.hasClass('on')) $pb.css('visibility', 'hidden');
 			});
 
 			// 링크 클릭 → 방문 기록
