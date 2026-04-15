@@ -22,46 +22,37 @@
 	<style>
 	html { font-size: 120%; }
 
-	body { 
-	    /*background: #f2f2f2; */
+	body {
 	    background-color: black;
     	color:  #569CD6;
-		font-size: 1.2rem;	/* .875rem */
+		font-size: 1.2rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	
+
 	#siteList {
-		/*max-width: 800px;*/
 		margin: 0 auto;
 		text-align: center;
 	}
 
 	ul {
-    	padding: 0; /* To remove default left padding */
+    	padding: 0;
 		margin-block-start: 0.1em;
     	margin-block-end: 0.1em;
 	}
-	li { /* 카테고리 */
+	li {
     	word-spacing: 0.2em;
-    	font-weight: bold; 
+    	font-weight: bold;
     	font-family : "Noto Sans KR", "맑은 고딕", "Malgun Gothic", Sans-serif, "궁서체";
-		list-style-type: none; /* list 앞 기호표시 */
-		word-wrap: normal; /* 적용 안되는 듯 */
+		list-style-type: none;
+		word-wrap: normal;
     	color:  #D7BA7D;
 	}
 	li a {
-    	color: #6A9955; /* #004d99;*/
+    	color: #6A9955;
 	}
-	/*
-	li:hover { 
-		color: yellow;         
-		font-size: 0.9rem;      
-		background-color: #333; 
-		text-decoration: underline;
-	}*/ 
-	li a:hover { 
+	li a:hover {
 	    background-color: #ffff99;
 	}
 	.groups {
@@ -72,9 +63,51 @@
 	}
 	h4 {
     	color:  #569CD6;
-		margin: 0.3em 0;  /* 또는 원하는 값으로 */
+		margin: 0.3em 0;
 		margin-block-start: 0.3em;
     	margin-block-end: 0.3em;
+	}
+
+	/* 카테고리 제목 클릭 가능 */
+	.cat-title {
+		cursor: pointer;
+		user-select: none;
+		display: inline-block;
+	}
+	.cat-title:hover {
+		color: #D7BA7D;
+	}
+	.cat-arrow {
+		font-size: 0.75rem;
+		margin-left: 0.3rem;
+		color: #569CD6;
+		vertical-align: middle;
+	}
+
+	/* 검색창 */
+	#searchBox {
+		margin: 0.3rem auto 0.8rem;
+		width: 100%;
+		max-width: 360px;
+	}
+	#searchInput {
+		width: 100%;
+		background: #1e1e1e;
+		border: 1px solid #3a3a3a;
+		border-radius: 4px;
+		color: #d4d4d4;
+		padding: 0.35rem 0.7rem;
+		font-size: 0.85rem;
+		font-family: "Noto Sans KR", monospace, sans-serif;
+		outline: none;
+		box-sizing: border-box;
+		transition: border-color 0.15s;
+	}
+	#searchInput:focus {
+		border-color: #569CD6;
+	}
+	#searchInput::placeholder {
+		color: #444;
 	}
 
 	.topurl {
@@ -85,11 +118,18 @@
 
 	nav-link {
 		color: #698c09;
-		font-size: 1.0rem;	/* .875rem */
-		line-height: 140%;  /* 또는 150% */
+		font-size: 1.0rem;
+		line-height: 140%;
 		display: inline-block;
 	}
 
+	/* 모바일 */
+	@media (max-width: 600px) {
+		html { font-size: 100%; }
+		#searchBox { max-width: 100%; padding: 0 0.4rem; }
+		li { font-size: 0.88rem; }
+		#searchInput { font-size: 1rem; } /* 모바일 자동 확대 방지 */
+	}
 
 </style>
 </head>
@@ -102,11 +142,16 @@
 				"Whatever, Live forever"『OASIS』
 			</a>
 		</p>
-	<div class="text-center" id="siteList"></div>
+
+		<div id="searchBox">
+			<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+		</div>
+
+		<div class="text-center" id="siteList"></div>
 	</div>
-	
+
 	<br>
-	  
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
@@ -115,10 +160,9 @@
 	 crossorigin="anonymous"></script>
 
 	<script>
-		
-		// 사이트 정보 가져오기. 
+
+		// 사이트 정보 가져오기
 		function fGetSiteInfoFromServer( pTopic ) {
-			// json 데이터 요청
 			var xmlhttp = new XMLHttpRequest();
 			xmlhttp.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
@@ -128,8 +172,7 @@
 					document.title = "The topic name [" + pTopic + "] is not available.";
 				}
 			};
-
-			document.title = "startWeb::" + pTopic ;	// title topic 이름으로 변경
+			document.title = "startWeb::" + pTopic;
 			var gUrl="./siteinfo/" + pTopic + ".json";
 			xmlhttp.open("GET", gUrl, true);
 			xmlhttp.send();
@@ -137,11 +180,13 @@
 
 		// json 데이터로 화면 표시
 		function fSetSiteList( jsObj ) {
-			var myObj = jsObj;	
-			
+			var myObj = jsObj;
 			var i, j, k, x = "";
 			for (i in myObj.category) {
-				x += "<h4>" + myObj.category[i].categoryname + "</h4><ul>";
+				var catName = myObj.category[i].categoryname;
+				x += '<div class="category" data-cat="' + catName + '">';
+				x += '<h4 class="cat-title">' + catName + ' <span class="cat-arrow">▾</span></h4>';
+				x += '<ul class="cat-body">';
 				for (j in myObj.category[i].group) {
 					x += "<li><div class=\"groups\"><span>";
 					x += myObj.category[i].group[j].groupname + " ";
@@ -151,42 +196,93 @@
 						   + myObj.category[i].group[j].sites[k].url
 						   + "\">"
 						   + myObj.category[i].group[j].sites[k].name
-						   + "</a> "
-						 ;
+						   + "</a> ";
 					}
-					x += "</div></div>";
-					x += "</li>";
+					x += "</div></div></li>";
 				}
-				x += "</li></ul>";
+				x += "</ul></div>";
 			}
 			$("#siteList").html(x);
-			//fShowToolTip();	// 지저분해서 툴팁 가림
 
 			$('#pEname').text( myObj.ename );
-			
 			$('#topurl').text('https://photonrusher.github.io/?topic='+myObj.name);
 
+			initCategories();
 		}
 
-		// 툴팁 보여주기
-		function fShowToolTip(  ) {
-			$("li > div > div > a").each(function (i, obj) {
-				$(obj).attr({
-					'title': $(obj).attr("href").replace(/(www.|http:\/\/|https:\/\/)/gi, ""),
-					'data-toggle': 'tooltip',
-					'data-placement': 'top'
-				});
+		// 카테고리 접기/펼치기 초기화
+		function initCategories() {
+			var saved = {};
+			try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
+
+			$('.category').each(function() {
+				var catName = $(this).data('cat');
+				if (saved[catName] === false) {
+					$(this).find('.cat-body').hide();
+					$(this).find('.cat-arrow').text('▸');
+				}
 			});
-			$('[data-toggle="tooltip"]').tooltip();	// initialize tooltip
+
+			$(document).off('click', '.cat-title').on('click', '.cat-title', function() {
+				var $cat = $(this).closest('.category');
+				var catName = $cat.data('cat');
+				var $body = $cat.find('.cat-body');
+				var $arrow = $cat.find('.cat-arrow');
+				var isVisible = $body.is(':visible');
+
+				$body.toggle(!isVisible);
+				$arrow.text(isVisible ? '▸' : '▾');
+
+				var s = {};
+				try { s = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
+				s[catName] = !isVisible;
+				localStorage.setItem('catState', JSON.stringify(s));
+			});
 		}
 
-		// 주소의 파라미터 값 가져오는 함수
+		// 검색
+		function doSearch(q) {
+			if (!q) {
+				// 검색 해제 → 저장된 접힘 상태 복원
+				$('.sites a').show();
+				$('.groups').show();
+				var saved = {};
+				try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
+				$('.category').each(function() {
+					var catName = $(this).data('cat');
+					var $body = $(this).find('.cat-body');
+					var $arrow = $(this).find('.cat-arrow');
+					if (saved[catName] === false) {
+						$body.hide();
+						$arrow.text('▸');
+					} else {
+						$body.show();
+						$arrow.text('▾');
+					}
+				});
+				return;
+			}
+
+			// 검색 중 → 모든 카테고리 펼침
+			$('.cat-body').show();
+			$('.cat-arrow').text('▾');
+
+			// 링크 이름으로 필터링
+			$('.sites a').each(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf(q) >= 0);
+			});
+
+			// 매칭 링크 없는 그룹 숨김
+			$('.groups').each(function() {
+				$(this).toggle($(this).find('a:visible').length > 0);
+			});
+		}
+
+		// 주소 파라미터 값 가져오기
 		function getUrlParameter(sParam) {
 			var sPageURL = window.location.search.substring(1),
 				sURLVariables = sPageURL.split('&'),
-				sParameterName,
-				i;
-
+				sParameterName, i;
 			for (i = 0; i < sURLVariables.length; i++) {
 				sParameterName = sURLVariables[i].split('=');
 				if (sParameterName[0] === sParam) {
@@ -197,39 +293,41 @@
 		}
 
 		$(function () {
-	
-			var topic = getUrlParameter('topic');	// 파라미터 체크
+
+			var topic = getUrlParameter('topic');
 
 			if(typeof topic == "undefined" || topic == null || topic == "") {
-				fGetSiteInfoFromServer( 'yk' ); // 현 서버에서는 yk를 기본으로
-			} else if(topic === "test") { 			
+				fGetSiteInfoFromServer( 'yk' );
+			} else if(topic === "test") {
 				const json = JSON.parse(document.getElementById("localjson").textContent);
 				fSetSiteList(json);
 				document.title = "startWeb:TEST";
 			} else {
 				fGetSiteInfoFromServer( topic );
-			} 
+			}
 
-		}) // end if function () 
+			// 검색 이벤트
+			$('#searchInput').on('input', function() {
+				doSearch($(this).val().trim().toLowerCase());
+			});
+
+		});
 
 	</script>
 
 
-	<!-- 테스트 JSON 삽입 : 내장 테스트 JSON으로 동작
-	https://photonrusher.github.io/index.html?topic=test
-	file:///C:/MyWorkPrj/04_worksplace/photonrusher.github.io/index.html?topic=test
-	-->
+	<!-- 테스트 JSON : ?topic=test -->
 	<script id="localjson" type="application/json">
 		{
 			"name": "yk",
 			"ename": "photonrusher",
 			"hname": "6071",
-			"category": [  
-		
+			"category": [
+
 		{    "categoryname":"Favorite_v20250620-test",
 			"group":[
 					{  "groupname":"자주","sites":[
-						{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"}, 
+						{"url":"http://web.humoruniv.com/board/humor/list.html?table=pick","name":"웃대"},
 						{"url":"http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu","name":"뽐뿌"},
 						{"url":"https://damoang.net/free","name":"다모앙"},
 						{"url":"http://www.youtube.com","name":"YouTube"},
@@ -238,10 +336,6 @@
 					},
 					{  "groupname":"포탈","sites":[
 						{"url":"http://www.google.co.kr","name":"Google"},
-						{"url":"http://www.gmail.com","name":"Gmail"},
-						{"url":"http://www.naver.com","name":"Naver"},
-						{"url":"http://www.gmail.com","name":"Gmail"},
-						{"url":"http://www.naver.com","name":"Naver"},
 						{"url":"http://www.gmail.com","name":"Gmail"},
 						{"url":"http://www.naver.com","name":"Naver"},
 						{"url":"https://www.hancomdocs.com/","name":"한컴독스"},
@@ -266,18 +360,12 @@
 					{"url":"http://www.saramin.co.kr","name":"사람인"},
 					{"url":"http://www.jobkorea.co.kr","name":"잡코리아"},
 					{"url":"http://www.joblink.co.kr","name":"잡링크"}]
-		  },  
+		  },
 				  {  "groupname":"기타","sites":[
 					{"url":"https://web.kma.go.kr/weather/lifenindustry/jisudaymap_D08.jsp","name":"꽃가루경보"},
 					{"url":"https://earth.google.com/web","name":"구글어스"},
 					{"url":"https://www.knowhow.or.kr/center/main.php","name":"노무현시민센터"},
-					{"url":"https://earth.google.com/web","name":"구글어스"},
-					{"url":"https://www.knowhow.or.kr/center/main.php","name":"노무현시민센터"},
-					{"url":"https://earth.google.com/web","name":"구글어스"},
-					{"url":"https://earth.google.com/web","name":"구글어스"},
-					{"url":"https://earth.google.com/web","name":"구글어스"},
 					{"url":"https://artvee.com/","name":"고전그림"},
-					{"url":"","name":""},
 					{"url":"","name":""},
 					{"url":"","name":""}
 				]
