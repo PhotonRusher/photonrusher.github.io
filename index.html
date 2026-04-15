@@ -83,12 +83,21 @@
 		color: #569CD6;
 		vertical-align: middle;
 	}
-	.cat-sub {
+	/* 헤더 줄 (OASIS + 버전) */
+	#header-line {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 100%;
+		max-width: 860px;
+		padding: 0 0.2rem;
+		box-sizing: border-box;
+	}
+	#data-ver {
 		font-size: 0.6rem;
-		color: #4a4a4a;
-		font-weight: normal;
-		margin-left: 0.4rem;
-		vertical-align: middle;
+		color: #3a3a3a;
+		white-space: nowrap;
+		margin-left: 1rem;
 	}
 
 	/* 검색창 */
@@ -144,11 +153,14 @@
 <body>
 
 	<div class="container">
-		<p style="color: #698c09;">
-			<a href="https://photonrusher.github.io/?topic=yk" style="color: inherit; text-decoration: none;">
-				"Whatever, Live forever"『OASIS』
-			</a>
-		</p>
+		<div id="header-line">
+			<p style="color: #698c09; margin: 0;">
+				<a href="https://photonrusher.github.io/?topic=yk" style="color: inherit; text-decoration: none;">
+					"Whatever, Live forever"『OASIS』
+				</a>
+			</p>
+			<span id="data-ver"></span>
+		</div>
 
 		<div id="searchBox">
 			<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
@@ -191,12 +203,9 @@
 			var i, j, k, x = "";
 			for (i in myObj.category) {
 				var catName = myObj.category[i].categoryname;
-				var catParts = catName.split('_');
-				var catMain = catParts[0];
-				var catSub  = catParts.length > 1 ? catParts.slice(1).join('_') : '';
-				var catLabel = catMain + (catSub ? ' <span class="cat-sub">' + catSub + '</span>' : '');
+				var catMain = catName.split('_')[0];   // _ 앞만 표시
 				x += '<div class="category" data-cat="' + catName + '">';
-				x += '<h4 class="cat-title">' + catLabel + ' <span class="cat-arrow">▾</span></h4>';
+				x += '<h4 class="cat-title">' + catMain + ' <span class="cat-arrow">▾</span></h4>';
 				x += '<ul class="cat-body">';
 				for (j in myObj.category[i].group) {
 					x += "<li><div class=\"groups\"><span>";
@@ -217,6 +226,11 @@
 
 			$('#pEname').text( myObj.ename );
 			$('#topurl').text('https://photonrusher.github.io/?topic='+myObj.name);
+
+			// 첫 카테고리 _ 뒤 문자열을 헤더 버전으로 표시
+			var firstCat = myObj.category[0] ? myObj.category[0].categoryname : '';
+			var verIdx = firstCat.indexOf('_');
+			$('#data-ver').text(verIdx >= 0 ? firstCat.slice(verIdx + 1) : '');
 
 			initCategories();
 		}
@@ -251,7 +265,49 @@
 			});
 		}
 
-		// 검색
+		// ── 영타→한글 자모 변환 ──────────────────────────────
+		var ENG_JAMO = {
+			q:'ㅂ',w:'ㅈ',e:'ㄷ',r:'ㄱ',t:'ㅅ',y:'ㅛ',u:'ㅕ',i:'ㅑ',o:'ㅐ',p:'ㅔ',
+			a:'ㅁ',s:'ㄴ',d:'ㅇ',f:'ㄹ',g:'ㅎ',h:'ㅗ',j:'ㅓ',k:'ㅏ',l:'ㅣ',
+			z:'ㅋ',x:'ㅌ',c:'ㅊ',v:'ㅍ',b:'ㅠ',n:'ㅜ',m:'ㅡ'
+		};
+		var CHO  = ['ㄱ','ㄲ','ㄴ','ㄷ','ㄸ','ㄹ','ㅁ','ㅂ','ㅃ','ㅅ','ㅆ','ㅇ','ㅈ','ㅉ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+		var JUNG = ['ㅏ','ㅐ','ㅑ','ㅒ','ㅓ','ㅔ','ㅕ','ㅖ','ㅗ','ㅘ','ㅙ','ㅚ','ㅛ','ㅜ','ㅝ','ㅞ','ㅟ','ㅠ','ㅡ','ㅢ','ㅣ'];
+		var JONG = ['','ㄱ','ㄲ','ㄳ','ㄴ','ㄵ','ㄶ','ㄷ','ㄹ','ㄺ','ㄻ','ㄼ','ㄽ','ㄾ','ㄿ','ㅀ','ㅁ','ㅂ','ㅄ','ㅅ','ㅆ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
+
+		// 한글 음절 → 자모 문자열 분해 (예: "한성" → "ㅎㅏㄴㅅㅓㅇ")
+		function decomposeKo(str) {
+			var out = '';
+			for (var i = 0; i < str.length; i++) {
+				var c = str.charCodeAt(i);
+				if (c >= 0xAC00 && c <= 0xD7A3) {
+					var off  = c - 0xAC00;
+					var jong = off % 28;
+					var jung = Math.floor(off / 28) % 21;
+					var cho  = Math.floor(off / 28 / 21);
+					out += CHO[cho] + JUNG[jung] + (jong ? JONG[jong] : '');
+				} else {
+					out += str[i];
+				}
+			}
+			return out;
+		}
+
+		// 영타 문자열 → 자모 문자열 (예: "gkstjd" → "ㅎㅏㄴㅅㅓㅇ")
+		function engToJamo(str) {
+			var out = '';
+			for (var i = 0; i < str.length; i++) {
+				out += ENG_JAMO[str[i]] || str[i];
+			}
+			return out;
+		}
+
+		// 검색어가 영문자만으로 이루어졌는지 판별
+		function isEngOnly(str) {
+			return /^[a-z]+$/.test(str);
+		}
+
+		// ── 검색 ─────────────────────────────────────────────
 		function doSearch(q) {
 			if (!q) {
 				// 검색 해제 → 저장된 접힘 상태 복원
@@ -261,15 +317,10 @@
 				try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
 				$('.category').each(function() {
 					var catName = $(this).data('cat');
-					var $body = $(this).find('.cat-body');
-					var $arrow = $(this).find('.cat-arrow');
-					if (saved[catName] === false) {
-						$body.hide();
-						$arrow.text('▸');
-					} else {
-						$body.show();
-						$arrow.text('▾');
-					}
+					var $body   = $(this).find('.cat-body');
+					var $arrow  = $(this).find('.cat-arrow');
+					if (saved[catName] === false) { $body.hide(); $arrow.text('▸'); }
+					else                           { $body.show(); $arrow.text('▾'); }
 				});
 				return;
 			}
@@ -278,16 +329,28 @@
 			$('.cat-body').show();
 			$('.cat-arrow').text('▾');
 
-			// 링크 이름 + URL로 필터링
+			// 영타 자모 변환 준비
+			var jamoQ = isEngOnly(q) ? engToJamo(q) : '';
+
+			// 링크 이름 + URL 필터링
 			$('.sites a').each(function() {
 				var text = $(this).text().toLowerCase();
 				var href = ($(this).attr('href') || '').toLowerCase();
-				$(this).toggle(text.indexOf(q) >= 0 || href.indexOf(q) >= 0);
+				var match = text.indexOf(q) >= 0 || href.indexOf(q) >= 0;
+				// 영타 변환 검색: 자모 분해 후 비교
+				if (!match && jamoQ) {
+					match = decomposeKo(text).indexOf(jamoQ) >= 0;
+				}
+				this.style.display = match ? '' : 'none';
 			});
 
-			// 매칭 링크 없는 그룹 숨김
+			// 매칭 링크 없는 그룹 숨김 (style.display 직접 확인)
 			$('.groups').each(function() {
-				$(this).toggle($(this).find('a:visible').length > 0);
+				var hasMatch = false;
+				$(this).find('.sites a').each(function() {
+					if (this.style.display !== 'none') { hasMatch = true; return false; }
+				});
+				this.style.display = hasMatch ? '' : 'none';
 			});
 		}
 
@@ -322,6 +385,10 @@
 			// 검색 이벤트
 			$('#searchInput').on('input', function() {
 				doSearch($(this).val().trim().toLowerCase());
+			});
+			// ESC로 검색 초기화
+			$('#searchInput').on('keydown', function(e) {
+				if (e.key === 'Escape') { $(this).val(''); doSearch(''); }
 			});
 
 		});
