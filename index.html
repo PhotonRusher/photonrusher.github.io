@@ -83,28 +83,34 @@
 		color: #569CD6;
 		vertical-align: middle;
 	}
-	/* 헤더 줄 (OASIS + 버전) */
+	/* ── 헤더: OASIS | 검색 | 버전 ── */
 	#header-line {
 		display: flex;
-		justify-content: space-between;
-		align-items: baseline;
+		align-items: center;
+		gap: 0.6rem;
 		width: 100%;
-		max-width: 860px;
-		padding: 0 0.2rem;
+		max-width: 960px;
+		padding: 0.2rem 0.2rem 0.3rem;
 		box-sizing: border-box;
 	}
-	#data-ver {
-		font-size: 0.6rem;
-		color: #3a3a3a;
+	#oasis-quote {
+		font-size: 0.75rem;
+		color: #698c09;
 		white-space: nowrap;
-		margin-left: 1rem;
+		flex-shrink: 0;
 	}
-
-	/* 검색창 */
+	#oasis-quote a { color: inherit; text-decoration: none; }
+	#oasis-quote a:hover { color: #9ab87a; }
+	/* 검색창 — flex 중앙 */
 	#searchBox {
-		margin: 0.3rem auto 0.8rem;
-		width: 100%;
-		max-width: 360px;
+		flex: 1;
+		min-width: 0;
+	}
+	#data-ver {
+		font-size: 0.58rem;
+		color: #333;
+		white-space: nowrap;
+		flex-shrink: 0;
 	}
 	#searchInput {
 		width: 100%;
@@ -139,16 +145,18 @@
 		display: inline-block;
 	}
 
-	/* ── 즐겨찾기 섹션 ── */
+	/* ── 즐겨찾기 섹션 (인라인, 왼쪽) ── */
 	#pin-section {
 		width: 100%;
-		max-width: 860px;
-		margin-bottom: 0.4rem;
-		text-align: center;
+		max-width: 960px;
+		margin-bottom: 0.25rem;
+		text-align: left;
+		font-size: 0.88rem;
 	}
-	#pin-section h4 {
-		color: #D7BA7D;
-		margin-bottom: 0.2rem;
+	.pin-label {
+		color: #569CD6;
+		font-size: 0.75rem;
+		margin-right: 0.3rem;
 	}
 	.pin-links { display: inline; }
 	.pin-item {
@@ -202,10 +210,12 @@
 	/* 모바일 */
 	@media (max-width: 600px) {
 		html { font-size: 100%; }
-		#searchBox { max-width: 100%; padding: 0 0.4rem; }
+		#header-line { flex-wrap: wrap; }
+		#oasis-quote { font-size: 0.7rem; }
+		#searchBox { min-width: 120px; }
 		li { font-size: 0.88rem; }
 		#searchInput { font-size: 1rem; } /* 모바일 자동 확대 방지 */
-		.pb { visibility: visible; }      /* 모바일: ☆ 항상 표시 */
+		.pb { color: #444; }              /* 모바일: ☆ 좀 더 보이게 */
 	}
 
 </style>
@@ -215,16 +225,13 @@
 
 	<div class="container">
 		<div id="header-line">
-			<p style="color: #698c09; margin: 0;">
-				<a href="https://photonrusher.github.io/?topic=yk" style="color: inherit; text-decoration: none;">
-					"Whatever, Live forever"『OASIS』
-				</a>
-			</p>
+			<span id="oasis-quote">
+				<a href="https://photonrusher.github.io/?topic=yk">"Whatever, Live forever"『OASIS』</a>
+			</span>
+			<div id="searchBox">
+				<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+			</div>
 			<span id="data-ver"></span>
-		</div>
-
-		<div id="searchBox">
-			<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 		</div>
 
 		<div id="pin-section" style="display:none;"></div>
@@ -351,14 +358,14 @@
 			var pins = getPins();
 			var $sec = $('#pin-section');
 			if (!pins.length) { $sec.hide(); return; }
-			var h = '<h4>★ 즐겨찾기</h4><div class="pin-links">';
+			var h = '<span class="pin-label">즐겨찾기</span><span class="pin-links">';
 			pins.forEach(function(p) {
 				h += '<span class="pin-item">'
 				   + '<a href="' + p.url + '">' + p.name + '</a>'
 				   + '<span class="pin-x" data-url="' + p.url + '">✕</span> '
 				   + '</span>';
 			});
-			h += '</div>';
+			h += '</span>';
 			$sec.html(h).show();
 		}
 
