@@ -83,6 +83,13 @@
 		color: #569CD6;
 		vertical-align: middle;
 	}
+	.cat-sub {
+		font-size: 0.6rem;
+		color: #4a4a4a;
+		font-weight: normal;
+		margin-left: 0.4rem;
+		vertical-align: middle;
+	}
 
 	/* 검색창 */
 	#searchBox {
@@ -184,8 +191,12 @@
 			var i, j, k, x = "";
 			for (i in myObj.category) {
 				var catName = myObj.category[i].categoryname;
+				var catParts = catName.split('_');
+				var catMain = catParts[0];
+				var catSub  = catParts.length > 1 ? catParts.slice(1).join('_') : '';
+				var catLabel = catMain + (catSub ? ' <span class="cat-sub">' + catSub + '</span>' : '');
 				x += '<div class="category" data-cat="' + catName + '">';
-				x += '<h4 class="cat-title">' + catName + ' <span class="cat-arrow">▾</span></h4>';
+				x += '<h4 class="cat-title">' + catLabel + ' <span class="cat-arrow">▾</span></h4>';
 				x += '<ul class="cat-body">';
 				for (j in myObj.category[i].group) {
 					x += "<li><div class=\"groups\"><span>";
@@ -267,9 +278,11 @@
 			$('.cat-body').show();
 			$('.cat-arrow').text('▾');
 
-			// 링크 이름으로 필터링
+			// 링크 이름 + URL로 필터링
 			$('.sites a').each(function() {
-				$(this).toggle($(this).text().toLowerCase().indexOf(q) >= 0);
+				var text = $(this).text().toLowerCase();
+				var href = ($(this).attr('href') || '').toLowerCase();
+				$(this).toggle(text.indexOf(q) >= 0 || href.indexOf(q) >= 0);
 			});
 
 			// 매칭 링크 없는 그룹 숨김
