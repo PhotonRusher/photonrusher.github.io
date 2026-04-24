@@ -262,7 +262,7 @@
 				<a href="https://photonrusher.github.io/?topic=yk">"Whatever, Live forever"『OASIS』</a>
 			</span>
 			<div id="searchBox">
-				<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+				<input type="text" id="searchInput" placeholder="🔍 / 로 검색" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 			</div>
 			<button id="expand-all-btn">전체 펼치기</button>
 			<span id="data-ver"></span>
@@ -473,6 +473,7 @@
 				// 검색 해제 → 저장된 접힘 상태 복원
 				$('.sites .lw').show();
 				$('.groups').show();
+				$('.category').show();
 				$('#no-results').hide();
 				var saved = {};
 				try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
@@ -513,6 +514,15 @@
 					if (this.style.display !== 'none') { hasMatch = true; totalMatch++; return false; }
 				});
 				this.style.display = hasMatch ? '' : 'none';
+			});
+
+			// 매칭 그룹 없는 카테고리 숨김
+			$('.category').each(function() {
+				var hasVisibleGroup = false;
+				$(this).find('.groups').each(function() {
+					if (this.style.display !== 'none') { hasVisibleGroup = true; return false; }
+				});
+				this.style.display = hasVisibleGroup ? '' : 'none';
 			});
 
 			$('#no-results').toggle(totalMatch === 0);
@@ -608,20 +618,42 @@
 				}
 			});
 
-			// 전체 펼치기/닫기 버튼
-			var _allExpanded = false;
+			// 전체 펼치기 → 전체 닫기 → 기존 상태 (3단계 토글)
+			var _expandPhase = 0;  // 0: 기본, 1: 전체 펼침, 2: 전체 닫힘
+			var _stateBeforeExpand = null;
+
 			$('#expand-all-btn').on('click', function() {
-				_allExpanded = !_allExpanded;
 				var s = {};
-				$('.category').each(function() {
-					var catName = $(this).data('cat');
-					var $body   = $(this).find('.cat-body');
-					var $arrow  = $(this).find('.cat-arrow');
-					if (_allExpanded) { $body.show(); $arrow.text('▾'); s[catName] = true; }
-					else              { $body.hide(); $arrow.text('▸'); s[catName] = false; }
-				});
-				localStorage.setItem('catState', JSON.stringify(s));
-				$(this).text(_allExpanded ? '전체 닫기' : '전체 펼치기');
+				if (_expandPhase === 0) {
+					_stateBeforeExpand = JSON.parse(localStorage.getItem('catState') || '{}');
+					$('.category').each(function() {
+						var catName = $(this).data('cat');
+						$(this).find('.cat-body').show(); $(this).find('.cat-arrow').text('▾');
+						s[catName] = true;
+					});
+					localStorage.setItem('catState', JSON.stringify(s));
+					_expandPhase = 1; $(this).text('전체 닫기');
+				} else if (_expandPhase === 1) {
+					$('.category').each(function() {
+						var catName = $(this).data('cat');
+						$(this).find('.cat-body').hide(); $(this).find('.cat-arrow').text('▸');
+						s[catName] = false;
+					});
+					localStorage.setItem('catState', JSON.stringify(s));
+					_expandPhase = 2; $(this).text('기존 상태');
+				} else {
+					var saved = _stateBeforeExpand || {};
+					$('.category').each(function() {
+						var catName = $(this).data('cat');
+						var catBase = catName.split('_')[0];
+						var isOpen = (typeof saved[catName] !== 'undefined') ? saved[catName] : (DEFAULT_CLOSED.indexOf(catBase) < 0);
+						if (isOpen) { $(this).find('.cat-body').show(); $(this).find('.cat-arrow').text('▾'); }
+						else        { $(this).find('.cat-body').hide(); $(this).find('.cat-arrow').text('▸'); }
+					});
+					localStorage.setItem('catState', JSON.stringify(saved));
+					_stateBeforeExpand = null;
+					_expandPhase = 0; $(this).text('전체 펼치기');
+				}
 			});
 
 		});
