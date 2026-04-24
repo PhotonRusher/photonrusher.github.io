@@ -269,9 +269,8 @@
 			{"url":"https://ticket.melon.com/csoon/index.htm#orderType=0&pageIndex=1&schGcode=GENRE_ALL&schText=&schDt=","name":"멜론"},
 			{"url":"http://ticket.yes24.com/New/Notice/NoticeMain.aspx?pid=cp03ud87p","name":"yes24"},
 			{"url":"https://timeticket.co.kr/","name":"타임티켓"},
-			{"url":"http://www.ticketbay.co.kr/web/dailytb/dailycal","name":"티켓팅"},
+			{"url":"http://www.ticketbay.co.kr","name":"티켓팅"},
 			{"url":"http://www.emuartspace.com/","name":"emu"},
-			{"url":"https://xindieticket.kr/","name":"씬디티켓"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""},
@@ -322,7 +321,7 @@
 			{"url":"https://www.agoda.com/ko-kr","name":"agoda"},
 			{"url":"https://agodascanner.com/","name":"agoda스캐너"},
 			{"url":"http://www.teachiworld.com/s5/main.jsp","name":"티처웰"},
-			{"url":"http://www.huyang.go.kr","name":"국립자연휴양림"},
+			{"url":"https://www.foresttrip.go.kr/","name":"국립자연휴양림"},
 			{"url":"https://res.knps.or.kr/","name":"국립공원공단예약"},
 			{"url":"http://www.ktcu.or.kr","name":"교직원공제회"},
 			{"url":"http://www.tp.or.kr:8088/tp/main/main.jsp","name":"사학연금"},
@@ -358,7 +357,6 @@
 				{"url":"https://smartthingsfind.samsung.com/login","name":"스마트find"},
 				{"url":"https://cls.edunet.net/","name":"e학습터"},
 				{"url":"https://www.tjmedia.com/song/accompaniment","name":"태진"},
-				{"url":"http://www.saenggeum.es.kr/","name":"생금초"},
 				{"url":"","name":""},
 				{"url":"","name":""}]
 			},
@@ -507,7 +505,6 @@
 		{"url":"","name":""}]
 	},  
 	{  "groupname":"기술블로그","sites":[
-		{"url":"https://www.codenary.co.kr/","name":"codenary"},
 		{"url":"https://news.hada.io/","name":"GeekNews"},
 		{"url":"https://gonslab.tistory.com/","name":"GonsLab"},
 		{"url":"https://hururuek-chapchap.tistory.com/","name":"짭짤이"},

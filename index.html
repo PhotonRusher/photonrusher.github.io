@@ -218,6 +218,39 @@
 		.pb { color: #444; }              /* 모바일: ☆ 좀 더 보이게 */
 	}
 
+	/* 전체 펼치기/닫기 버튼 */
+	#expand-all-btn {
+		background: none;
+		border: 1px solid #2a2a2a;
+		color: #444;
+		font-size: 0.62rem;
+		padding: 0.18rem 0.4rem;
+		border-radius: 3px;
+		cursor: pointer;
+		white-space: nowrap;
+		flex-shrink: 0;
+		font-family: "Noto Sans KR", sans-serif;
+	}
+	#expand-all-btn:hover { border-color: #569CD6; color: #569CD6; }
+
+	/* 검색 결과 없음 */
+	#no-results {
+		color: #444;
+		font-size: 0.85rem;
+		padding: 1.5rem 0;
+		display: none;
+	}
+
+	/* 깨진 링크 뱃지 */
+	.broken-badge {
+		color: #e06c75;
+		font-size: 0.58rem;
+		margin-left: 1px;
+		vertical-align: super;
+		cursor: default;
+	}
+
+
 </style>
 </head>
 
@@ -231,21 +264,18 @@
 			<div id="searchBox">
 				<input type="text" id="searchInput" placeholder="🔍 검색..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
 			</div>
+			<button id="expand-all-btn">전체 펼치기</button>
 			<span id="data-ver"></span>
 		</div>
 
-		<div id="pin-section" style="display:none;"></div>
+		<div id="pin-section"></div>
 		<div class="text-center" id="siteList"></div>
+		<div id="no-results">검색 결과가 없습니다.</div>
 	</div>
 
 	<br>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-	 crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
 
 	<script>
 
@@ -306,6 +336,7 @@
 			initCategories();
 			renderPins();
 			updatePinBtns();
+			loadLinkStatus();
 		}
 
 		// 처음 방문 시 기본으로 닫힐 카테고리 (base name 기준)
@@ -442,6 +473,7 @@
 				// 검색 해제 → 저장된 접힘 상태 복원
 				$('.sites .lw').show();
 				$('.groups').show();
+				$('#no-results').hide();
 				var saved = {};
 				try { saved = JSON.parse(localStorage.getItem('catState') || '{}'); } catch(e) {}
 				$('.category').each(function() {
@@ -474,13 +506,32 @@
 			});
 
 			// 매칭 링크 없는 그룹 숨김
+			var totalMatch = 0;
 			$('.groups').each(function() {
 				var hasMatch = false;
 				$(this).find('.sites .lw').each(function() {
-					if (this.style.display !== 'none') { hasMatch = true; return false; }
+					if (this.style.display !== 'none') { hasMatch = true; totalMatch++; return false; }
 				});
 				this.style.display = hasMatch ? '' : 'none';
 			});
+
+			$('#no-results').toggle(totalMatch === 0);
+		}
+
+		// ── 깨진 링크 상태 표시 ──────────────────────────────
+		function loadLinkStatus() {
+			fetch('./siteinfo/yk-linkstatus.json')
+				.then(function(r) { return r.ok ? r.json() : null; })
+				.then(function(data) {
+					if (!data || !data.broken || !data.broken.length) return;
+					var broken = data.broken;
+					$('.pb').each(function() {
+						if (broken.indexOf($(this).data('url')) >= 0) {
+							$(this).before('<span class="broken-badge" title="링크 오류">⚠</span>');
+						}
+					});
+				})
+				.catch(function() {});
 		}
 
 		// 주소 파라미터 값 가져오기
@@ -547,6 +598,30 @@
 				savePins(pins);
 				renderPins();
 				updatePinBtns();
+			});
+
+			// '/' 키 → 검색창 포커스
+			$(document).on('keydown', function(e) {
+				if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
+					e.preventDefault();
+					$('#searchInput').focus();
+				}
+			});
+
+			// 전체 펼치기/닫기 버튼
+			var _allExpanded = false;
+			$('#expand-all-btn').on('click', function() {
+				_allExpanded = !_allExpanded;
+				var s = {};
+				$('.category').each(function() {
+					var catName = $(this).data('cat');
+					var $body   = $(this).find('.cat-body');
+					var $arrow  = $(this).find('.cat-arrow');
+					if (_allExpanded) { $body.show(); $arrow.text('▾'); s[catName] = true; }
+					else              { $body.hide(); $arrow.text('▸'); s[catName] = false; }
+				});
+				localStorage.setItem('catState', JSON.stringify(s));
+				$(this).text(_allExpanded ? '전체 닫기' : '전체 펼치기');
 			});
 
 		});

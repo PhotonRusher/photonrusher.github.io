@@ -1,0 +1,82 @@
+name: YK Link Check
+
+on:
+  schedule:
+    - cron: '0 2 * * *'    # 매일 새벽 2시 (KST 11시)
+  workflow_dispatch:        # 수동 실행 버튼
+
+permissions:
+  contents: write
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check yk.json links and update yk-linkstatus.json
+        run: |
+          python3 << 'PYEOF'
+          import json
+          import subprocess
+          from datetime import datetime, timezone, timedelta
+
+          with open('siteinfo/yk.json', 'r', encoding='utf-8') as f:
+              data = json.load(f)
+
+          urls = []
+          for cat in data['category']:
+              for grp in cat['group']:
+                  for site in grp['sites']:
+                      url = site.get('url', '').strip()
+                      if url:
+                          urls.append(url)
+
+          urls = list(set(urls))
+          print(f'총 {len(urls)}개 URL 체크 시작...')
+
+          broken = []
+          for url in urls:
+              try:
+                  proc = subprocess.run(
+                      [
+                          'curl', '-o', '/dev/null', '-s',
+                          '-w', '%{http_code}',
+                          '--max-time', '15',
+                          '-L', '--compressed',
+                          '-A', 'Mozilla/5.0',
+                          url
+                      ],
+                      capture_output=True, text=True, timeout=20
+                  )
+                  status = int(proc.stdout.strip()) if proc.stdout.strip() else 0
+              except Exception as e:
+                  print(f'  Error: {url} — {e}')
+                  status = 0
+
+              # 403/405 는 봇 차단으로 간주하여 제외
+              is_broken = (status == 0 or status == 404 or status >= 500)
+              if is_broken:
+                  broken.append(url)
+              print(f'  [{status}{"⚠" if is_broken else ""}] {url}')
+
+          output = {
+              'updated': datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST'),
+              'broken': broken
+          }
+
+          with open('siteinfo/yk-linkstatus.json', 'w', encoding='utf-8') as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+
+          print(f'\n완료. 깨진 링크: {len(broken)}개')
+          PYEOF
+
+      - name: Commit and push yk-linkstatus.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add siteinfo/yk-linkstatus.json
+          git diff --cached --quiet || git commit -m "chore: update yk link status [skip ci]"
+          git push
