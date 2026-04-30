@@ -1,22 +1,22 @@
 {
-  "updated": "2026-04-29 14:33 KST",
+  "updated": "2026-04-30 14:36 KST",
   "broken": [
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://sms.hansung.ac.kr",
     "http://www.tp.or.kr:8088/tp/main/main.jsp",
-    "https://www.foresttrip.go.kr/",
+    "https://sms.hansung.ac.kr",
     "http://sec.keris.or.kr",
-    "https://jusung.gitbook.io/the-swift-language-guide/",
-    "http://www.law.go.kr/",
-    "https://www.moe.go.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://kr.tmaxsoft.com/service/educationList.do",
-    "https://flight.naver.com/",
-    "https://www.vmware.com/support/vsphere.html",
     "https://cls.edunet.net/",
-    "http://korean.hansung.ac.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://flight.naver.com/",
+    "https://www.foresttrip.go.kr/",
+    "https://www.vmware.com/support/vsphere.html",
     "https://hsdw.hansung.ac.kr/",
-    "https://www.seoulfilmcenter.com/index.do"
+    "http://korean.hansung.ac.kr/",
+    "https://www.moe.go.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://tech.ssut.me/",
+    "https://megabox.co.kr/",
+    "https://kr.tmaxsoft.com/service/educationList.do",
+    "https://jusung.gitbook.io/the-swift-language-guide/"
   ]
 }
