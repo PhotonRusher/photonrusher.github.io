@@ -1,23 +1,22 @@
 {
-  "updated": "2026-05-01 14:48 KST",
+  "updated": "2026-05-02 14:04 KST",
   "broken": [
     "https://sms.hansung.ac.kr",
-    "https://car.go.kr/ri/recall/list.do",
-    "https://cls.edunet.net/",
-    "http://www.tp.or.kr:8088/tp/main/main.jsp",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://jusung.gitbook.io/the-swift-language-guide/",
-    "https://kr.tmaxsoft.com/service/educationList.do",
+    "https://www.foresttrip.go.kr/",
+    "https://tech.ssut.me/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://www.tp.or.kr:8088/tp/main/main.jsp",
+    "http://sec.keris.or.kr",
     "https://hsdw.hansung.ac.kr/",
     "https://flight.naver.com/",
-    "http://korean.hansung.ac.kr/",
-    "http://sec.keris.or.kr",
-    "https://tech.ssut.me/",
-    "https://www.foresttrip.go.kr/",
+    "https://kr.tmaxsoft.com/service/educationList.do",
     "https://www.moe.go.kr/",
+    "https://cls.edunet.net/",
     "https://www.vmware.com/support/vsphere.html",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "http://www.yangcheon.go.kr/"
+    "https://jusung.gitbook.io/the-swift-language-guide/",
+    "http://korean.hansung.ac.kr/",
+    "http://www.yangcheon.go.kr/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp"
   ]
 }
