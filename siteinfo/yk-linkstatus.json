@@ -1,23 +1,22 @@
 {
-  "updated": "2026-05-12 14:44 KST",
+  "updated": "2026-05-13 14:55 KST",
   "broken": [
-    "https://flight.naver.com/",
-    "https://sms.hansung.ac.kr",
+    "https://jusung.gitbook.io/the-swift-language-guide/",
+    "http://sec.keris.or.kr",
+    "https://kr.tmaxsoft.com/service/educationList.do",
+    "https://www.moe.go.kr/",
     "https://www.vmware.com/support/vsphere.html",
+    "http://korean.hansung.ac.kr/",
+    "https://www.foresttrip.go.kr/",
+    "https://flight.naver.com/",
+    "https://cls.edunet.net/",
+    "https://hsdw.hansung.ac.kr/",
+    "https://sms.hansung.ac.kr",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "http://www.jobkorea.co.kr",
-    "http://sec.keris.or.kr",
-    "https://hsdw.hansung.ac.kr/",
-    "https://academy.kisa.or.kr/",
     "http://www.tp.or.kr:8088/tp/main/main.jsp",
-    "https://tech.ssut.me/",
     "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
-    "https://jusung.gitbook.io/the-swift-language-guide/",
-    "https://cls.edunet.net/",
-    "https://kr.tmaxsoft.com/service/educationList.do",
-    "https://www.foresttrip.go.kr/",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.moe.go.kr/",
-    "http://korean.hansung.ac.kr/"
+    "https://tech.ssut.me/"
   ]
 }
