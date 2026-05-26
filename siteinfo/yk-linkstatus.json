@@ -1,22 +1,22 @@
 {
-  "updated": "2026-05-25 15:33 KST",
+  "updated": "2026-05-26 15:13 KST",
   "broken": [
-    "https://uptimerobot.com/",
-    "http://korean.hansung.ac.kr/",
-    "http://www.law.go.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://cls.edunet.net/",
-    "https://www.vmware.com/support/vsphere.html",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
-    "https://www.foresttrip.go.kr/",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://hsdw.hansung.ac.kr/",
+    "https://www.foresttrip.go.kr/",
+    "https://kr.tmaxsoft.com/service/educationList.do",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "http://www.saramin.co.kr",
     "https://jusung.gitbook.io/the-swift-language-guide/",
-    "http://sec.keris.or.kr",
-    "https://sms.hansung.ac.kr",
-    "https://flight.naver.com/",
     "https://www.moe.go.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://hsdw.hansung.ac.kr/",
+    "http://www.yangcheon.go.kr/",
+    "http://sec.keris.or.kr",
+    "http://korean.hansung.ac.kr/",
+    "https://cls.edunet.net/",
+    "https://sms.hansung.ac.kr",
     "http://www.tp.or.kr:8088/tp/main/main.jsp",
-    "https://kr.tmaxsoft.com/service/educationList.do"
+    "https://flight.naver.com/",
+    "https://www.vmware.com/support/vsphere.html"
   ]
 }
