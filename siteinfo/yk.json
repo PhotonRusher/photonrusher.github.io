@@ -41,8 +41,8 @@
 				{"url":"http://ko.wikipedia.org","name":"Wiki"},
 				{"url":"https://dict.naver.com/","name":"네이버사전"},
 				{"url":"https://www.korean.go.kr/","name":"국립국어원"},
-				{"url":"","name":""},
-				{"url":"","name":""},
+				{"url":"https://www.weather.go.kr/w/forecast/life/life-weather-index.do?tabIndex=4","name":"생활기상지수"},
+				{"url":"https://www.genspark.ai/","name":"젠스파크"},
 				{"url":"","name":""}]
 	  		},
 			{  "groupname":"뉴스","sites":[
@@ -69,8 +69,8 @@
 				{"url":"http://www.facebook.com","name":"Facebook"},
 				{"url":"http://todayhumor.co.kr/board/list.php?table=bestofbest","name":"오유"},
 				{"url":"https://theqoo.net/total","name":"더쿠"},
-				{"url":"","name":""},
-				{"url":"","name":""},
+				{"url":"https://cafe.daum.net/oasislife","name":"오아시스카페"},
+				{"url":"https://gall.dcinside.com/mgallery/board/lists/?id=oasis","name":"DC오아시스"},
 				{"url":"","name":""}]
 			},
           {  "groupname":"통신","sites":[
@@ -108,7 +108,7 @@
 			{"url":"http://mail.hansung.ac.kr","name":"웹메일"},
 			{"url":"https://sms.hansung.ac.kr","name":"SMS"},
 			{"url":"http://idisk.hansung.ac.kr","name":"인터넷디스크"},
-			{"url":"","name":""},
+			{"url":"https://status.hansung.ac.kr/","name":"한성대서비스상태"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-교직원","sites":[
@@ -148,9 +148,10 @@
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
 		{"url":"https://rule.hansung.ac.kr/","name":"규정관리"},
 		{"url":"https://help.hansung.ac.kr/","name":"help"},
+		{"url":"https://help.hansung.ac.kr/hsmgmt","name":"IT헬프데스크관리"},
 		{"url":"https://tax.hansung.ac.kr/","name":"연말정산"},
 		{"url":"https://erp.hansung.ac.kr/#/login","name":"아마란스"},
-		{"url":"","name":""},
+		{"url":"https://github.com/hsuniv","name":"hsuniv-GitHub"},
 		{"url":"","name":""}]
 	}
 	]
@@ -171,7 +172,7 @@
 			{"url":"https://www.hansung.ac.kr/hansung/6061/subview.do","name":"전화번호"},
 			{"url":"https://www.hansung.ac.kr/hansung/6015/subview.do","name":"학사일정"},
 			{"url":"https://hansung.ac.kr/sites/info/index.do","name":"디지털정보처"},
-			{"url":"","name":""},
+			{"url":"https://www.hansung.ac.kr/hansung/6789/subview.do#link","name":"AI플랫폼이용"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""}]
@@ -305,7 +306,7 @@
 			{"url":"https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp","name":"서울시전자구독"},
 			{"url":"https://lib.yangcheon.or.kr/yclib/contents.do?idx=3829","name":"양천구전자"},
 			{"url":"https://lib.yangcheon.or.kr/main/main.do","name":"양천구립"},
-			{"url":"","name":""}]
+			{"url":"https://onbook.dkyobobook.co.kr/main.ink","name":"온책방(교보)"}]
 		  }
 		]
 },
@@ -315,7 +316,7 @@
 			{"url":"https://blog.naver.com/kim4993300","name":"블로그-일상도여행처럼"},
 			{"url":"http://www.couchsurfing.org","name":"카우치서핑"},
 			{"url":"https://www.tablenjoy.com/","name":"레스토랑인조이"},
-			{"url":"","name":""},
+			{"url":"https://www.mypacer.com/routes/cw3m/walking-in-seoul","name":"서울걷기코스"},
 			{"url":"","name":""}]
 		},  
 		{  "groupname":"여행예약","sites":[
@@ -395,8 +396,12 @@
 		{"url":"https://ts.devbj.com/371","name":"토렝이순위"},
 		{"url":"","name":""},
 		{"url":"","name":""}]
+	},
+	{  "groupname":"교육","sites":[
+		{"url":"https://mochaclass.com/","name":"모카클래스"},
+		{"url":"https://class101.net/ko","name":"CLASS101"}]
 	}
-]  
+]
 },
 
 
@@ -425,7 +430,7 @@
 			{"url":"https://accounts.kakao.com/login/kakaobusiness","name":"카카오비즈"},
 			{"url":"https://www.auisoft.net/","name":"auisoft"},
 			{"url":"https://support.oracle.com/signin","name":"oracle"},
-			{"url":"","name":""},
+			{"url":"https://admin.cloud.microsoft/?#/homepage","name":"M365관리센터"},
 			{"url":"","name":""},
 			{"url":"","name":""}]
 		},
@@ -434,7 +439,8 @@
 			{"url":"http://jennifersoft.com/ko","name":"재니퍼소프트"},
 			{"url":"https://www.remotecall.io/ko/","name":"리모트콜"},
 			{"url":"https://front.jennifersoft.com","name":"재니퍼프론트"},
-			{"url":"","name":""}]
+			{"url":"https://my.cohesity.com/s/","name":"cohesity"},
+			{"url":"https://status.claude.com/","name":"Claude상태"}]
 		},
 		{  "groupname":"보안","sites":[
 			{"url":"https://www.virustotal.com/gui/home/upload","name":"virustotal"},
@@ -455,7 +461,7 @@
 			{"url":"https://developer.apple.com","name":"애플개발자콘솔"},
 			{"url":"https://itunesconnect.apple.com","name":"iTunesConnect"},
 			{"url":"https://kakaobusiness.gitbook.io/main/","name":"카카오비즈니스"},
-			{"url":"","name":""},
+			{"url":"https://url.kr/","name":"URL단축"},
 			{"url":"https://www.google.com/intl/ko_KR/analytics","name":"구글웹로그분석"}]
 		}
 	]
@@ -469,7 +475,9 @@
 			{"url":"https://www.gseek.kr","name":"경기도지식"},
 			{"url":"https://e-koreatech.step.or.kr/","name":"기술교육대"},
 			{"url":"http://www.modenedu.com/","name":"모든에듀"},
-			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"}
+			{"url":"https://academy.kisa.or.kr/","name":"KISA교육"},
+			{"url":"http://www.kocw.net","name":"KOCW"},
+			{"url":"https://itgo.kr/","name":"아이티고"}
 			]
 		},
 		{  "groupname":"교육","sites":[
@@ -503,8 +511,10 @@
 		{"url":"https://caniuse.com/","name":"canIuse"},
 		{"url":"https://www.reddit.com/r/webdev/","name":"reddit/webdev"},
 		{"url":"https://www.wishket.com/","name":"wishket구인"},
-		{"url":"","name":""},
-		{"url":"","name":""}]
+		{"url":"https://aistudio.google.com/","name":"GoogleAIStudio"},
+		{"url":"https://platform.claude.com/docs/ko/intro","name":"ClaudeAPI"},
+		{"url":"https://webhook.site/","name":"Webhook.site"},
+		{"url":"https://developers.worksmobile.com/kr/docs/api","name":"WorksAPI"}]
 	},  
 	{  "groupname":"기술블로그","sites":[
 		{"url":"https://www.codenary.co.kr/","name":"codenary"},
@@ -514,7 +524,7 @@
 		{"url":"https://brunch.co.kr/@joonwonlee#articles","name":"이준원"},
 		{"url":"https://pilgwon.github.io/","name":"pilgwon"},
 		{"url":"https://tech.ssut.me/","name":"tech.ssut"},
-		{"url":"","name":""},
+		{"url":"https://support.claude.com/ko","name":"Claude지원센터"},
 		{"url":"","name":""}]
 	}
 	]
