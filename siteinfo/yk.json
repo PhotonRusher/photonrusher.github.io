@@ -59,7 +59,7 @@
 			}
 		]
 },
-{    "categoryname":"Daily-커뮤",
+{    "categoryname":"Daily-생활",
     "group":[
 		{  "groupname":"커뮤니티","sites":[
 				{"url":"https://damoang.net/","name":"다모앙"},
@@ -518,12 +518,8 @@
 		{"url":"https://gonslab.tistory.com/","name":"GonsLab"},
 		{"url":"https://support.claude.com/ko","name":"Claude지원센터"},
 		{"url":"","name":""}]
-	}
-	]
-},
-{    "categoryname":"Programming-개발",
-    "group":[
-	{  "groupname":"시스템","sites":[
+	},
+	{  "groupname":"개발-시스템","sites":[
 		{"url":"https://aws.amazon.com/ko/","name":"AWS"},
 		{"url":"https://www.awseducate.com/signin/SiteLogin","name":"awsEducate"},
 		{"url":"https://technet.tmaxsoft.com/upload/download/online/jeus/pver-20170202-000001/index.html","name":"Jeus8_Doc"},
@@ -533,7 +529,7 @@
 		{"url":"https://www.ssllabs.com/ssltest/analyze.html","name":"sslTest"},
 		{"url":"","name":""}]
 	}
-]
+	]
 },
 
 {    "categoryname":"Etc",
