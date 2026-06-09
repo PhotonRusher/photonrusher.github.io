@@ -215,6 +215,7 @@
 			{"url":"http://emart.ssg.com/","name":"이마트"},
 			{"url":"http://www.lottemart.com","name":"롯데마트"},
 			{"url":"https://www.musinsa.com/","name":"무신사"},
+			{"url":"https://smartstore.naver.com/bankholiday","name":"bankholiday"},
 			{"url":"","name":""}]
   		},
           {  "groupname":"부동산","sites":[
@@ -241,7 +242,14 @@
 			{"url":"http://www.interpark.com","name":"인터파크"},
 			{"url":"http://www.yes24.com","name":"예스24"},
 			{"url":"http://www.aladin.co.kr","name":"알라딘"}]
-  }]  
+  		},
+          {  "groupname":"편의점","sites":[
+			{"url":"https://pyony.com/","name":"pyony"},
+			{"url":"https://www.7-eleven.co.kr/event/eventList.asp","name":"7-Eleven이벤트"},
+			{"url":"http://gs25.gsretail.com/gscvs/ko/customer-engagement/event/current-events?uiel=Mobile","name":"GS25이벤트"},
+			{"url":"https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5","name":"CU이벤트"},
+			{"url":"","name":""}]
+  }]
 },
 
 
@@ -447,6 +455,7 @@
 		},
 		{  "groupname":"기타-시스템","sites":[
 			{"url":"https://mvnrepository.com/","name":"mvnrepository"},
+			{"url":"https://localsend.org/ko","name":"LocalSend"},
 			{"url":"","name":""},
 			{"url":"","name":""},
 			{"url":"","name":""},
