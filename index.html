@@ -251,6 +251,48 @@
 	}
 
 
+/* ── 방문 기록 패널 ── */
+#visit-btn {
+	background: none;
+	border: 1px solid #2a2a2a;
+	color: #333;
+	font-size: 0.62rem;
+	padding: 0.18rem 0.6rem;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: "Noto Sans KR", sans-serif;
+	margin: 0.5rem auto 0.6rem;
+	display: block;
+}
+#visit-btn:hover { border-color: #569CD6; color: #569CD6; }
+#visit-panel {
+	display: none;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto 1rem;
+	background: #111;
+	border: 1px solid #222;
+	border-radius: 4px;
+	padding: 0.7rem 0.9rem;
+	box-sizing: border-box;
+	font-size: 0.72rem;
+	text-align: left;
+}
+.vp-summary { color: #555; margin-bottom: 0.5rem; font-size: 0.7rem; }
+.vp-sec-title { color: #2a4a6a; font-size: 0.68rem; margin: 0.5rem 0 0.15rem; border-bottom: 1px solid #1a1a1a; padding-bottom: 0.1rem; }
+.vp-row { display: flex; padding: 0.1rem 0; gap: 0.5rem; align-items: baseline; }
+.vp-name { flex: 0 0 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vp-name a { text-decoration: none; }
+.vp-name a:hover { background: #ffff99; color: #000; }
+.vp-cat { flex: 1; color: #2a2a2a; font-size: 0.62rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vp-date { flex: 0 0 78px; text-align: right; font-size: 0.62rem; }
+.vp-never .vp-name a { color: #3a3a3a; }
+.vp-never .vp-date  { color: #2a2a2a; }
+.vp-old   .vp-name a { color: #666; }
+.vp-old   .vp-date  { color: #444; }
+.vp-recent .vp-name a { color: #4a7a3a; }
+.vp-recent .vp-date  { color: #3a5a2a; }
+
 </style>
 </head>
 
@@ -271,6 +313,10 @@
 		<div id="pin-section"></div>
 		<div class="text-center" id="siteList"></div>
 		<div id="no-results">검색 결과가 없습니다.</div>
+		<div style="text-align:center;">
+			<button id="visit-btn">방문 기록 ▾</button>
+		</div>
+		<div id="visit-panel"></div>
 	</div>
 
 	<br>
@@ -278,6 +324,8 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
 
 	<script>
+
+		var _siteData = null;
 
 		// 사이트 정보 가져오기
 		function fGetSiteInfoFromServer( pTopic ) {
@@ -298,6 +346,7 @@
 
 		// json 데이터로 화면 표시
 		function fSetSiteList( jsObj ) {
+			_siteData = jsObj;
 			var myObj = jsObj;
 			var i, j, k, x = "";
 			for (i in myObj.category) {
@@ -544,6 +593,68 @@
 				.catch(function() {});
 		}
 
+		// ── 방문 기록 패널 ────────────────────────────────────
+		function buildVisitPanel() {
+			if (!_siteData) return;
+			var v = getVisits();
+			var now = Date.now(), day = 86400000, month3 = day * 90;
+
+			var all = [];
+			_siteData.category.forEach(function(cat) {
+				var catMain = cat.categoryname.split('_')[0];
+				cat.group.forEach(function(grp) {
+					grp.sites.forEach(function(s) {
+						if (!s.url || !s.name) return;
+						all.push({ url: s.url, name: s.name, cat: catMain, grp: grp.groupname, last: v[s.url] || 0 });
+					});
+				});
+			});
+
+			all.sort(function(a, b) {
+				if (!a.last && !b.last) return 0;
+				if (!a.last) return -1;
+				if (!b.last) return 1;
+				return a.last - b.last;
+			});
+
+			var never  = all.filter(function(s) { return !s.last; });
+			var old    = all.filter(function(s) { return s.last && (now - s.last) >= month3; });
+			var recent = all.filter(function(s) { return s.last && (now - s.last) < month3; });
+
+			function fmtDate(ts) {
+				if (!ts) return '미방문';
+				var d = new Date(ts);
+				return d.getFullYear() + '.' + String(d.getMonth()+1).padStart(2,'0') + '.' + String(d.getDate()).padStart(2,'0');
+			}
+			function row(s, cls) {
+				return '<div class="vp-row ' + cls + '">'
+					+ '<span class="vp-name"><a href="' + s.url + '" target="_blank">' + s.name + '</a></span>'
+					+ '<span class="vp-cat">' + s.cat + ' › ' + s.grp + '</span>'
+					+ '<span class="vp-date">' + fmtDate(s.last) + '</span>'
+					+ '</div>';
+			}
+
+			var h = '<div class="vp-summary">전체 <b>' + all.length + '</b>개 &nbsp;|&nbsp; '
+				+ '미방문 <b style="color:#555">' + never.length + '</b>개 &nbsp;|&nbsp; '
+				+ '3개월이상 <b style="color:#777">' + old.length + '</b>개 &nbsp;|&nbsp; '
+				+ '최근 <b style="color:#4a7a3a">' + recent.length + '</b>개</div>';
+
+			if (never.length) {
+				h += '<div class="vp-sec-title">미방문 (' + never.length + ')</div>';
+				never.forEach(function(s) { h += row(s, 'vp-never'); });
+			}
+			if (old.length) {
+				h += '<div class="vp-sec-title">3개월 이상 미방문 (' + old.length + ')</div>';
+				old.forEach(function(s) { h += row(s, 'vp-old'); });
+			}
+			if (recent.length) {
+				h += '<div class="vp-sec-title">3개월 이내 방문 (' + recent.length + ')</div>';
+				recent.forEach(function(s) { h += row(s, 'vp-recent'); });
+			}
+
+			$('#visit-panel').html(h);
+		}
+
 		// 주소 파라미터 값 가져오기
 		function getUrlParameter(sParam) {
 			var sPageURL = window.location.search.substring(1),
@@ -608,6 +719,19 @@
 				savePins(pins);
 				renderPins();
 				updatePinBtns();
+			});
+
+			// 방문 기록 버튼 토글
+			$('#visit-btn').on('click', function() {
+				var $p = $('#visit-panel');
+				if ($p.is(':visible')) {
+					$p.hide();
+					$(this).text('방문 기록 ▾');
+				} else {
+					buildVisitPanel();
+					$p.show();
+					$(this).text('방문 기록 ▴');
+				}
 			});
 
 			// '/' 키 → 검색창 포커스

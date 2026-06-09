@@ -115,6 +115,7 @@
 			{"url":"https://research.hansung.ac.kr","name":"연구업적"},
 			{"url":"https://rndb.hansung.ac.kr","name":"산학erp"},
 			{"url":"https://hsdw.hansung.ac.kr/","name":"DW"},
+			{"url":"https://help.hansung.ac.kr/","name":"help"},
 			{"url":"","name":""}]
 		},
 		{  "groupname":"교내-학사","sites":[
@@ -147,8 +148,6 @@
 		{"url":"https://recruit.hansung.ac.kr/xabdmxgr/lgn/admLoginView.do","name":"채용관리"},
 		{"url":"https://recruit.hansung.ac.kr/employ","name":"채용심사"},
 		{"url":"https://rule.hansung.ac.kr/","name":"규정관리"},
-		{"url":"https://help.hansung.ac.kr/","name":"help"},
-		{"url":"https://help.hansung.ac.kr/hsmgmt","name":"IT헬프데스크관리"},
 		{"url":"https://tax.hansung.ac.kr/","name":"연말정산"},
 		{"url":"https://erp.hansung.ac.kr/#/login","name":"아마란스"},
 		{"url":"https://github.com/hsuniv","name":"hsuniv-GitHub"},
