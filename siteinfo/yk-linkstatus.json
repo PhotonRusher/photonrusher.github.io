@@ -1,19 +1,17 @@
 {
-  "updated": "2026-06-16 16:34 KST",
+  "updated": "2026-06-17 16:16 KST",
   "broken": [
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://flight.naver.com/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://korean.hansung.ac.kr/",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
-    "https://megabox.co.kr/",
-    "http://www.golfzon.com",
-    "https://hsdw.hansung.ac.kr/",
-    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
-    "http://kren.kr",
     "https://sms.hansung.ac.kr",
     "http://www.yangcheon.go.kr/",
-    "https://www.2cpu.co.kr"
+    "https://flight.naver.com/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "http://korean.hansung.ac.kr/",
+    "http://www.law.go.kr/",
+    "http://www.golfzon.com",
+    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://hsdw.hansung.ac.kr/",
+    "https://megabox.co.kr/"
   ]
 }
