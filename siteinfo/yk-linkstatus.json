@@ -1,17 +1,28 @@
 {
-  "updated": "2026-06-17 16:16 KST",
+  "updated": "2026-06-18 16:01 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "http://www.yangcheon.go.kr/",
-    "https://flight.naver.com/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://korean.hansung.ac.kr/",
+    "http://www.kt.com",
+    "https://www.seoul.go.kr/thismteventfstvl/list.do",
+    "https://www.skbroadband.com/Main.do",
     "http://www.law.go.kr/",
-    "http://www.golfzon.com",
-    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://flight.naver.com/",
+    "https://megabox.co.kr/",
+    "https://www.foresttrip.go.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://sms.hansung.ac.kr",
+    "http://www.g2b.go.kr/",
+    "http://sec.keris.or.kr",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
     "http://www.teachiworld.com/s5/main.jsp",
+    "http://www.ktcu.or.kr",
+    "http://www.golfzon.com",
     "https://hsdw.hansung.ac.kr/",
-    "https://megabox.co.kr/"
+    "http://www.yangcheon.go.kr/",
+    "http://korean.hansung.ac.kr/",
+    "https://research.hansung.ac.kr",
+    "https://www.sfac.or.kr/participation/artsnet/qenre.do",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://www.moe.go.kr/"
   ]
 }
