@@ -1,22 +1,18 @@
 {
-  "updated": "2026-06-19 16:14 KST",
+  "updated": "2026-06-20 15:27 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "http://korean.hansung.ac.kr/",
-    "http://www.g2b.go.kr/",
-    "https://www.moe.go.kr/",
-    "http://sec.keris.or.kr",
-    "http://www.law.go.kr/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://www.skbroadband.com/Main.do",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "http://www.ktcu.or.kr",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://www.foresttrip.go.kr/",
-    "https://megabox.co.kr/",
     "http://www.teachiworld.com/s5/main.jsp",
+    "http://korean.hansung.ac.kr/",
     "http://www.yangcheon.go.kr/",
-    "http://www.kt.com",
-    "https://flight.naver.com/"
+    "https://support.oracle.com/signin",
+    "https://flight.naver.com/",
+    "http://www.golfzon.com",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://www.tjmedia.com/song/accompaniment",
+    "https://megabox.co.kr/",
+    "https://hsdw.hansung.ac.kr/",
+    "https://sms.hansung.ac.kr"
   ]
 }
