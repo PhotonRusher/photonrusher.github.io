@@ -1,24 +1,23 @@
 {
-  "updated": "2026-06-21 16:00 KST",
+  "updated": "2026-06-22 16:32 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
+    "http://www.kt.com",
     "http://www.g2b.go.kr/",
     "https://flight.naver.com/",
-    "https://hsdw.hansung.ac.kr/",
-    "http://www.golfzon.com",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.moe.go.kr/",
-    "http://korean.hansung.ac.kr/",
-    "http://www.kt.com",
     "http://www.yangcheon.go.kr/",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "http://www.law.go.kr/",
-    "https://www.seoulfilmcenter.com/index.do",
-    "https://megabox.co.kr/",
-    "https://itgo.kr/",
+    "http://korean.hansung.ac.kr/",
     "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://hsdw.hansung.ac.kr/",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "http://www.ktcu.or.kr",
+    "https://sms.hansung.ac.kr",
+    "http://www.law.go.kr/",
     "http://sec.keris.or.kr",
-    "https://www.foresttrip.go.kr/"
+    "https://www.foresttrip.go.kr/",
+    "https://www.moe.go.kr/",
+    "https://megabox.co.kr/",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01"
   ]
 }
