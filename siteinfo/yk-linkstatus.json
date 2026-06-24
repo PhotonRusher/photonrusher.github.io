@@ -1,15 +1,25 @@
 {
-  "updated": "2026-06-23 15:12 KST",
+  "updated": "2026-06-24 15:15 KST",
   "broken": [
-    "https://flight.naver.com/",
-    "http://www.golfzon.com",
-    "https://itgo.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://korean.hansung.ac.kr/",
-    "https://hsdw.hansung.ac.kr/",
     "https://megabox.co.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "https://sms.hansung.ac.kr",
-    "http://www.teachiworld.com/s5/main.jsp"
+    "http://korean.hansung.ac.kr/",
+    "http://www.yangcheon.go.kr/",
+    "http://kren.kr",
+    "https://www.moe.go.kr/",
+    "https://sms.uplus.co.kr/ver2/jsp/main/index.jsp",
+    "http://sec.keris.or.kr",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.foresttrip.go.kr/",
+    "http://www.law.go.kr/",
+    "http://www.golfzon.com",
+    "http://www.kt.com",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://flight.naver.com/",
+    "https://www.seoulfilmcenter.com/index.do",
+    "https://hsdw.hansung.ac.kr/",
+    "http://www.g2b.go.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://www.7-eleven.co.kr/event/eventList.asp"
   ]
 }
