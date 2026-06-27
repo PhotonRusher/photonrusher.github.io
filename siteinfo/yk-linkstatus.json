@@ -1,13 +1,13 @@
 {
-  "updated": "2026-06-26 15:16 KST",
+  "updated": "2026-06-27 14:58 KST",
   "broken": [
-    "https://megabox.co.kr/",
     "https://sms.hansung.ac.kr",
-    "http://korean.hansung.ac.kr/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://flight.naver.com/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.tjmedia.com/song/accompaniment",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.7-eleven.co.kr/event/eventList.asp"
+    "https://flight.naver.com/",
+    "http://korean.hansung.ac.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://hsdw.hansung.ac.kr/"
   ]
 }
