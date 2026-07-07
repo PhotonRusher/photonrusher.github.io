@@ -1,17 +1,25 @@
 {
-  "updated": "2026-07-06 15:35 KST",
+  "updated": "2026-07-07 15:16 KST",
   "broken": [
-    "https://www.skbroadband.com/Main.do",
-    "http://korean.hansung.ac.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "http://www.golfzon.com",
+    "http://sec.keris.or.kr",
+    "https://www.moe.go.kr/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.foresttrip.go.kr/",
-    "http://www.yangcheon.go.kr/",
-    "https://flight.naver.com/",
+    "http://www.golfzon.com",
+    "https://sms.hansung.ac.kr",
+    "https://www.2cpu.co.kr",
     "http://www.kt.com",
     "https://hsdw.hansung.ac.kr/",
-    "https://sms.hansung.ac.kr"
+    "http://www.teachiworld.com/s5/main.jsp",
+    "http://kren.kr",
+    "https://sms.uplus.co.kr/ver2/jsp/main/index.jsp",
+    "http://korean.hansung.ac.kr/",
+    "https://flight.naver.com/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "http://www.yangcheon.go.kr/",
+    "http://www.law.go.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.foresttrip.go.kr/",
+    "http://www.ibk.co.kr",
+    "http://www.g2b.go.kr/"
   ]
 }
