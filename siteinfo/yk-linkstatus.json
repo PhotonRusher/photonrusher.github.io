@@ -1,14 +1,18 @@
 {
-  "updated": "2026-07-21 14:25 KST",
+  "updated": "2026-07-22 14:24 KST",
   "broken": [
+    "http://www.law.go.kr/",
     "https://sms.hansung.ac.kr",
-    "http://korean.hansung.ac.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
     "https://www.fafan.kr/",
-    "https://itgo.kr/",
-    "https://hsdw.hansung.ac.kr/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://hsdw.hansung.ac.kr/",
     "https://flight.naver.com/",
-    "http://www.teachiworld.com/s5/main.jsp"
+    "http://www.golfzon.com",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://www.kt.com",
+    "http://korean.hansung.ac.kr/",
+    "https://www.seoulfilmcenter.com/index.do",
+    "https://itgo.kr/"
   ]
 }
