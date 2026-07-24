@@ -1,14 +1,13 @@
 {
-  "updated": "2026-07-23 14:29 KST",
+  "updated": "2026-07-24 14:24 KST",
   "broken": [
-    "http://www.yangcheon.go.kr/",
-    "https://flight.naver.com/",
+    "https://www.fafan.kr/",
+    "https://hsdw.hansung.ac.kr/",
     "http://korean.hansung.ac.kr/",
+    "https://flight.naver.com/",
+    "https://sms.hansung.ac.kr",
     "https://www.7-eleven.co.kr/event/eventList.asp",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://hsdw.hansung.ac.kr/",
-    "https://www.fafan.kr/",
-    "https://sms.hansung.ac.kr",
     "http://www.teachiworld.com/s5/main.jsp"
   ]
 }
