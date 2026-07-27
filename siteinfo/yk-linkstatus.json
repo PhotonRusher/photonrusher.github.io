@@ -1,16 +1,19 @@
 {
-  "updated": "2026-07-26 14:39 KST",
+  "updated": "2026-07-27 14:56 KST",
   "broken": [
-    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://sms.hansung.ac.kr",
+    "https://www.2cpu.co.kr",
+    "https://hsdw.hansung.ac.kr/",
     "http://www.golfzon.com",
+    "http://korean.hansung.ac.kr/",
+    "https://www.seoulfilmcenter.com/index.do",
+    "https://www.fafan.kr/",
     "https://megabox.co.kr/",
-    "http://www.yangcheon.go.kr/",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://sms.hansung.ac.kr",
-    "https://hsdw.hansung.ac.kr/",
-    "http://korean.hansung.ac.kr/",
-    "https://www.fafan.kr/",
-    "https://flight.naver.com/"
+    "http://kren.kr",
+    "https://flight.naver.com/",
+    "http://www.yangcheon.go.kr/"
   ]
 }
