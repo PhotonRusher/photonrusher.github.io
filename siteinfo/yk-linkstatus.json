@@ -1,19 +1,21 @@
 {
-  "updated": "2026-07-27 14:56 KST",
+  "updated": "2026-07-28 14:22 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "https://www.2cpu.co.kr",
-    "https://hsdw.hansung.ac.kr/",
-    "http://www.golfzon.com",
-    "http://korean.hansung.ac.kr/",
-    "https://www.seoulfilmcenter.com/index.do",
-    "https://www.fafan.kr/",
-    "https://megabox.co.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "http://kren.kr",
+    "http://www.kbstar.com",
     "https://flight.naver.com/",
-    "http://www.yangcheon.go.kr/"
+    "http://korean.hansung.ac.kr/",
+    "http://www.ktcu.or.kr",
+    "http://www.yangcheon.go.kr/",
+    "https://www.seoulfilmcenter.com/index.do",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://hsdw.hansung.ac.kr/",
+    "https://sms.hansung.ac.kr",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://www.fafan.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://www.golfzon.com",
+    "https://www.skbroadband.com/Main.do",
+    "http://www.kt.com"
   ]
 }
