@@ -1,17 +1,18 @@
 {
-  "updated": "2026-08-07 13:31 KST",
+  "updated": "2026-08-08 12:33 KST",
   "broken": [
-    "https://www.bbongtv.com",
-    "http://www.golfzon.com",
-    "http://www.kt.com",
-    "https://sms.hansung.ac.kr",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://www.seoulfilmcenter.com/index.do",
-    "http://korean.hansung.ac.kr/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://flight.naver.com/",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://www.yangcheon.go.kr/",
+    "http://www.ibk.co.kr",
+    "https://www.seoul.go.kr/thismteventfstvl/list.do",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.fafan.kr/"
+    "https://www.fafan.kr/",
+    "http://korean.hansung.ac.kr/",
+    "https://sms.hansung.ac.kr",
+    "https://flight.naver.com/",
+    "https://hsdw.hansung.ac.kr/",
+    "http://www.kt.com",
+    "https://www.sfac.or.kr/participation/artsnet/qenre.do"
   ]
 }
