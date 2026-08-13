@@ -1,22 +1,21 @@
 {
-  "updated": "2026-08-12 13:14 KST",
+  "updated": "2026-08-13 13:18 KST",
   "broken": [
-    "http://www.ibk.co.kr",
-    "http://www.law.go.kr/",
-    "https://www.fafan.kr/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://www.sfac.or.kr/participation/artsnet/qenre.do",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://flight.naver.com/",
-    "http://www.golfzon.com",
-    "https://www.seoul.go.kr/thismteventfstvl/list.do",
-    "https://www.bbongtv.com",
-    "https://sms.hansung.ac.kr",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "http://www.kt.com",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.yangcheon.go.kr/",
-    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
-    "http://korean.hansung.ac.kr/"
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://www.fafan.kr/",
+    "http://www.golfzon.com",
+    "https://flight.naver.com/",
+    "https://hsdw.hansung.ac.kr/",
+    "https://www.2cpu.co.kr",
+    "http://sec.keris.or.kr",
+    "https://www.moe.go.kr/",
+    "http://www.law.go.kr/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://www.g2b.go.kr/",
+    "https://sms.hansung.ac.kr",
+    "http://korean.hansung.ac.kr/",
+    "https://www.foresttrip.go.kr/"
   ]
 }
