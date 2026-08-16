@@ -1,21 +1,23 @@
 {
-  "updated": "2026-08-15 11:57 KST",
+  "updated": "2026-08-16 12:05 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "https://www.fafan.kr/",
-    "http://korean.hansung.ac.kr/",
-    "https://hsdw.hansung.ac.kr/",
-    "http://sec.keris.or.kr",
-    "http://www.g2b.go.kr/",
-    "https://www.foresttrip.go.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://www.skbroadband.com/Main.do",
-    "https://flight.naver.com/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "http://gs25.gsretail.com/gscvs/ko/customer-engagement/event/current-events?uiel=Mobile",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
     "http://www.teachiworld.com/s5/main.jsp",
+    "https://www.foresttrip.go.kr/",
+    "https://www.skbroadband.com/Main.do",
+    "http://korean.hansung.ac.kr/",
+    "https://www.fafan.kr/",
+    "https://sms.hansung.ac.kr",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "http://www.law.go.kr/",
-    "https://www.moe.go.kr/"
+    "https://hsdw.hansung.ac.kr/",
+    "http://www.g2b.go.kr/",
+    "https://itgo.kr/",
+    "https://flight.naver.com/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "http://www.yangcheon.go.kr/",
+    "https://www.moe.go.kr/",
+    "http://sec.keris.or.kr",
+    "https://cu.bgfretail.com/brand_info/news_list.do?category=brand_info&depth2=5",
+    "https://www.7-eleven.co.kr/event/eventList.asp"
   ]
 }
