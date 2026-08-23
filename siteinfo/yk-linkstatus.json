@@ -1,26 +1,18 @@
 {
-  "updated": "2026-08-22 12:00 KST",
+  "updated": "2026-08-23 12:07 KST",
   "broken": [
-    "https://www.fafan.kr/",
+    "https://megabox.co.kr/",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://hsdw.hansung.ac.kr/",
-    "https://gall.dcinside.com/mgallery/board/lists/?id=ps5",
-    "https://news.naver.com/",
-    "http://www.kt.com",
-    "https://gall.dcinside.com/mgallery/board/lists/?id=wine",
-    "https://gall.dcinside.com/mgallery/board/lists/?id=mvnogallery",
-    "http://www.yangcheon.go.kr/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.dcinside.com",
+    "http://korean.hansung.ac.kr/",
+    "https://www.fafan.kr/",
     "https://flight.naver.com/",
     "https://erp.hansung.ac.kr/#/login",
-    "https://sms.uplus.co.kr/ver2/jsp/main/index.jsp",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "http://gall.dcinside.com/list.php?id=hansung",
-    "http://korean.hansung.ac.kr/",
+    "http://www.kt.com",
+    "http://www.yangcheon.go.kr/",
     "https://sms.hansung.ac.kr",
-    "https://support.oracle.com/signin",
-    "https://gall.dcinside.com/mgallery/board/lists/?id=oasis",
-    "http://www.golfzon.com"
+    "https://sms.uplus.co.kr/ver2/jsp/main/index.jsp",
+    "https://hsdw.hansung.ac.kr/",
+    "http://www.teachiworld.com/s5/main.jsp"
   ]
 }
