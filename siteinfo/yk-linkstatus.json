@@ -1,19 +1,25 @@
 {
-  "updated": "2026-08-27 21:29 KST",
+  "updated": "2026-08-28 22:55 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "https://www.fafan.kr/",
-    "http://www.teachiworld.com/s5/main.jsp",
     "http://korean.hansung.ac.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.yangcheon.go.kr/",
-    "https://flight.naver.com/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://erp.hansung.ac.kr/#/login",
-    "https://www.microsoft.com/Licensing/servicecenter/default.aspx",
-    "http://www.ktcu.or.kr",
     "http://www.kt.com",
-    "http://www.golfzon.com"
+    "https://hsdw.hansung.ac.kr/",
+    "https://www.foresttrip.go.kr/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "https://flight.naver.com/",
+    "https://www.moe.go.kr/",
+    "http://www.yangcheon.go.kr/",
+    "https://www.fafan.kr/",
+    "http://sec.keris.or.kr",
+    "http://www.g2b.go.kr/",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "http://www.golfzon.com",
+    "https://erp.hansung.ac.kr/#/login",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.tjmedia.com/song/accompaniment",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://sms.hansung.ac.kr",
+    "http://www.law.go.kr/"
   ]
 }
