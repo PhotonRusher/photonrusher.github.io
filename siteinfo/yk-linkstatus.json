@@ -1,23 +1,16 @@
 {
-  "updated": "2026-09-08 16:04 KST",
+  "updated": "2026-09-09 16:12 KST",
   "broken": [
+    "https://erp.hansung.ac.kr/#/login",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "http://www.11st.co.kr",
-    "http://www.law.go.kr/",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://sms.hansung.ac.kr",
+    "https://flight.naver.com/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
     "http://www.yangcheon.go.kr/",
-    "https://www.moe.go.kr/",
-    "http://korean.hansung.ac.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
     "https://www.fafan.kr/",
-    "http://www.g2b.go.kr/",
-    "http://www.kt.com",
-    "http://sec.keris.or.kr",
     "https://hsdw.hansung.ac.kr/",
-    "https://flight.naver.com/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://www.foresttrip.go.kr/",
-    "https://erp.hansung.ac.kr/#/login"
+    "http://korean.hansung.ac.kr/",
+    "https://sms.hansung.ac.kr"
   ]
 }
