@@ -1,17 +1,24 @@
 {
-  "updated": "2026-09-11 16:07 KST",
+  "updated": "2026-09-12 15:59 KST",
   "broken": [
-    "https://www.fafan.kr/",
-    "https://academy.kisa.or.kr/",
     "https://erp.hansung.ac.kr/#/login",
-    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
-    "http://www.yangcheon.go.kr/",
-    "http://korean.hansung.ac.kr/",
-    "https://sms.hansung.ac.kr",
-    "https://hsdw.hansung.ac.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://academy.kisa.or.kr/",
+    "http://www.golfzon.com",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.foresttrip.go.kr/",
+    "https://www.fafan.kr/",
+    "http://www.law.go.kr/",
+    "http://www.g2b.go.kr/",
+    "http://korean.hansung.ac.kr/",
+    "https://www.seoulfilmcenter.com/index.do",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://hsdw.hansung.ac.kr/",
+    "https://www.2cpu.co.kr",
     "https://flight.naver.com/",
-    "http://www.teachiworld.com/s5/main.jsp"
+    "https://www.moe.go.kr/",
+    "https://www.mcst.go.kr/kor/s_culture/culture/cultureList.jsp",
+    "http://sec.keris.or.kr",
+    "https://sms.hansung.ac.kr"
   ]
 }
