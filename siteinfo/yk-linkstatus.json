@@ -1,21 +1,22 @@
 {
-  "updated": "2026-10-05 17:27 KST",
+  "updated": "2026-10-06 17:42 KST",
   "broken": [
-    "http://www.teachiworld.com/s5/main.jsp",
-    "http://www.kocw.net",
-    "http://www.kt.com",
-    "http://korean.hansung.ac.kr/",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.kri.go.kr/hansung",
-    "http://www.golfzon.com",
-    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
     "https://www.fafan.kr/",
-    "https://hsdw.hansung.ac.kr/",
+    "https://www.2cpu.co.kr",
     "https://flight.naver.com/",
-    "https://sms.uplus.co.kr/ver2/jsp/main/index.jsp",
-    "https://sms.hansung.ac.kr",
-    "https://academy.kisa.or.kr/",
+    "http://www.yangcheon.go.kr/",
+    "http://www.golfzon.com",
+    "https://hsdw.hansung.ac.kr/",
     "https://erp.hansung.ac.kr/#/login",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp"
+    "http://www.kri.go.kr/hansung",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://academy.kisa.or.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://sms.hansung.ac.kr",
+    "https://www.tjmedia.com/song/accompaniment",
+    "http://korean.hansung.ac.kr/",
+    "https://www.7-eleven.co.kr/event/eventList.asp"
   ]
 }
