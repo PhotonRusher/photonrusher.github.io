@@ -1,20 +1,19 @@
 {
-  "updated": "2026-10-13 18:04 KST",
+  "updated": "2026-10-14 16:13 KST",
   "broken": [
     "https://flight.naver.com/",
-    "https://hsdw.hansung.ac.kr/",
-    "https://apt2.me/",
-    "https://erp.hansung.ac.kr/#/login",
-    "https://academy.kisa.or.kr/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://korean.hansung.ac.kr/",
     "https://www.fafan.kr/",
-    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://hsdw.hansung.ac.kr/",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://erp.hansung.ac.kr/#/login",
     "https://sms.hansung.ac.kr",
     "http://www.kri.go.kr/hansung",
-    "https://itgo.kr/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp"
+    "https://url.kr/",
+    "http://korean.hansung.ac.kr/",
+    "https://academy.kisa.or.kr/",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01"
   ]
 }
