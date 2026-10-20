@@ -1,21 +1,22 @@
 {
-  "updated": "2026-10-19 16:25 KST",
+  "updated": "2026-10-20 16:18 KST",
   "broken": [
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://academy.kisa.or.kr/",
     "http://www.golfzon.com",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://erp.hansung.ac.kr/#/login",
-    "https://sms.hansung.ac.kr",
-    "http://korean.hansung.ac.kr/",
-    "https://www.fafan.kr/",
-    "http://www.kri.go.kr/hansung",
-    "https://www.2cpu.co.kr",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
     "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://hsdw.hansung.ac.kr/",
+    "http://korean.hansung.ac.kr/",
     "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
-    "https://vino-bot.com/",
+    "https://academy.kisa.or.kr/",
+    "http://www.kri.go.kr/hansung",
+    "https://erp.hansung.ac.kr/#/login",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "https://www.2cpu.co.kr",
     "https://flight.naver.com/",
-    "https://hsdw.hansung.ac.kr/"
+    "https://itgo.kr/",
+    "http://www.g2b.go.kr/",
+    "https://sms.hansung.ac.kr",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://www.fafan.kr/"
   ]
 }
