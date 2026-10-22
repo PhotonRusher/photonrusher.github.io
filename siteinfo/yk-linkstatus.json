@@ -1,21 +1,20 @@
 {
-  "updated": "2026-10-21 16:11 KST",
+  "updated": "2026-10-22 16:12 KST",
   "broken": [
-    "https://erp.hansung.ac.kr/#/login",
-    "https://academy.kisa.or.kr/",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "http://www.yangcheon.go.kr/",
-    "https://flight.naver.com/",
-    "http://www.kt.com",
-    "http://www.golfzon.com",
-    "http://korean.hansung.ac.kr/",
-    "https://www.fafan.kr/",
-    "http://www.kri.go.kr/hansung",
     "https://hsdw.hansung.ac.kr/",
     "https://www.7-eleven.co.kr/event/eventList.asp",
-    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
+    "https://flight.naver.com/",
+    "http://www.yangcheon.go.kr/",
     "https://sms.hansung.ac.kr",
+    "http://korean.hansung.ac.kr/",
+    "http://www.teachiworld.com/s5/main.jsp",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "https://erp.hansung.ac.kr/#/login",
+    "http://www.dealbada.com/bbs/board.php?bo_table=deal_domestic",
     "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01"
+    "https://academy.kisa.or.kr/",
+    "http://www.kri.go.kr/hansung",
+    "https://www.fafan.kr/",
+    "https://koreandev.hansung.ac.kr/"
   ]
 }
