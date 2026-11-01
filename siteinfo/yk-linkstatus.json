@@ -1,24 +1,23 @@
 {
-  "updated": "2026-10-31 17:07 KST",
+  "updated": "2026-11-01 17:48 KST",
   "broken": [
+    "http://www.kri.go.kr/hansung",
+    "https://flight.naver.com/",
     "http://idisk.hansung.ac.kr",
-    "https://sms.hansung.ac.kr",
-    "https://www.tjmedia.com/song/accompaniment",
-    "https://www.skbroadband.com/Main.do",
-    "https://www.7-eleven.co.kr/event/eventList.asp",
-    "https://erp.hansung.ac.kr/#/login",
+    "http://korean.hansung.ac.kr/",
     "https://book.hansung.ac.kr/",
     "http://www.teachiworld.com/s5/main.jsp",
-    "https://www.fafan.kr/",
-    "https://koreandev.hansung.ac.kr/",
-    "http://tour.interpark.com/home",
-    "https://flight.naver.com/",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
+    "http://tour.interpark.com/home",
     "https://academy.kisa.or.kr/",
-    "http://www.yangcheon.go.kr/",
+    "https://www.skbroadband.com/Main.do",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
     "https://hsdw.hansung.ac.kr/",
-    "http://korean.hansung.ac.kr/",
-    "http://www.kri.go.kr/hansung"
+    "https://www.fafan.kr/",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "http://www.yangcheon.go.kr/",
+    "https://koreandev.hansung.ac.kr/",
+    "https://erp.hansung.ac.kr/#/login",
+    "https://sms.hansung.ac.kr"
   ]
 }
