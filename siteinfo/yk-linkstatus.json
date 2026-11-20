@@ -1,22 +1,22 @@
 {
-  "updated": "2026-11-19 19:00 KST",
+  "updated": "2026-11-20 18:46 KST",
   "broken": [
-    "https://sms.hansung.ac.kr",
-    "https://www.fafan.kr/",
-    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
-    "http://tour.interpark.com/home",
-    "http://www.kri.go.kr/hansung",
-    "http://www.teachiworld.com/s5/main.jsp",
-    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
-    "https://hsdw.hansung.ac.kr/",
     "https://koreandev.hansung.ac.kr/",
-    "http://korean.hansung.ac.kr/",
-    "http://www.11st.co.kr",
-    "http://idisk.hansung.ac.kr",
+    "https://sms.hansung.ac.kr",
+    "https://campus.heyoung.co.kr/admin/screen/HCO0101M01",
     "https://flight.naver.com/",
+    "http://www.kri.go.kr/hansung",
+    "http://korean.hansung.ac.kr/",
     "https://book.hansung.ac.kr/",
-    "https://www.skbroadband.com/Main.do",
+    "http://idisk.hansung.ac.kr",
+    "https://www.7-eleven.co.kr/event/eventList.asp",
+    "https://www.fafan.kr/",
     "https://erp.hansung.ac.kr/#/login",
-    "https://www.7-eleven.co.kr/event/eventList.asp"
+    "https://www.skbroadband.com/Main.do",
+    "https://hsdw.hansung.ac.kr/",
+    "https://seoullib.barob.co.kr/ebookPlatform/b2b_homepage/B2B01_Main/main.jsp",
+    "http://tour.interpark.com/home",
+    "http://www.11st.co.kr",
+    "http://www.teachiworld.com/s5/main.jsp"
   ]
 }
